@@ -37,7 +37,7 @@ const ManzilMapPage = () => {
   return (
     <div className="manzil-container">
       {/* Header */}
-      <div className="header">
+      <div className="header-map">
         <h1 className="title">{t.title}</h1>
       </div>
 

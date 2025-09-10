@@ -11,8 +11,8 @@ const Home = ({ lang }) => {
             <Main lang={lang} />
             <Products lang={lang} />
             <SodiumNitrateInfo lang={lang} />
-            <ManzilMapPage lang={lang} />
             <CertificatesGallery lang={lang} />
+            <ManzilMapPage lang={lang} />
         </>
     )
 }
