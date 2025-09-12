@@ -7,7 +7,7 @@ import {
   useNavigate,
   useParams,
 } from "react-router-dom";
-import { useDispatch } from "react-redux"; // Add this import
+import { useDispatch } from "react-redux";
 import { productApi } from "./context/productionApi"; // Adjust the import path if needed
 import Header from "./components/header/Header";
 import HomePage from "./components/Home";
@@ -18,27 +18,22 @@ import ContactForm from "./components/sms/Sms";
 import AdminLogin from "./components/login/Login";
 import AdminDashboard from "./admin/Dashboard";
 import ProductSinglePage from "./components/singlePage/ProductSinglePage";
-// import './style.css';
 import SodiumNitrateInfo from "./components/sodiumNitrateInfo/SodiumNitrateInfo";
 import Products from "./components/products/Products";
+import AzsStationPage from "./components/bazs/Bazs";
+import ScrollToTopButton from "./components/top/ScrollToTopButton"; // Import the new component
 
 // Simulated token validation function (replace with your actual logic)
 const validateToken = (token) => {
-  // Example: Check if token exists and is valid (e.g., via API or localStorage)
-  // For demo, assume tokens are stored in localStorage or validated via an API
   return token && token.length > 0; // Replace with real validation
 };
 
 // Protected Route Component
 function ProtectedRoute({ element }) {
-  const { token } = useParams(); // Get token from URL
+  const { token } = useParams();
   const isAuthenticated = validateToken(token);
 
-  return isAuthenticated ? (
-    element
-  ) : (
-    <Navigate to="/ru/admin/servoce" replace />
-  );
+  return isAuthenticated ? element : <Navigate to="/ru/admin/servoce" replace />;
 }
 
 function RedirectToLang() {
@@ -70,7 +65,7 @@ function RedirectToLang() {
 function App() {
   const location = useLocation();
   const navigate = useNavigate();
-  const dispatch = useDispatch(); // Add this to get dispatch
+  const dispatch = useDispatch();
   const lang = location.pathname.split("/")[1];
   const token = localStorage.getItem("token");
 
@@ -83,7 +78,7 @@ function App() {
   // Prefetch products data on app load
   useEffect(() => {
     dispatch(productApi.endpoints.getProducts.initiate());
-  }, [dispatch]); // Runs once on mount, caches data via RTK Query
+  }, [dispatch]);
 
   const handleChatClick = () => {
     navigate(`/${lang}/sms`);
@@ -91,27 +86,21 @@ function App() {
 
   return (
     <>
-      {/* Admin sahifada Header ko‘rsatilmaydi */}
       {!isAdminLoginPage && !isAdminDashboardPage && <Header />}
 
       <Routes>
         <Route path="/" element={<RedirectToLang />} />
         <Route path="/:lang/:contact" element={<UniversalInfoPage />} />
         <Route path="/:lang/map" element={<ManzilMapPage lang={lang} />} />
-        <Route
-          path="/:lang/nitrat"
-          element={<SodiumNitrateInfo lang={lang} />}
-        />
+        <Route path="/:lang/nitrat" element={<SodiumNitrateInfo lang={lang} />} />
         <Route path="/:lang/products" element={<Products lang={lang} />} />
         <Route path="/:lang/sms" element={<ContactForm lang={lang} />} />
         <Route
           path="/admin/:token/dashboard"
           element={<ProtectedRoute element={<AdminDashboard />} />}
         />
-        <Route
-          path="/:lang/admin/service"
-          element={<AdminLogin lang={lang} />}
-        />
+        <Route path="/:lang/bazs" element={<AzsStationPage lang={lang} />} />
+        <Route path="/:lang/admin/service" element={<AdminLogin lang={lang} />} />
         <Route path="/:name" element={<ProductSinglePage lang={lang} />} />
         <Route path="/ru" element={<HomePage lang="ru" />} />
         <Route path="/en" element={<HomePage lang="en" />} />
@@ -119,10 +108,9 @@ function App() {
         <Route path="*" element={<RedirectToLang />} />
       </Routes>
 
-      {/* Admin sahifada Footer ko‘rsatilmaydi */}
       {!isAdminLoginPage && !isAdminDashboardPage && <Footer lang={lang} />}
 
-      {/* SMS sahifada chat tugmasi ko‘rsatilmaydi */}
+      {/* Chat button */}
       {!isSmsPage && !isAdminLoginPage && !isAdminDashboardPage && (
         <div className="chat-button-container" onClick={handleChatClick}>
           <div className="chat-ripples">
@@ -150,6 +138,11 @@ function App() {
             </div>
           </div>
         </div>
+      )}
+
+      {/* Scroll to top button */}
+      {!isSmsPage && !isAdminLoginPage && !isAdminDashboardPage && (
+        <ScrollToTopButton />
       )}
     </>
   );

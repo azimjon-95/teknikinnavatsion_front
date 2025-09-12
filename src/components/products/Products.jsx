@@ -243,9 +243,9 @@ const Products = ({ lang = "uz" }) => {
 
         {/* Navigation Tabs */}
         <div className="klu-nav-tabs">
-          {t.sections.map((section) => (
+          {t.sections.map((section, inx) => (
             <button
-              key={section.id}
+              key={inx}
               className={`klu-nav-tab ${activeSection === section.id ? 'klu-active' : ''}`}
               onClick={() => setActiveSection(section.id)}
             >
@@ -273,7 +273,7 @@ const Products = ({ lang = "uz" }) => {
                 <p className="klu-company-subtitle">{t.productionData.subtitle}</p>
                 <div className="klu-capabilities">
                   {t.productionData.description.map((item, index) => (
-                    <span style={{ marginTop: "8px" }} className="klu-capability-ru">{item}</span>
+                    <span style={{ marginTop: "8px" }} key={index} className="klu-capability-ru">{item}</span>
                   ))}
                 </div>
               </div>
@@ -292,13 +292,13 @@ const Products = ({ lang = "uz" }) => {
                 <h3 className="klu-company-title">{t.designData.title}</h3>
                 <div className="klu-capabilities">
                   {t.designData.capabilities.map((item, index) => (
-                    <span className="klu-capability-ru">{item}</span>
+                    <span key={index} className="klu-capability-ru">{item}</span>
                   ))}
                 </div>
                 <p className="klu-company-subtitle">{t.designData.subtitle}</p>
                 <div className="klu-capabilities">
                   {t.designData.description.map((item, index) => (
-                    <span className="klu-capability-ru">{item}</span>
+                    <span key={index} className="klu-capability-ru">{item}</span>
                   ))}
                 </div>
                 <span className="klu-capability-ru">{t.designData.method}</span>
@@ -317,7 +317,7 @@ const Products = ({ lang = "uz" }) => {
                 <h3 className="klu-company-title">{t.constructionData.title}</h3>
                 <div className="klu-capabilities">
                   {t.constructionData.capabilities.map((item, index) => (
-                    <span className="klu-capability-ru">{item}</span>
+                    <span key={index} className="klu-capability-ru">{item}</span>
                   ))}
                 </div>
                 <span className="klu-capability-ru" style={{ marginTop: "10px" }}>{t.constructionData.method}</span>
