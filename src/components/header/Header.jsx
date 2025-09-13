@@ -16,7 +16,6 @@ const translations = {
     navLinks: [
       { label: "Резервуар горизонтальный стальной РГС", path: "rgs" },
       { label: "Резервуар вертикальный стальной РВС", path: "rvs" },
-      { label: "Блочная автозаправочная станция (БАЗС)", path: "bazs" },
     ],
   },
   en: {
@@ -24,7 +23,6 @@ const translations = {
     navLinks: [
       { label: "Horizontal Steel Tank RGS", path: "rgs" },
       { label: "Vertical Steel Tank RVS", path: "rvs" },
-      { label: "Block Fuel Station (BAZS)", path: "bazs" },
     ],
   },
   uz: {
@@ -32,7 +30,6 @@ const translations = {
     navLinks: [
       { label: "Gorizontal po'lat rezervuar RGS", path: "rgs" },
       { label: "Vertikal po'lat rezervuar RVS", path: "rvs" },
-      { label: "Blokli avtoyog' quyish shaxobchasi (BAZS)", path: "bazs" },
     ],
   },
 };
@@ -119,7 +116,6 @@ function Header() {
       <div className="bez-header-bottom">
         {
           translations[language].navLinks.map((link, index) => {
-            console.log(link.path);
             return (
               <Link
                 key={index}

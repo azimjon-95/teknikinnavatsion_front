@@ -22,6 +22,8 @@ import SodiumNitrateInfo from "./components/sodiumNitrateInfo/SodiumNitrateInfo"
 import Products from "./components/products/Products";
 import AzsStationPage from "./components/bazs/Bazs";
 import ScrollToTopButton from "./components/top/ScrollToTopButton"; // Import the new component
+import GasStationsPage from "./components/azs/Azs";
+import Kazs from "./components/kazs/Kazs";
 
 // Simulated token validation function (replace with your actual logic)
 const validateToken = (token) => {
@@ -99,7 +101,9 @@ function App() {
           path="/admin/:token/dashboard"
           element={<ProtectedRoute element={<AdminDashboard />} />}
         />
+        <Route path="/:lang/azs" element={<GasStationsPage lang={lang} />} />
         <Route path="/:lang/bazs" element={<AzsStationPage lang={lang} />} />
+        <Route path="/:lang/kazs" element={<Kazs lang={lang} />} />
         <Route path="/:lang/admin/service" element={<AdminLogin lang={lang} />} />
         <Route path="/:name" element={<ProductSinglePage lang={lang} />} />
         <Route path="/ru" element={<HomePage lang="ru" />} />
