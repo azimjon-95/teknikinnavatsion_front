@@ -229,54 +229,7 @@ const CertificatesGallery = ({ lang }) => {
         </div>
       )}
 
-      <style jsx>{`
-        .set-real-certificate-image {
-          width: 100%;
-          height: 200px;
-          object-fit: cover;
-          border-radius: 15px;
-          border: 2px solid #e1e5e9;
-          transition: transform 0.3s ease;
-        }
 
-        .set-modal-certificate-image {
-          width: 100%;
-          max-height: 400px;
-          object-fit: contain;
-          border-radius: 15px;
-          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-          transition: transform 0.3s ease;
-          will-change: transform;
-        }
-
-        .set-modal-certificate-image.zoomed {
-          transform: scale(2);
-        }
-
-        .set-certificate-info {
-          text-align: center;
-        }
-
-        .set-view-button {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          gap: 0.5rem;
-          color: #667eea;
-          font-weight: 600;
-          font-size: 0.95rem;
-        }
-
-        .set-arrow {
-          transition: transform 0.3s ease;
-        }
-
-        .set-modal-image {
-          margin-bottom: 2rem;
-          overflow: auto;
-          max-height: 400px; /* Matches max-height of image */
-        }
-      `}</style>
     </div>
   );
 };

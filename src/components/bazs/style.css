@@ -1,0 +1,405 @@
+.azs-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    color: #333;
+    line-height: 1.6;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+.azs-header {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.azs-company-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.azs-company-name {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.azs-contact-info {
+    text-align: right;
+    color: #666;
+}
+
+.azs-contact-title {
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+.azs-contact-info p {
+    margin-bottom: 4px;
+    font-size: 0.9rem;
+}
+
+/* Main Title */
+.azs-main-title {
+    text-align: center;
+    background-color: white;
+    padding: 40px 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.azs-main-title h2 {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+.azs-main-title h1 {
+    font-size: 2.2rem;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+/* Specifications Section */
+.azs-specifications {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.azs-specifications h3 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e74c3c;
+    padding-bottom: 10px;
+}
+
+.azs-intro {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.azs-usage {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.azs-fuel-types {
+    margin-bottom: 25px;
+}
+
+.azs-fuel-item h4 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.azs-fuel-variants {
+    margin: 20px 0;
+}
+
+.azs-variant h4 {
+    color: #e74c3c;
+    margin-bottom: 15px;
+}
+
+.azs-variant ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.azs-variant li {
+    background-color: #f8f9fa;
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    border-left: 4px solid #27ae60;
+    border-radius: 5px;
+}
+
+.azs-features,
+.azs-safety,
+.azs-services {
+    margin: 25px 0;
+}
+
+.azs-features h4,
+.azs-safety h4,
+.azs-services h4 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.azs-features ul,
+.azs-safety ul {
+    padding-left: 20px;
+}
+
+.azs-features li,
+.azs-safety li {
+    margin-bottom: 8px;
+    color: #555;
+}
+
+li::marker {
+    color: #ffffff00;
+}
+
+.azs-automation-note {
+    background-color: #fff3cd;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 4px solid #ffc107;
+    margin: 15px 0;
+    font-style: italic;
+}
+
+/* Images Section */
+.azs-images {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
+}
+
+.azs-station-overview {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.azs-main-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); */
+}
+
+.azs-image-caption {
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #2c3e50;
+    font-size: 1.1rem;
+}
+
+.azs-detailed-view {
+    position: relative;
+    text-align: center;
+}
+
+.azs-detail-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.azs-component-labels {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+}
+
+.azs-label {
+    background-color: #e8f5e8;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    color: #2c3e50;
+    border-left: 3px solid #27ae60;
+}
+
+/* Description Section */
+.azs-description {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.azs-description h3 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e74c3c;
+    padding-bottom: 10px;
+}
+
+.azs-description>p {
+    margin-bottom: 25px;
+    color: #555;
+    font-size: 1rem;
+}
+
+.azs-advantages h4 {
+    color: #e74c3c;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.azs-advantages ol {
+    counter-reset: advantages;
+}
+
+.azs-advantages li {
+    counter-increment: advantages;
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+    position: relative;
+}
+
+.azs-advantages li::before {
+    content: counter(advantages);
+    position: absolute;
+    left: -15px;
+    top: 15px;
+    background-color: #3498db;
+    color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* Documents Section */
+.azs-documents {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.azs-documents h3 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e74c3c;
+    padding-bottom: 10px;
+}
+
+.azs-documents ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.azs-documents li {
+    background-color: #f8f9fa;
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    border-left: 4px solid #f39c12;
+    border-radius: 5px;
+    position: relative;
+}
+
+.azs-documents li::before {
+    content: "📄";
+    margin-right: 10px;
+}
+
+/* Footer */
+.azs-footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.azs-footer p {
+    margin-bottom: 5px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .azs-container {
+        padding: 15px;
+    }
+
+    .azs-company-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .azs-contact-info {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .azs-company-name {
+        font-size: 2rem;
+    }
+
+    .azs-main-title h1 {
+        font-size: 1.8rem;
+    }
+
+    .azs-header,
+    .azs-specifications,
+    .azs-images,
+    .azs-description,
+    .azs-documents {
+        padding: 20px;
+    }
+
+    .azs-component-labels {
+        grid-template-columns: 1fr;
+    }
+
+    .azs-advantages li::before {
+        position: static;
+        display: inline-block;
+        margin-right: 10px;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .azs-company-name {
+        font-size: 1.5rem;
+    }
+
+    .azs-main-title h1 {
+        font-size: 1.4rem;
+    }
+
+    .azs-main-title h2 {
+        font-size: 1rem;
+    }
+
+    .azs-contact-info p {
+        font-size: 0.8rem;
+    }
+
+    .azs-header,
+    .azs-specifications,
+    .azs-images,
+    .azs-description,
+    .azs-documents {
+        padding: 15px;
+    }
+}

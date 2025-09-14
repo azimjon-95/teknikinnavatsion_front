@@ -14,28 +14,26 @@ const translations = {
   ru: {
     contactEmail: "teknikinnovatsion.info@gmail.com",
     navLinks: [
-      "Резервуар горизонтальный стальной РГС",
-      "Резервуар вертикальный стальной РВС",
-      "Блочная автозаправочная станция (БАЗС)",
+      { label: "Резервуар горизонтальный стальной РГС", path: "rgs" },
+      { label: "Резервуар вертикальный стальной РВС", path: "rvs" },
     ],
   },
   en: {
     contactEmail: "teknikinnovatsion.info@gmail.com",
     navLinks: [
-      "Horizontal Steel Tank RGS",
-      "Vertical Steel Tank RVS",
-      "Block Fuel Station (BAZS)",
+      { label: "Horizontal Steel Tank RGS", path: "rgs" },
+      { label: "Vertical Steel Tank RVS", path: "rvs" },
     ],
   },
   uz: {
     contactEmail: "teknikinnovatsion.info@gmail.com",
     navLinks: [
-      "Gorizontal po'lat rezervuar RGS",
-      "Vertikal po'lat rezervuar RVS",
-      "Blokli avtoyog' quyish shaxobchasi (BAZS)",
+      { label: "Gorizontal po'lat rezervuar RGS", path: "rgs" },
+      { label: "Vertikal po'lat rezervuar RVS", path: "rvs" },
     ],
   },
 };
+
 
 function Header() {
   const navigate = useNavigate();
@@ -69,7 +67,20 @@ function Header() {
   const handleLanguageChange = (value) => {
     setLanguage(value);
     localStorage.setItem("lang", value);
-    navigate(`/${value}`);
+
+    // Joriy yo'lni olish (masalan, /ru/rgs yoki /en/contact)
+    const currentPath = location.pathname;
+
+    // Yo'lni til qismiga bo'lib, faqat tilni almashtirish
+    const pathParts = currentPath.split("/").filter(Boolean);
+    if (pathParts.length > 0) {
+      // Birinchi qism til (ru, en, uz), qolgan qism esa sahifa yo'li
+      const newPath = `/${value}/${pathParts.slice(1).join("/")}`;
+      navigate(newPath);
+    } else {
+      // Agar yo'l bo'sh bo'lsa, faqat tilni o'zgartirish
+      navigate(`/${value}`);
+    }
   };
 
   const handleSearchInputChange = (e) => {
@@ -103,14 +114,24 @@ function Header() {
         </div>
       </div>
       <div className="bez-header-bottom">
-        {translations[language].navLinks.map((link, index) => (
-          <Link key={index} to={`/${language}/${link.toLowerCase().replace(/\s+/g, "-")}`}>
-            {link}
-          </Link>
-        ))}
+        {
+          translations[language].navLinks.map((link, index) => {
+            return (
+              <Link
+                key={index}
+                to={`/${language}/${link.path}`}
+              >
+                {link.label}
+              </Link>
+
+            )
+          })
+        }
       </div>
     </div>
   );
 }
 
 export default Header;
+
+
