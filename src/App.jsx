@@ -21,6 +21,8 @@ import ProductSinglePage from "./components/singlePage/ProductSinglePage";
 // import './style.css';
 import SodiumNitrateInfo from "./components/sodiumNitrateInfo/SodiumNitrateInfo";
 import Products from "./components/products/Products";
+import Horizontal from "./components/horizontal/Horizontal";
+import CardDetail from "./components/horizontal/details/CardDetail";
 
 // Simulated token validation function (replace with your actual logic)
 const validateToken = (token) => {
@@ -98,6 +100,12 @@ function App() {
         <Route path="/" element={<RedirectToLang />} />
         <Route path="/:lang/:contact" element={<UniversalInfoPage />} />
         <Route path="/:lang/map" element={<ManzilMapPage lang={lang} />} />
+        <Route
+          path="/:lang/резервуар-горизонтальный-стальной-ргс"
+          element={<Horizontal lang={lang} />}
+        />
+        <Route path="/:lang/details/:id" element={<CardDetail lang={lang} />} />
+
         <Route
           path="/:lang/nitrat"
           element={<SodiumNitrateInfo lang={lang} />}
