@@ -20,7 +20,7 @@ const translations = {
     submitButton: "Kirish",
     loading: "Tekshirilmoqda...",
     securityBadge: "Xavfsiz ulanish",
-    copyright: "© 2025 LiderLux MCHJ. Barcha huquqlar himoyalangan.",
+    copyright: "© 2025 TEKNIK INNOVATSION MCHJ. Barcha huquqlar himoyalangan.",
     sidePanelTitle: "texnik natriy nitrati",
     molecularMass: "Molekular massa",
     solubility: "Erishuvchanlik",
@@ -37,7 +37,7 @@ const translations = {
     submitButton: "Войти",
     loading: "Проверка...",
     securityBadge: "Безопасное соединение",
-    copyright: "© 2025 LiderLux MCHJ. Все права защищены.",
+    copyright: "© 2025 TEKNIK INNOVATSION MCHJ. Все права защищены.",
     sidePanelTitle: "Нитрат натрия",
     molecularMass: "Молекулярная масса",
     solubility: "Растворимость",
@@ -54,7 +54,7 @@ const translations = {
     submitButton: "Login",
     loading: "Checking...",
     securityBadge: "Secure Connection",
-    copyright: "© 2025 LiderLux MCHJ. All rights reserved.",
+    copyright: "© 2025 TEKNIK INNOVATSION MCHJ. All rights reserved.",
     sidePanelTitle: "Sodium Nitrate",
     molecularMass: "Molecular Mass",
     solubility: "Solubility",
@@ -100,14 +100,14 @@ const AdminLogin = () => {
     setIsLoading(true);
     setLoginError("");
     try {
-      const res = await axios.post(
-        "https://liderlux-two.vercel.app/api/admin/login",
-        formData
-      );
       // const res = await axios.post(
-      //   "http://localhost:8080/api/admin/login",
+      //   "https://TEKNIK INNOVATSION-two.vercel.app/api/admin/login",
       //   formData
       // );
+      const res = await axios.post(
+        "https://teknikinnavatsion-server.vercel.app/api/admin/login",
+        formData
+      );
       if (res.data?.innerData) {
         localStorage.setItem("token", res.data.innerData.token);
         navigate(`/admin/${res.data.innerData.token}/dashboard`); // Corrected: Call navigate as a function
@@ -139,10 +139,9 @@ const AdminLogin = () => {
       <div className="log-content">
         <div className="log-header">
           <div className="log-logo">
-            <Factory className="log-factory-icon" />
-            <div className="log-formula">NaNO₃</div>
+            {/* <Factory className="log-factory-icon" /> */}
+            <div className="log-formula"><i> TEKNIK <br /> INNOVATSION</i></div>
           </div>
-          <h1 className="log-title">LiderLux</h1>
           <p className="log-subtitle">{t.title}</p>
         </div>
 
@@ -237,26 +236,7 @@ const AdminLogin = () => {
         </div>
       </div>
 
-      <div className="log-side-panel">
-        <div className="log-chemical-formula">
-          <h3>{t.sidePanelTitle}</h3>
-          <div className="log-formula-large">NaNO₃</div>
-          <div className="log-properties">
-            <div className="log-property">
-              <span className="log-property-label">{t.molecularMass}:</span>
-              <span className="log-property-value">{t.molecularMassValue}</span>
-            </div>
-            <div className="log-property">
-              <span className="log-property-label">{t.solubility}:</span>
-              <span className="log-property-value">{t.solubilityValue}</span>
-            </div>
-            <div className="log-property">
-              <span className="log-property-label">{t.color}:</span>
-              <span className="log-property-value">{t.colorValue}</span>
-            </div>
-          </div>
-        </div>
-      </div>
+
     </div>
   );
 };

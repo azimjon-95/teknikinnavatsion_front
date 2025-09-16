@@ -16,6 +16,7 @@ const translations = {
     navLinks: [
       { label: "Резервуар горизонтальный стальной РГС", path: "rgs" },
       { label: "Резервуар вертикальный стальной РВС", path: "rvs" },
+
     ],
   },
   en: {
@@ -83,9 +84,7 @@ function Header() {
     }
   };
 
-  const handleSearchInputChange = (e) => {
-    dispatch(setSearchQuery(e.target.value));
-  };
+
 
   return (
     <div className="bez-header">

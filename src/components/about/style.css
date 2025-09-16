@@ -620,6 +620,8 @@ html {
     flex-wrap: wrap;
 }
 
+
+
 .abu-social-btn {
     display: flex;
     align-items: center;
@@ -632,6 +634,7 @@ html {
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+    color: #fafafa;
 }
 
 .abu-social-btn::before {
@@ -649,26 +652,34 @@ html {
     left: 100%;
 }
 
+.abu-social-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Instagram ranglari */
 .abu-instagram {
-    background: linear-gradient(45deg, #3794ff, #002856);
-    color: #fafafa;
+    background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
 }
 
-.abu-instagram:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(0, 42, 252, 0.701);
-}
-
+/* Telegram ranglari */
 .abu-telegram {
-    background: linear-gradient(45deg, #002856, #3794ff) !important;
-    background: transparent;
-    color: white;
+    background: linear-gradient(45deg, #0088cc, #3794ff);
 }
 
-.abu-telegram:hover {
-    background: #002856;
-    color: #fafafa;
-    transform: translateY(-3px);
+/* WhatsApp ranglari */
+.abu-whatsapp {
+    background: linear-gradient(45deg, #25d366, #128c7e);
+}
+
+/* WeChat ranglari */
+.abu-wechat {
+    background: linear-gradient(45deg, #09b83e, #0cc142);
+}
+
+/* YouTube ranglari */
+.abu-youtube {
+    background: linear-gradient(45deg, #ff0000, #cc0000);
 }
 
 /* Responsive Design for Social Media */

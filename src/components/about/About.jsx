@@ -15,6 +15,7 @@ import {
   ShoppingCart,
   Info,
   Send,
+  Youtube,
 } from "lucide-react";
 import { translations } from "./translations";
 import "./style.css";
@@ -26,35 +27,23 @@ const UniversalInfoPage = () => {
   const navigate = useNavigate();
   const [activeSection, setActiveSection] = useState(contact || "home");
   const [language, setLanguage] = useState(lang || "uz");
-  const [isLoading, setIsLoading] = useState(false); // Added isLoading state
   const { data: contactData, isLoading: contactsLoading } =
     useGetContactsQuery();
   console.log(contactData?.innerData[contactData?.innerData.length - 1]);
 
-  const mockContactData = {
-    main: "+998 (73) 242-66-42",
-    sales: "+998 (73) 242-66-39",
-    procurement: "+998 (73) 242-66-46",
-    accounting: "+998 (73) 242-62-62",
-    spareParts: "+998 (73) 242-60-63",
-    personnel: "+998 (73) 242-59-95",
-    infoPhone: "+998 99 997 44 40",
-    instagram: "https://www.instagram.com/liderlux.uz", // Example Instagram link
-    telegram: "https://t.me/liderlux_uz", // Example Telegram link
-  };
   // Fallback translations to avoid undefined errors
   const t = translations[language] || translations["uz"];
 
   const phones = contactData?.innerData[contactData?.innerData.length - 1];
 
   const contactItems = [
-    // {
-    //   key: "main",
-    //   icon: Phone,
-    //   // Приёмная
-    //   label: t.contact?.main || "Приёмная",
-    //   value: phones?.reception,
-    // },
+    {
+      key: "main",
+      icon: Phone,
+      // Приёмная
+      label: t.contact?.main || "Приёмная",
+      value: phones?.reception,
+    },
     {
       key: "sales",
       icon: ShoppingCart,
@@ -76,20 +65,35 @@ const UniversalInfoPage = () => {
       label: t.contact?.procurement || "Отдел по закупу",
       value: phones?.purchaseDepartment,
     },
-    // {
-    //   key: "hr",
-    //   icon: Users,
-    //   // Отдел по работе с персоналом
-    //   label: t.contact?.personnel || "Отдел по работе с персоналом",
-    //   value: phones?.hrDepartment,
-    // },
-    // {
-    //   key: "info",
-    //   icon: Info,
-    //   // Справочное бюро
-    //   label: t.contact?.info || "Справочное бюро",
-    //   value: phones?.infoDesk,
-    // },
+    {
+      key: "hr",
+      icon: Users,
+      // Отдел по работе с персоналом
+      label: t.contact?.personnel || "Отдел по работе с персоналом",
+      value: phones?.hrDepartment,
+    },
+    {
+      key: "info",
+      icon: Info,
+      // Справочное бюро
+      label: t.contact?.info || "Справочное бюро",
+      value: phones?.infoDesk,
+    },
+  ];
+
+  const socialItems = [
+    {
+      key: "instagram1",
+      icon: Instagram,
+      label: "Instagram 1",
+      value: phones?.instagramLink1,
+    },
+    {
+      key: "instagram2",
+      icon: Instagram,
+      label: "Instagram 2",
+      value: phones?.instagramLink2,
+    },
     {
       key: "telegram",
       icon: Send,
@@ -102,7 +106,20 @@ const UniversalInfoPage = () => {
       label: "WhatsApp",
       value: phones?.whatsappLink,
     },
+    {
+      key: "wechat",
+      icon: MessageCircle,
+      label: "WeChat",
+      value: phones?.wechatLink,
+    },
+    {
+      key: "youtube",
+      icon: Youtube,
+      label: "YouTube",
+      value: phones?.youtubeLink,
+    },
   ];
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [activeSection]);
@@ -125,6 +142,8 @@ const UniversalInfoPage = () => {
       navigate(`/${newLang}/${activeSection || ""}`, { replace: true });
     }
   }, [lang, activeSection, navigate]);
+
+  console.log(contactItems);
 
   const renderContent = () => {
     switch (activeSection) {
@@ -169,7 +188,15 @@ const UniversalInfoPage = () => {
                       <li key={index}>{spec}</li>
                     ))}
                   </ul>
-                  <ul>{t.about?.productFeatures}</ul>
+                  <ul>
+                    {Array.isArray(t.about?.productFeatures) ? (
+                      t.about?.productFeatures.map((feature, index) => (
+                        <li key={index}>{feature}</li>
+                      ))
+                    ) : (
+                      <li>{t.about?.productFeatures}</li>
+                    )}
+                  </ul>
                 </div>
               </div>
             </div>
@@ -187,7 +214,7 @@ const UniversalInfoPage = () => {
                 {t.contact?.subtitle || "Get in touch with our team"}
               </p>
             </div>
-            {isLoading ? (
+            {contactsLoading ? (
               <div className="abu-loading">
                 <div className="abu-spinner"></div>
                 <p>Loading contact information...</p>
@@ -195,7 +222,7 @@ const UniversalInfoPage = () => {
             ) : (
               <>
                 <div className="abu-contact-grid">
-                  {/* {contactItems.map((item) => (
+                  {contactItems.map((item) => (
                     <div key={item.key} className="abu-contact-card">
                       <item.icon
                         className="abu-contact-icon"
@@ -211,45 +238,7 @@ const UniversalInfoPage = () => {
                         +998 {PhoneNumberFormat(item.value)}
                       </a>
                     </div>
-                  ))} */}
-                  {contactItems.map((item) => {
-                    // Agar qiymat link bo‘lsa aniqlash
-                    const isLink =
-                      typeof item.value === "string" &&
-                      (item.value.startsWith("http://") ||
-                        item.value.startsWith("https://"));
-
-                    return (
-                      <div key={item.key} className="abu-contact-card">
-                        <item.icon
-                          className="abu-contact-icon"
-                          size={32}
-                          aria-hidden="true"
-                        />
-                        <h3>{item.label}</h3>
-
-                        {isLink ? (
-                          <a
-                            href={item.value}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="abu-phone-link"
-                            aria-label={`Open ${item.label}`}
-                          >
-                            {item.value?.split("/").pop()}
-                          </a>
-                        ) : (
-                          <a
-                            href={`tel:${item.value}`}
-                            className="abu-phone-link"
-                            aria-label={`Call ${item.label}`}
-                          >
-                            +998 {PhoneNumberFormat(item.value)}
-                          </a>
-                        )}
-                      </div>
-                    );
-                  })}
+                  ))}
                 </div>
 
                 <div className="abu-contact-grid">
@@ -264,13 +253,11 @@ const UniversalInfoPage = () => {
                     <Mail className="abu-contact-icon" aria-hidden="true" />
                     <h3>{t.contact?.info || "Information"}</h3>
                     <a
-                      href={`mailto:${
-                        t.contact?.infoEmail || "liderlux.info@gmail.com"
-                      }`}
+                      href={`mailto:${t.contact?.infoEmail || "teknikinnovatsion.info@gmail.com"}`}
                       className="abu-phone-link"
                       aria-label="Send email"
                     >
-                      {t.contact?.infoEmail || "liderlux.info@gmail.com"}
+                      {t.contact?.infoEmail || "teknikinnovatsion.info@gmail.com"}
                     </a>
                   </div>
                 </div>
@@ -279,26 +266,19 @@ const UniversalInfoPage = () => {
                     {t.contact?.social || "Follow Us"}
                   </h3>
                   <div className="abu-social-buttons">
-                    <a
-                      href={mockContactData.instagram}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="abu-social-btn abu-instagram"
-                      aria-label="Visit our Instagram"
-                    >
-                      <Instagram size={24} aria-hidden="true" />
-                      Instagram
-                    </a>
-                    <a
-                      href={mockContactData.telegram}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="abu-social-btn abu-telegram"
-                      aria-label="Visit our Telegram"
-                    >
-                      <MessageCircle size={24} aria-hidden="true" />
-                      Telegram
-                    </a>
+                    {socialItems.map((item) => (
+                      <a
+                        key={item.key}
+                        href={item.value}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`abu-social-btn abu-${item.key.split(/\d/)[0]}`}
+                        aria-label={`Visit our ${item.label}`}
+                      >
+                        <item.icon size={24} aria-hidden="true" />
+                        {item.label}
+                      </a>
+                    ))}
                   </div>
                 </div>
                 <div className="abu-working-hours-section">

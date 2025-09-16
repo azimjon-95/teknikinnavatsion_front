@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Users, Package, Contact, LogOut, Menu, X, Search } from "lucide-react";
 import { useNavigate } from "react-router-dom"; // Added for redirect
 import AdminsTable from "./AdminsTable";
-import ProductsTable from "./ProductsTable";
+import BazsStationForm from "./form/BazsStationForm";
 import ContactsTable from "./ContactsTable";
 import "./css/style.css";
 
@@ -10,7 +10,7 @@ const translations = {
   uz: {
     title: "Admin Panel",
     admins: "Adminlar",
-    products: "Mahsulotlar",
+    products: "BAZS",
     contacts: "Kontaktlar",
     logout: "Chiqish",
     search: "Qidirish...",
@@ -19,7 +19,7 @@ const translations = {
   ru: {
     title: "Админ-панель",
     admins: "Админ",
-    products: "Продукты",
+    products: "БАЗС",
     contacts: "Контакты",
     logout: "Выйти",
     search: "Поиск...",
@@ -28,7 +28,7 @@ const translations = {
   en: {
     title: "Admin Panel",
     admins: "Admins",
-    products: "Products",
+    products: "BAZS",
     contacts: "Contacts",
     logout: "Logout",
     search: "Search...",
@@ -94,9 +94,8 @@ const AdminDashboard = () => {
 
         <nav className="dash-nav">
           <button
-            className={`dash-nav-item ${
-              activeTab === "admins" ? "dash-nav-active" : ""
-            }`}
+            className={`dash-nav-item ${activeTab === "admins" ? "dash-nav-active" : ""
+              }`}
             onClick={() => {
               setActiveTab("admins");
               setSidebarOpen(false);
@@ -106,9 +105,8 @@ const AdminDashboard = () => {
             <span>{translations[lang].admins}</span>
           </button>
           <button
-            className={`dash-nav-item ${
-              activeTab === "products" ? "dash-nav-active" : ""
-            }`}
+            className={`dash-nav-item ${activeTab === "products" ? "dash-nav-active" : ""
+              }`}
             onClick={() => {
               setActiveTab("products");
               setSidebarOpen(false);
@@ -118,9 +116,8 @@ const AdminDashboard = () => {
             <span>{translations[lang].products}</span>
           </button>
           <button
-            className={`dash-nav-item ${
-              activeTab === "contacts" ? "dash-nav-active" : ""
-            }`}
+            className={`dash-nav-item ${activeTab === "contacts" ? "dash-nav-active" : ""
+              }`}
             onClick={() => {
               setActiveTab("contacts");
               setSidebarOpen(false);
@@ -160,25 +157,22 @@ const AdminDashboard = () => {
           </div>
           <div className="dash-lang">
             <button
-              className={`dash-lang-btn ${
-                lang === "uz" ? "dash-lang-active" : ""
-              }`}
+              className={`dash-lang-btn ${lang === "uz" ? "dash-lang-active" : ""
+                }`}
               onClick={() => handleLangChange("uz")}
             >
               UZ
             </button>
             <button
-              className={`dash-lang-btn ${
-                lang === "ru" ? "dash-lang-active" : ""
-              }`}
+              className={`dash-lang-btn ${lang === "ru" ? "dash-lang-active" : ""
+                }`}
               onClick={() => handleLangChange("ru")}
             >
               RU
             </button>
             <button
-              className={`dash-lang-btn ${
-                lang === "en" ? "dash-lang-active" : ""
-              }`}
+              className={`dash-lang-btn ${lang === "en" ? "dash-lang-active" : ""
+                }`}
               onClick={() => handleLangChange("en")}
             >
               EN
@@ -191,7 +185,7 @@ const AdminDashboard = () => {
             <AdminsTable lang={lang} searchTerm={searchTerm} />
           )}
           {activeTab === "products" && (
-            <ProductsTable lang={lang} searchTerm={searchTerm} />
+            <BazsStationForm lang={lang} searchTerm={searchTerm} />
           )}
           {activeTab === "contacts" && (
             <ContactsTable lang={lang} searchTerm={searchTerm} />

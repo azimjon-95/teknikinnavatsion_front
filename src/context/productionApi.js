@@ -3,47 +3,43 @@ import { api } from "./api";
 
 export const productApi = api.injectEndpoints({
   endpoints: (builder) => ({
-    createProduct: builder.mutation({
-      query: (formData /* FormData */) => ({
-        url: "/product/create",
-        method: "POST",
-        body: formData,
-      }),
-      invalidatesTags: ["Products"],
-    }),
     getProducts: builder.query({
-      query: () => "/product/all",
-      providesTags: ["Products"],
+      query: () => '/products', // Adjust the URL to match your backend API
     }),
-    getProductById: builder.query({
-      query: (id) => `/product/get/${id}`,
-      providesTags: ["Products"],
+    getBazsStations: builder.query({
+      query: () => '/bazs-stations',
     }),
-    updateProduct: builder.mutation({
-      query: ({ id, body }) => {
-        return {
-          url: `/product/update/${id}`,
-          method: "PUT",
-          body,
-        };
-      },
-      invalidatesTags: ["Products"],
+    getBazsStationById: builder.query({
+      query: (id) => `/bazs-stations/${id}`,
     }),
-    deleteProduct: builder.mutation({
-      query: (id) => ({
-        url: `/product/delete/${id}`,
-        method: "DELETE",
+    createBazsStation: builder.mutation({
+      query: (body) => ({
+        url: '/bazs-stations',
+        method: 'POST',
+        body,
       }),
-      invalidatesTags: ["Products"],
+    }),
+    updateBazsStation: builder.mutation({
+      query: ({ id, ...data }) => ({
+        url: `/bazs-stations/${id}`,
+        method: 'PUT',
+        body: data,
+      }),
+    }),
+    deleteBazsStation: builder.mutation({
+      query: (id) => ({
+        url: `/bazs-stations/${id}`,
+        method: 'DELETE',
+      }),
     }),
   }),
 });
 
-// Export hooks for usage in components
 export const {
   useGetProductsQuery,
-  useGetProductByIdQuery,
-  useCreateProductMutation,
-  useDeleteProductMutation,
-  useUpdateProductMutation,
+  useGetBazsStationsQuery,
+  useGetBazsStationByIdQuery,
+  useCreateBazsStationMutation,
+  useUpdateBazsStationMutation,
+  useDeleteBazsStationMutation,
 } = productApi;

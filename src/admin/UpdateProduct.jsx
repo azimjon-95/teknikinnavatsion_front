@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "./css/updateP.css";
-import { useUpdateProductMutation } from "../context/productionApi";
+import { useUpdateBazsStationMutation } from "../context/productionApi";
 import { FiX } from "react-icons/fi";
 
 function UpdateProduct({ data, setCloseModal }) {
-  const [updateProduct, { isLoading }] = useUpdateProductMutation();
+  const [updateProduct] = useUpdateBazsStationMutation();
   const [formData, setFormData] = useState({
     titleUz: "",
     titleRu: "",

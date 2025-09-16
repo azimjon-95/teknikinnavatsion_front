@@ -24,6 +24,7 @@ import AzsStationPage from "./components/bazs/Bazs";
 import ScrollToTopButton from "./components/top/ScrollToTopButton"; // Import the new component
 import GasStationsPage from "./components/azs/Azs";
 import Kazs from "./components/kazs/Kazs";
+import BazsStationsManager from "./admin/form/BazsStationForm";
 
 // Simulated token validation function (replace with your actual logic)
 const validateToken = (token) => {
@@ -72,7 +73,7 @@ function App() {
   const token = localStorage.getItem("token");
 
   const isSmsPage = location.pathname.includes("/sms");
-  const isAdminLoginPage = location.pathname.includes("/admin/servoce");
+  const isAdminLoginPage = location.pathname.includes("/admin/service");
   const isAdminDashboardPage = location.pathname.includes(
     `/admin/${token}/dashboard`
   );
@@ -153,3 +154,5 @@ function App() {
 }
 
 export default App;
+
+

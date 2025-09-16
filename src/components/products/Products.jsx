@@ -1,5 +1,16 @@
 import React, { useState } from 'react';
-import img1 from '../../assets/production/proektirovanie.jpg';
+import caed1 from '../../assets/cards/01.jpg';
+import caed2 from '../../assets/cards/02.jpg';
+import caed3 from '../../assets/cards/03.jpg';
+import caed4 from '../../assets/cards/04.jpg';
+import caed5 from '../../assets/cards/05.jpg';
+import caed6 from '../../assets/cards/06.jpg';
+import caed7 from '../../assets/cards/07.jpg';
+import caed8 from '../../assets/cards/08.jpg';
+import caed9 from '../../assets/cards/09.jpg';
+import caed10 from '../../assets/cards/10.jpg';
+import caed11 from '../../assets/cards/11.jpg';
+import caed12 from '../../assets/cards/12.jpg';
 import img2 from '../../assets/production/proizvodstvo.jpg';
 import img3 from '../../assets/production/stroitelstvo.jpg';
 import './style.css';
@@ -231,9 +242,25 @@ const translations = {
   },
 };
 
+const images = [
+  caed1,
+  caed2,
+  caed3,
+  caed4,
+  caed5,
+  caed6,
+  caed7,
+  caed8,
+  caed9,
+  caed10,
+  caed11,
+  caed12,
+];
+
 const Products = ({ lang = "uz" }) => {
   const [activeSection, setActiveSection] = useState('production');
   const t = translations[lang] || translations.uz; // Fallback to Uzbek if lang is invalid
+  const [selectedImg, setSelectedImg] = useState(null);
 
   return (
     <div className="klu-container">
@@ -279,32 +306,29 @@ const Products = ({ lang = "uz" }) => {
               </div>
             </div>
             <span className="klu-capability-ru">{t.productionData.method}</span>
-          </div>
+            dd</div>
         )}
 
         {activeSection === 'design' && (
-          <div className="klu-production-section">
-            <div className="klu-production-grid">
-              <div className="klu-image-container">
-                <img src={img1} alt="" />
-              </div>
-              <div className="klu-info-panel">
-                <h3 className="klu-company-title">{t.designData.title}</h3>
-                <div className="klu-capabilities">
-                  {t.designData.capabilities.map((item, index) => (
-                    <span key={index} className="klu-capability-ru">{item}</span>
-                  ))}
-                </div>
-                <p className="klu-company-subtitle">{t.designData.subtitle}</p>
-                <div className="klu-capabilities">
-                  {t.designData.description.map((item, index) => (
-                    <span key={index} className="klu-capability-ru">{item}</span>
-                  ))}
-                </div>
-                <span className="klu-capability-ru">{t.designData.method}</span>
-              </div>
+          <>
+            <div className="klu-production-imgs">
+              {images.map((src, i) => (
+                <img
+                  key={i}
+                  src={src}
+                  alt=""
+                  onClick={() => setSelectedImg(src)}
+                />
+              ))}
             </div>
-          </div>
+
+            {selectedImg && (
+              <div className="modal" onClick={() => setSelectedImg(null)}>
+                <span className="close">&times;</span>
+                <img className="modal-content" src={selectedImg} alt="" />
+              </div>
+            )}
+          </>
         )}
 
         {activeSection === 'construction' && (
