@@ -3,9 +3,6 @@ import { api } from "./api";
 
 export const productApi = api.injectEndpoints({
   endpoints: (builder) => ({
-    getProducts: builder.query({
-      query: () => '/products', // Adjust the URL to match your backend API
-    }),
     getBazsStations: builder.query({
       query: () => '/bazs-stations',
     }),
@@ -36,10 +33,10 @@ export const productApi = api.injectEndpoints({
 });
 
 export const {
-  useGetProductsQuery,
   useGetBazsStationsQuery,
   useGetBazsStationByIdQuery,
   useCreateBazsStationMutation,
   useUpdateBazsStationMutation,
   useDeleteBazsStationMutation,
 } = productApi;
+

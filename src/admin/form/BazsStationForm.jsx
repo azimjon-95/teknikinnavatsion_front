@@ -4,9 +4,7 @@ import { IoImageOutline } from "react-icons/io5";
 import { HiOutlineArrowRight } from "react-icons/hi2";
 import { TiDropbox } from "react-icons/ti";
 import {
-    useGetProductsQuery,
     useGetBazsStationsQuery,
-    useGetBazsStationByIdQuery,
     useCreateBazsStationMutation,
     useUpdateBazsStationMutation,
     useDeleteBazsStationMutation,

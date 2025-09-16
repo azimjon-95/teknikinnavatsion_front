@@ -26,7 +26,6 @@ import AzsStationPage from "./components/bazs/Bazs";
 import ScrollToTopButton from "./components/top/ScrollToTopButton"; // Import the new component
 import GasStationsPage from "./components/azs/Azs";
 import Kazs from "./components/kazs/Kazs";
-import BazsStationsManager from "./admin/form/BazsStationForm";
 
 // Simulated token validation function (replace with your actual logic)
 const validateToken = (token) => {
@@ -86,7 +85,7 @@ function App() {
 
   // Prefetch products data on app load
   useEffect(() => {
-    dispatch(productApi.endpoints.getProducts.initiate());
+    dispatch(productApi.endpoints.getBazsStations.initiate());
   }, [dispatch]);
 
   const handleChatClick = () => {
@@ -173,3 +172,6 @@ function App() {
 }
 
 export default App;
+
+
+
