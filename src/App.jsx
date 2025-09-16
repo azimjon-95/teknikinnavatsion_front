@@ -20,6 +20,8 @@ import AdminDashboard from "./admin/Dashboard";
 import ProductSinglePage from "./components/singlePage/ProductSinglePage";
 import SodiumNitrateInfo from "./components/sodiumNitrateInfo/SodiumNitrateInfo";
 import Products from "./components/products/Products";
+import Horizontal from "./components/horizontal/Horizontal";
+import CardDetail from "./components/horizontal/details/CardDetail";
 import AzsStationPage from "./components/bazs/Bazs";
 import ScrollToTopButton from "./components/top/ScrollToTopButton"; // Import the new component
 import GasStationsPage from "./components/azs/Azs";
@@ -36,7 +38,11 @@ function ProtectedRoute({ element }) {
   const { token } = useParams();
   const isAuthenticated = validateToken(token);
 
-  return isAuthenticated ? element : <Navigate to="/ru/admin/servoce" replace />;
+  return isAuthenticated ? (
+    element
+  ) : (
+    <Navigate to="/ru/admin/servoce" replace />
+  );
 }
 
 function RedirectToLang() {
@@ -95,7 +101,17 @@ function App() {
         <Route path="/" element={<RedirectToLang />} />
         <Route path="/:lang/:contact" element={<UniversalInfoPage />} />
         <Route path="/:lang/map" element={<ManzilMapPage lang={lang} />} />
-        <Route path="/:lang/nitrat" element={<SodiumNitrateInfo lang={lang} />} />
+        <Route path="/:lang/rgs" element={<Horizontal lang={lang} />} />
+        <Route path="/:lang/details/:id" element={<CardDetail lang={lang} />} />
+
+        <Route
+          path="/:lang/nitrat"
+          element={<SodiumNitrateInfo lang={lang} />}
+        />
+        <Route
+          path="/:lang/nitrat"
+          element={<SodiumNitrateInfo lang={lang} />}
+        />
         <Route path="/:lang/products" element={<Products lang={lang} />} />
         <Route path="/:lang/sms" element={<ContactForm lang={lang} />} />
         <Route
@@ -105,7 +121,10 @@ function App() {
         <Route path="/:lang/azs" element={<GasStationsPage lang={lang} />} />
         <Route path="/:lang/bazs" element={<AzsStationPage lang={lang} />} />
         <Route path="/:lang/kazs" element={<Kazs lang={lang} />} />
-        <Route path="/:lang/admin/service" element={<AdminLogin lang={lang} />} />
+        <Route
+          path="/:lang/admin/service"
+          element={<AdminLogin lang={lang} />}
+        />
         <Route path="/:name" element={<ProductSinglePage lang={lang} />} />
         <Route path="/ru" element={<HomePage lang="ru" />} />
         <Route path="/en" element={<HomePage lang="en" />} />
@@ -154,5 +173,3 @@ function App() {
 }
 
 export default App;
-
-
