@@ -174,8 +174,8 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .chat-button-container {
-    bottom: 20px;
-    right: 20px;
+    bottom: 30px;
+    right: 30px;
   }
 
   .chat-button-container::before,

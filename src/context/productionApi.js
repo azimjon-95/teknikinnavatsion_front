@@ -3,47 +3,40 @@ import { api } from "./api";
 
 export const productApi = api.injectEndpoints({
   endpoints: (builder) => ({
-    createProduct: builder.mutation({
-      query: (formData /* FormData */) => ({
-        url: "/product/create",
-        method: "POST",
-        body: formData,
+    getBazsStations: builder.query({
+      query: () => '/bazs-stations',
+    }),
+    getBazsStationById: builder.query({
+      query: (id) => `/bazs-stations/${id}`,
+    }),
+    createBazsStation: builder.mutation({
+      query: (body) => ({
+        url: '/bazs-stations',
+        method: 'POST',
+        body,
       }),
-      invalidatesTags: ["Products"],
     }),
-    getProducts: builder.query({
-      query: () => "/product/all",
-      providesTags: ["Products"],
+    updateBazsStation: builder.mutation({
+      query: ({ id, ...data }) => ({
+        url: `/bazs-stations/${id}`,
+        method: 'PUT',
+        body: data,
+      }),
     }),
-    getProductById: builder.query({
-      query: (id) => `/product/get/${id}`,
-      providesTags: ["Products"],
-    }),
-    updateProduct: builder.mutation({
-      query: ({ id, body }) => {
-        return {
-          url: `/product/update/${id}`,
-          method: "PUT",
-          body,
-        };
-      },
-      invalidatesTags: ["Products"],
-    }),
-    deleteProduct: builder.mutation({
+    deleteBazsStation: builder.mutation({
       query: (id) => ({
-        url: `/product/delete/${id}`,
-        method: "DELETE",
+        url: `/bazs-stations/${id}`,
+        method: 'DELETE',
       }),
-      invalidatesTags: ["Products"],
     }),
   }),
 });
 
-// Export hooks for usage in components
 export const {
-  useGetProductsQuery,
-  useGetProductByIdQuery,
-  useCreateProductMutation,
-  useDeleteProductMutation,
-  useUpdateProductMutation,
+  useGetBazsStationsQuery,
+  useGetBazsStationByIdQuery,
+  useCreateBazsStationMutation,
+  useUpdateBazsStationMutation,
+  useDeleteBazsStationMutation,
 } = productApi;
+

@@ -1,4 +1,6 @@
 import React from 'react';
+import { Mail } from "lucide-react";
+import TEKNIK from "../../assets/TEKNIK.jpg";
 import img1 from '../../assets/footer/ico-my.png';
 import img2 from '../../assets/footer/ico-my1.png';
 import img3 from '../../assets/footer/ico-my2.png';
@@ -209,6 +211,12 @@ const Footer = ({ lang = "ru" }) => {
                   <a href="#" className="fot-section-link">{item}</a>
                 </p>
               ))}
+              <p>
+                <a href={`mailto:teknikinnovatsion.info@gmail.com`} className="fot-section-link">
+                  <span style={{ color: "green" }}>teknikinnovatsion.info@gmail.com</span>
+                </a>
+              </p>
+              <h3><i>TEKNIK INNOVATSION</i> </h3>
             </div>
           </div>
 
@@ -280,3 +288,4 @@ const Footer = ({ lang = "ru" }) => {
 };
 
 export default Footer;
+

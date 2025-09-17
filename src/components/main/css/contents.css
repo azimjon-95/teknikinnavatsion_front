@@ -1,0 +1,104 @@
+/* About Section Styles */
+.bez-insta-about-section {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 50px;
+    gap: 30px;
+    color: #ffffff;
+}
+
+.bez-insta-container {
+    width: 100%;
+}
+
+.bez-insta-section-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2e7d32;
+    margin-bottom: 20px;
+    line-height: 1.3;
+    position: relative;
+}
+
+.bez-insta-section-title::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 45%;
+    height: 3px;
+    background: #002856;
+    border-radius: 2px;
+}
+
+.bez-insta-about-image {
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.bez-insta-about-image iframe {
+    width: 100%;
+    height: 275px;
+    margin-top: 4px;
+    border: none;
+    border-radius: 10px;
+}
+
+.bez-insta-about-insta {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.bez-insta-about-insta blockquote.instagram-media {
+    width: 350px;
+    height: 460px;
+    max-width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* 📱 Mobil versiya */
+@media (max-width: 768px) {
+    .bez-insta-about-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 10px;
+    }
+
+    .bez-insta-section-title {
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    .bez-insta-about-image iframe {
+        height: 250px;
+    }
+
+    .bez-insta-about-insta {
+        width: 100%;
+    }
+
+    .bez-insta-about-insta blockquote.instagram-media {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 3/4;
+        /* nisbatni saqlaydi */
+    }
+}
+
+/* 📱 Juda kichik ekranlar */
+@media (max-width: 480px) {
+    .bez-insta-section-title {
+        font-size: 1.1rem;
+    }
+
+    .bez-insta-about-image iframe {
+        height: 200px;
+    }
+}

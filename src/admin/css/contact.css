@@ -138,13 +138,11 @@
 }
 
 .vfo-table th {
-    padding: 10px 16px;
+    padding: 7px;
     color: white;
     font-weight: 600;
     text-align: left;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+    font-size: 12px;
     position: relative;
 }
 
@@ -170,8 +168,9 @@
 }
 
 .vfo-table td {
-    padding: 5px 16px;
+    padding: 7px;
     color: #475569;
+    font-size: 12px;
     font-weight: 500;
     vertical-align: middle;
 }

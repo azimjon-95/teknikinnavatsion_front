@@ -84,12 +84,10 @@ html {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 215, 0, 0.2),
-    transparent
-  );
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 215, 0, 0.2),
+      transparent);
   transition: left 0.5s;
 }
 
@@ -132,11 +130,9 @@ html {
   transform: translateX(-50%);
   width: 300px;
   height: 300px;
-  background: radial-gradient(
-    circle,
-    rgba(255, 215, 0, 0.1) 0%,
-    transparent 70%
-  );
+  background: radial-gradient(circle,
+      rgba(255, 215, 0, 0.1) 0%,
+      transparent 70%);
   border-radius: 50%;
   z-index: -1;
 }
@@ -227,12 +223,10 @@ html {
   left: -50%;
   width: 200%;
   height: 200%;
-  background: linear-gradient(
-    45deg,
-    transparent,
-    rgba(255, 215, 0, 0.1),
-    transparent
-  );
+  background: linear-gradient(45deg,
+      transparent,
+      rgba(255, 215, 0, 0.1),
+      transparent);
   transform: rotate(45deg);
   transition: all 0.5s;
   opacity: 0;
@@ -298,11 +292,9 @@ html {
 
 /* Product Highlight */
 .abu-product-highlight {
-  background: linear-gradient(
-    135deg,
-    rgba(255, 215, 0, 0.1) 0%,
-    rgba(255, 165, 0, 0.05) 100%
-  );
+  background: linear-gradient(135deg,
+      rgba(255, 215, 0, 0.1) 0%,
+      rgba(255, 165, 0, 0.05) 100%);
   padding: 2rem;
   border-radius: 15px;
   margin: 3rem 0;
@@ -479,12 +471,10 @@ html {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.2),
-    transparent
-  );
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent);
   transition: left 0.5s;
 }
 
@@ -572,12 +562,10 @@ html {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 215, 0, 0.1),
-    transparent
-  );
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 215, 0, 0.1),
+      transparent);
   transition: left 0.5s;
 }
 
@@ -640,7 +628,21 @@ html {
   flex-wrap: wrap;
 }
 
+
+
 .abu-social-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 2rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  color: #fafafa;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -661,12 +663,10 @@ html {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.2),
-    transparent
-  );
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent);
   transition: left 0.5s;
 }
 
@@ -674,7 +674,14 @@ html {
   left: 100%;
 }
 
+.abu-social-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Instagram ranglari */
 .abu-instagram {
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
   background: linear-gradient(45deg, #3794ff, #002856);
   color: #fafafa;
 }
@@ -684,7 +691,24 @@ html {
   box-shadow: 0 10px 25px rgba(0, 42, 252, 0.701);
 }
 
+/* Telegram ranglari */
 .abu-telegram {
+  background: linear-gradient(45deg, #0088cc, #3794ff);
+}
+
+/* WhatsApp ranglari */
+.abu-whatsapp {
+  background: linear-gradient(45deg, #25d366, #128c7e);
+}
+
+/* WeChat ranglari */
+.abu-wechat {
+  background: linear-gradient(45deg, #09b83e, #0cc142);
+}
+
+/* YouTube ranglari */
+.abu-youtube {
+  background: linear-gradient(45deg, #ff0000, #cc0000);
   background: linear-gradient(45deg, #002856, #3794ff) !important;
   background: transparent;
   color: white;
@@ -739,6 +763,7 @@ html {
 }
 
 @keyframes pulse {
+
   0%,
   100% {
     transform: scale(1);

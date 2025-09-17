@@ -26,21 +26,21 @@ const CertificatesGallery = ({ lang }) => {
       status: "Status",
       type: "Type",
       active: "Active",
-      companyName: "LIDERLUX LLC",
+      companyName: "TEKNIK INNOVATSION LLC",
       locationValue: "Ferghana region, Tashlak district",
       certificates: [
         {
           id: 1,
           title: "Legal Certificate",
           type: "Legal Certificate",
-          description: "LIDERLUX LLC Legal Entity Certificate",
+          description: "TEKNIK INNOVATSION LLC Legal Entity Certificate",
           image: Гувохнома,
         },
         {
           id: 2,
           title: "ISO 9001:2015 Certificate",
           type: "Quality Management",
-          description: "LIDERLUX LLC - Production of sodium nitrate",
+          description: "TEKNIK INNOVATSION LLC - Production of sodium nitrate",
           image: Сертификат,
         },
         {
@@ -61,21 +61,21 @@ const CertificatesGallery = ({ lang }) => {
       status: "Статус",
       type: "Тип",
       active: "Активен",
-      companyName: "ООО LIDERLUX",
+      companyName: "ООО TEKNIK INNOVATSION",
       locationValue: "Ферганская область, Ташлакский район",
       certificates: [
         {
           id: 1,
           title: "Сертификат юридического лица",
           type: "Юридический сертификат",
-          description: "Сертификат юридического лица ООО LIDERLUX",
+          description: "Сертификат юридического лица ООО TEKNIK INNOVATSION",
           image: Гувохнома,
         },
         {
           id: 2,
           title: "Сертификат ISO 9001:2015",
           type: "Управление качеством",
-          description: "ООО LIDERLUX - Производство нитрата натрия",
+          description: "ООО TEKNIK INNOVATSION - Производство нитрата натрия",
           image: Сертификат,
         },
         {
@@ -96,21 +96,21 @@ const CertificatesGallery = ({ lang }) => {
       status: "Holati",
       type: "Turi",
       active: "Faol",
-      companyName: "LIDERLUX MChJ",
+      companyName: "TEKNIK INNOVATSION MChJ",
       locationValue: "Farg'ona viloyati, Toshloq tumani",
       certificates: [
         {
           id: 1,
           title: "Yuridik shaxs guvohnomasi",
           type: "Yuridik sertifikat",
-          description: "LIDERLUX MChJ yuridik shaxs sertifikati",
+          description: "TEKNIK INNOVATSION MChJ yuridik shaxs sertifikati",
           image: Гувохнома,
         },
         {
           id: 2,
           title: "ISO 9001:2015 sertifikati",
           type: "Sifat boshqaruvi",
-          description: "LIDERLUX MChJ - texnik natriy nitrati ishlab chiqarish",
+          description: "TEKNIK INNOVATSION MChJ - texnik natriy nitrati ishlab chiqarish",
           image: Сертификат,
         },
         {

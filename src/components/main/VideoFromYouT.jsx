@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./main.css";
+import "./css/contents.css";
 
 const VideoFromYouT = ({ lang = "ru" }) => {
 
@@ -7,7 +7,7 @@ const VideoFromYouT = ({ lang = "ru" }) => {
   const content = {
     en: {
       about: {
-        sectionTitle: "Turnkey Tanks and Tank Farms",
+        sectionTitle: "Videos about the activities of TEXNIK INNOVATSION MCHJ",
         companyTitle: "TEKNIK INNOVATSION – a Russian engineering company specializing in the production of tanks and the construction of tank farms.",
         description: [
           "Our clients are primarily petrochemical companies with the highest standards for quality, safety, and compliance in all processes. We also have extensive experience working with large and medium-sized agricultural enterprises and food industry companies, addressing their needs for storage facilities for liquid and bulk raw materials and finished products.",
@@ -24,7 +24,7 @@ const VideoFromYouT = ({ lang = "ru" }) => {
     },
     ru: {
       about: {
-        sectionTitle: "Резервуары и резервуарные парки под ключ",
+        sectionTitle: "Видео о деятельности TEXNIK INNOVATSION MCHJ",
         companyTitle: "АО «ТЕКНИК ИННОВАЦИОН» – российское инжиниринговое предприятие, специализирующееся на производстве резервуаров и строительстве резервуарных парков.",
         description: [
           "Наши заказчики – преимущественно предприятия нефтехимической отрасли, предъявляющие высокие требования к качеству, безопасности и легитимности всех процессов. Также у нас есть богатый опыт работы с крупными и средними сельскохозяйственными предприятиями и компаниями пищевой промышленности, нуждающимися в хранилищах для жидкого и сыпучего сырья и продукции.",
@@ -41,7 +41,7 @@ const VideoFromYouT = ({ lang = "ru" }) => {
     },
     uz: {
       about: {
-        sectionTitle: "Suv omborlari va ombor parklari kalit topshirilgan holda",
+        sectionTitle: "TEXNIK INNOVATSION MCHJ faoliyati jarayonidagi videolar",
         companyTitle: "AO «TEKNIK INNOVATSION» – suv omborlari ishlab chiqarish va ombor parklari qurilishiga ixtisoslashgan Rossiya muhandislik kompaniyasi.",
         description: [
           "Bizning mijozlarimiz, asosan, sifat, xavfsizlik va barcha jarayonlarning qonuniyligiga eng yuqori talablar qo‘yadigan neft-kimyo sohasi korxonalari hisoblanadi. Shuningdek, biz katta va o‘rta hajmdagi qishloq xo‘jaligi korxonalari va oziq-ovqat sanoati kompaniyalari bilan suyuq va quyma xomashyo hamda tayyor mahsulot saqlash omborlari qurilishida katta tajribaga egamiz.",
@@ -72,10 +72,21 @@ const VideoFromYouT = ({ lang = "ru" }) => {
     };
   }, []);
   return (
-    <section className="bez-about-section">
-      <div className="bez-container">
-        <h2 className="bez-section-title">{selectedContent.about.sectionTitle}</h2>
-        <div className="bez-about-image">
+    <section className="bez-insta-about-section">
+      <div className="bez-insta-container">
+        <h2 className="bez-insta-section-title">{selectedContent.about.sectionTitle}</h2>
+        <div className="bez-insta-about-image">
+
+          <iframe
+            src="https://www.youtube.com/embed/GjGLb7AgEjQ?si=F4AG-lopSPWrc1xX"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen></iframe>
+        </div>
+
+        <div className="bez-insta-about-image">
           <iframe
             src="https://www.youtube.com/embed/6eeedeutfXM?si=i61HHfHy56BcIZxg&amp;start=13"
             title="YouTube video player"
@@ -87,26 +98,21 @@ const VideoFromYouT = ({ lang = "ru" }) => {
         </div>
       </div>
 
-      <div className="bez-container">
-        <h2 className="bez-section-title">{selectedContent.about.sectionTitle}</h2>
-        <div className="bez-about-image">
-          {/* <iframe
-            src="https://www.youtube.com/embed/6eeedeutfXM?si=i61HHfHy56BcIZxg&amp;start=13"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-          ></iframe> */}
+      <div className="bez-insta-about-insta">
+        <blockquote
+          className="instagram-media"
+          data-instgrm-permalink="https://www.instagram.com/reel/DON18iOjd_S/?igsh=MXJhc3V5YnplMXRpZQ=="
+          data-instgrm-version="14"
+        ></blockquote>
 
-          <blockquote
-            className="instagram-media"
-            data-instgrm-permalink="https://www.instagram.com/reel/DNE8RV-ITJG/?utm_source=ig_web_copy_link"
-            data-instgrm-version="14"
-            style={{ maxWidth: "300px", margin: "auto", height: "400px" }}
-          ></blockquote>
+      </div>
 
-        </div>
+      <div className="bez-insta-about-insta">
+        <blockquote
+          className="instagram-media"
+          data-instgrm-permalink="https://www.instagram.com/reel/DOiXE-CDRKn/?igsh=MXdyOHV5NjN4Y2Mz"
+          data-instgrm-version="14"
+        ></blockquote>
       </div>
     </section>
   );

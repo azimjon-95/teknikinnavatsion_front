@@ -22,6 +22,12 @@ const translations = {
     hrDepartment: "HR Department",
     infoDesk: "Info Desk",
     reception: "Reception",
+    telegramLink: "Telegram Link",
+    whatsappLink: "WhatsApp Link",
+    wechatLink: "WeChat Link",
+    instagramLink1: "Instagram Link 1",
+    instagramLink2: "Instagram Link 2",
+    youtubeLink: "YouTube Link",
     actions: "Actions",
     edit: "Edit",
     delete: "Delete",
@@ -37,10 +43,11 @@ const translations = {
     hrDepartmentRequired: "HR Department is required",
     infoDeskRequired: "Info Desk is required",
     receptionRequired: "Reception is required",
-    telegramLink: "Telegram Link",
-    whatsappLink: "WhatsApp Link",
     telegramPlaceholder: "https://t.me/username",
     whatsappPlaceholder: "https://wa.me/998901234567",
+    wechatPlaceholder: "https://weixin.qq.com/r/username",
+    instagramPlaceholder: "https://www.instagram.com/username",
+    youtubePlaceholder: "https://www.youtube.com/@username",
     submitError: "Error saving contact",
   },
   ru: {
@@ -55,6 +62,12 @@ const translations = {
     hrDepartment: "Отдел кадров",
     infoDesk: "Информационное бюро",
     reception: "Ресепшн",
+    telegramLink: "Ссылка на Telegram",
+    whatsappLink: "Ссылка на WhatsApp",
+    wechatLink: "Ссылка на WeChat",
+    instagramLink1: "Ссылка на Instagram 1",
+    instagramLink2: "Ссылка на Instagram 2",
+    youtubeLink: "Ссылка на YouTube",
     actions: "Действия",
     edit: "Редактировать",
     delete: "Удалить",
@@ -70,10 +83,11 @@ const translations = {
     hrDepartmentRequired: "Отдел кадров обязателен",
     infoDeskRequired: "Информационное бюро обязательно",
     receptionRequired: "Ресепшн обязателен",
-    telegramLink: "Ссылка на Telegram",
-    whatsappLink: "Ссылка на WhatsApp",
     telegramPlaceholder: "https://t.me/username",
     whatsappPlaceholder: "https://wa.me/998901234567",
+    wechatPlaceholder: "https://weixin.qq.com/r/username",
+    instagramPlaceholder: "https://www.instagram.com/username",
+    youtubePlaceholder: "https://www.youtube.com/@username",
     submitError: "Ошибка при сохранении контакта",
   },
   uz: {
@@ -88,6 +102,12 @@ const translations = {
     hrDepartment: "HR Bo'limi",
     infoDesk: "Ma'lumot Byurosi",
     reception: "Qabulxona",
+    telegramLink: "Telegram Havolasi",
+    whatsappLink: "WhatsApp Havolasi",
+    wechatLink: "WeChat Havolasi",
+    instagramLink1: "Instagram Havolasi 1",
+    instagramLink2: "Instagram Havolasi 2",
+    youtubeLink: "YouTube Havolasi",
     actions: "Amallar",
     edit: "Tahrirlash",
     delete: "O'chirish",
@@ -103,26 +123,31 @@ const translations = {
     hrDepartmentRequired: "HR Bo'limi majburiy",
     infoDeskRequired: "Ma'lumot Byurosi majburiy",
     receptionRequired: "Qabulxona majburiy",
-    telegramLink: "Telegram Havolasi",
-    whatsappLink: "WhatsApp Havolasi",
     telegramPlaceholder: "https://t.me/username",
     whatsappPlaceholder: "https://wa.me/998901234567",
+    wechatPlaceholder: "https://weixin.qq.com/r/username",
+    instagramPlaceholder: "https://www.instagram.com/username",
+    youtubePlaceholder: "https://www.youtube.com/@username",
     submitError: "Kontaktni saqlashda xatolik yuz berdi",
   },
 };
 
-const ContactsTable = ({ lang, searchTerm = "" }) => {
+const ContactsTable = ({ lang = "uz", searchTerm = "" }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [editingContact, setEditingContact] = useState(null);
   const [formData, setFormData] = useState({
     salesDepartment: "",
     exportDepartment: "",
     purchaseDepartment: "",
-    // hrDepartment: "",
-    // infoDesk: "",s
-    // reception: "",
+    hrDepartment: "",
+    infoDesk: "",
+    reception: "",
     telegramLink: "",
     whatsappLink: "",
+    wechatLink: "",
+    instagramLink1: "",
+    instagramLink2: "",
+    youtubeLink: "",
   });
   const [errors, setErrors] = useState({});
 
@@ -140,24 +165,29 @@ const ContactsTable = ({ lang, searchTerm = "" }) => {
   // Get translations based on lang prop
   const t = translations[lang] || translations.uz;
 
-  // Form validation
+  // Form validation for required fields
   const validateForm = () => {
     const newErrors = {};
-    if (!formData.salesDepartment.trim())
-      newErrors.salesDepartment = t.salesDepartmentRequired;
-    if (!formData.exportDepartment.trim())
-      newErrors.exportDepartment = t.exportDepartmentRequired;
-    if (!formData.purchaseDepartment.trim())
-      newErrors.purchaseDepartment = t.purchaseDepartmentRequired;
-    // if (!formData.hrDepartment.trim())
-    //   newErrors.hrDepartment = t.hrDepartmentRequired;
-    // if (!formData.infoDesk.trim()) newErrors.infoDesk = t.infoDeskRequired;
-    // if (!formData.reception.trim()) newErrors.reception = t.receptionRequired;
+    const requiredFields = [
+      { key: "salesDepartment", message: t.salesDepartmentRequired },
+      { key: "exportDepartment", message: t.exportDepartmentRequired },
+      { key: "purchaseDepartment", message: t.purchaseDepartmentRequired },
+      { key: "hrDepartment", message: t.hrDepartmentRequired },
+      { key: "infoDesk", message: t.infoDeskRequired },
+      { key: "reception", message: t.receptionRequired },
+    ];
+
+    requiredFields.forEach(({ key, message }) => {
+      if (!formData[key].trim()) {
+        newErrors[key] = message;
+      }
+    });
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
 
+  // Open modal for adding or editing a contact
   const openModal = (contact = null) => {
     if (contact) {
       setEditingContact(contact);
@@ -168,17 +198,22 @@ const ContactsTable = ({ lang, searchTerm = "" }) => {
         salesDepartment: "",
         exportDepartment: "",
         purchaseDepartment: "",
-        // hrDepartment: "",
-        // infoDesk: "",
-        // reception: "",
+        hrDepartment: "",
+        infoDesk: "",
+        reception: "",
         telegramLink: "",
         whatsappLink: "",
+        wechatLink: "",
+        instagramLink1: "",
+        instagramLink2: "",
+        youtubeLink: "",
       });
     }
     setErrors({});
     setIsModalOpen(true);
   };
 
+  // Close modal and reset form
   const closeModal = () => {
     setIsModalOpen(false);
     setEditingContact(null);
@@ -186,22 +221,26 @@ const ContactsTable = ({ lang, searchTerm = "" }) => {
       salesDepartment: "",
       exportDepartment: "",
       purchaseDepartment: "",
-      //   hrDepartment: "",
-      //   infoDesk: "",
-      //   reception: "",
+      hrDepartment: "",
+      infoDesk: "",
+      reception: "",
       telegramLink: "",
       whatsappLink: "",
+      wechatLink: "",
+      instagramLink1: "",
+      instagramLink2: "",
+      youtubeLink: "",
     });
     setErrors({});
   };
 
+  // Handle input changes
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
       [name]: value,
     }));
-    // Clear error when user starts typing
     if (errors[name]) {
       setErrors((prev) => ({
         ...prev,
@@ -210,6 +249,7 @@ const ContactsTable = ({ lang, searchTerm = "" }) => {
     }
   };
 
+  // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!validateForm()) return;
@@ -228,6 +268,7 @@ const ContactsTable = ({ lang, searchTerm = "" }) => {
     }
   };
 
+  // Handle contact deletion
   const handleDelete = async (contactId) => {
     if (!window.confirm(t.deleteConfirm)) return;
 
@@ -241,26 +282,28 @@ const ContactsTable = ({ lang, searchTerm = "" }) => {
 
   // Filter contacts based on searchTerm
   const filteredContacts =
-    contacts?.innerData?.filter(
-      (contact) =>
-        contact.salesDepartment
-          .toLowerCase()
-          .includes(searchTerm.toLowerCase()) ||
-        contact.exportDepartment
-          .toLowerCase()
-          .includes(searchTerm.toLowerCase()) ||
-        contact.purchaseDepartment
-          .toLowerCase()
-          .includes(searchTerm.toLowerCase()) ||
-        // contact.hrDepartment.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        // contact.infoDesk.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        // contact.reception.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        contact.telegramLink.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        contact.whatsappLink.toLowerCase().includes(searchTerm.toLowerCase())
+    contacts?.innerData?.filter((contact) =>
+      [
+        "salesDepartment",
+        "exportDepartment",
+        "purchaseDepartment",
+        "hrDepartment",
+        "infoDesk",
+        "reception",
+        "telegramLink",
+        "whatsappLink",
+        "wechatLink",
+        "instagramLink1",
+        "instagramLink2",
+        "youtubeLink",
+      ].some((field) =>
+        contact[field]?.toLowerCase().includes(searchTerm.toLowerCase())
+      )
     ) || [];
 
   return (
     <div className="vfo-contacts-container">
+      {/* Header */}
       <div className="vfo-header">
         <h2 className="vfo-title">{t.title}</h2>
         <button
@@ -273,6 +316,7 @@ const ContactsTable = ({ lang, searchTerm = "" }) => {
         </button>
       </div>
 
+      {/* Loading State */}
       {isLoading && (
         <div className="vfo-loading">
           <Loader2 size={24} className="vfo-spinner" />
@@ -280,6 +324,7 @@ const ContactsTable = ({ lang, searchTerm = "" }) => {
         </div>
       )}
 
+      {/* Error State */}
       {error && (
         <div className="vfo-error">
           {t.error} {error?.data?.message || "Error loading contacts"}
@@ -292,6 +337,7 @@ const ContactsTable = ({ lang, searchTerm = "" }) => {
         </div>
       )}
 
+      {/* Contacts Table */}
       {!isLoading && !error && (
         <div className="vfo-table-wrapper">
           <table className="vfo-table">
@@ -300,16 +346,22 @@ const ContactsTable = ({ lang, searchTerm = "" }) => {
                 <th>{t.salesDepartment}</th>
                 <th>{t.exportDepartment}</th>
                 <th>{t.purchaseDepartment}</th>
-                {/* <th>{t.hrDepartment}</th> */}
-                {/* <th>{t.infoDesk}</th> */}
-                {/* <th>{t.reception}</th> */}
+                <th>{t.hrDepartment}</th>
+                <th>{t.infoDesk}</th>
+                <th>{t.reception}</th>
+                <th>{t.telegramLink}</th>
+                <th>{t.whatsappLink}</th>
+                <th>{t.wechatLink}</th>
+                <th>{t.instagramLink1}</th>
+                <th>{t.instagramLink2}</th>
+                <th>{t.youtubeLink}</th>
                 <th>{t.actions}</th>
               </tr>
             </thead>
             <tbody>
               {filteredContacts.length === 0 ? (
                 <tr>
-                  <td colSpan="7" className="vfo-empty">
+                  <td colSpan="13" className="vfo-empty">
                     {t.noContacts}
                   </td>
                 </tr>
@@ -319,9 +371,87 @@ const ContactsTable = ({ lang, searchTerm = "" }) => {
                     <td>{contact.salesDepartment}</td>
                     <td>{contact.exportDepartment}</td>
                     <td>{contact.purchaseDepartment}</td>
-                    {/* <td>{contact.hrDepartment}</td> */}
-                    {/* <td>{contact.infoDesk}</td> */}
-                    {/* <td>{contact.reception}</td> */}
+                    <td>{contact.hrDepartment}</td>
+                    <td>{contact.infoDesk}</td>
+                    <td>{contact.reception}</td>
+                    <td>
+                      {contact.telegramLink ? (
+                        <a
+                          href={contact.telegramLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {contact.telegramLink}
+                        </a>
+                      ) : (
+                        "-"
+                      )}
+                    </td>
+                    <td>
+                      {contact.whatsappLink ? (
+                        <a
+                          href={contact.whatsappLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {contact.whatsappLink}
+                        </a>
+                      ) : (
+                        "-"
+                      )}
+                    </td>
+                    <td>
+                      {contact.wechatLink ? (
+                        <a
+                          href={contact.wechatLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {contact.wechatLink}
+                        </a>
+                      ) : (
+                        "-"
+                      )}
+                    </td>
+                    <td>
+                      {contact.instagramLink1 ? (
+                        <a
+                          href={contact.instagramLink1}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {contact.instagramLink1}
+                        </a>
+                      ) : (
+                        "-"
+                      )}
+                    </td>
+                    <td>
+                      {contact.instagramLink2 ? (
+                        <a
+                          href={contact.instagramLink2}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {contact.instagramLink2}
+                        </a>
+                      ) : (
+                        "-"
+                      )}
+                    </td>
+                    <td>
+                      {contact.youtubeLink ? (
+                        <a
+                          href={contact.youtubeLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {contact.youtubeLink}
+                        </a>
+                      ) : (
+                        "-"
+                      )}
+                    </td>
                     <td>
                       <div className="vfo-actions">
                         <button
@@ -354,6 +484,7 @@ const ContactsTable = ({ lang, searchTerm = "" }) => {
         </div>
       )}
 
+      {/* Modal for Adding/Editing Contact */}
       {isModalOpen && (
         <div className="vfo-modal-overlay" onClick={closeModal}>
           <div className="vfo-modal" onClick={(e) => e.stopPropagation()}>
@@ -370,126 +501,53 @@ const ContactsTable = ({ lang, searchTerm = "" }) => {
 
             <form onSubmit={handleSubmit} className="vfo-form">
               <div className="vfo-form-grid">
-                <div className="vfo-form-group">
-                  <label>{t.salesDepartment} *</label>
-                  <input
-                    type="text"
-                    name="salesDepartment"
-                    value={formData.salesDepartment}
-                    onChange={handleInputChange}
-                    className={`vfo-input ${
-                      errors.salesDepartment ? "vfo-input-error" : ""
-                    }`}
-                    placeholder={t.salesDepartment}
-                  />
-                  {errors.salesDepartment && (
-                    <span className="vfo-error">{errors.salesDepartment}</span>
-                  )}
-                </div>
+                {/* Required Fields */}
+                {[
+                  { name: "salesDepartment", label: t.salesDepartment },
+                  { name: "exportDepartment", label: t.exportDepartment },
+                  { name: "purchaseDepartment", label: t.purchaseDepartment },
+                  { name: "hrDepartment", label: t.hrDepartment },
+                  { name: "infoDesk", label: t.infoDesk },
+                  { name: "reception", label: t.reception },
+                ].map(({ name, label }) => (
+                  <div className="vfo-form-group" key={name}>
+                    <label>{label} *</label>
+                    <input
+                      type="text"
+                      name={name}
+                      value={formData[name]}
+                      onChange={handleInputChange}
+                      className={`vfo-input ${errors[name] ? "vfo-input-error" : ""}`}
+                      placeholder={label}
+                    />
+                    {errors[name] && <span className="vfo-error">{errors[name]}</span>}
+                  </div>
+                ))}
 
-                <div className="vfo-form-group">
-                  <label>{t.exportDepartment} *</label>
-                  <input
-                    type="text"
-                    name="exportDepartment"
-                    value={formData.exportDepartment}
-                    onChange={handleInputChange}
-                    className={`vfo-input ${
-                      errors.exportDepartment ? "vfo-input-error" : ""
-                    }`}
-                    placeholder={t.exportDepartment}
-                  />
-                  {errors.exportDepartment && (
-                    <span className="vfo-error">{errors.exportDepartment}</span>
-                  )}
-                </div>
-
-                <div className="vfo-form-group">
-                  <label>{t.purchaseDepartment} *</label>
-                  <input
-                    type="text"
-                    name="purchaseDepartment"
-                    value={formData.purchaseDepartment}
-                    onChange={handleInputChange}
-                    className={`vfo-input ${
-                      errors.purchaseDepartment ? "vfo-input-error" : ""
-                    }`}
-                    placeholder={t.purchaseDepartment}
-                  />
-                  {errors.purchaseDepartment && (
-                    <span className="vfo-error">
-                      {errors.purchaseDepartment}
-                    </span>
-                  )}
-                </div>
-
-                {/* <div className="vfo-form-group">
-                                    <label>{t.hrDepartment} *</label>
-                                    <input
-                                        type="text"
-                                        name="hrDepartment"
-                                        value={formData.hrDepartment}
-                                        onChange={handleInputChange}
-                                        className={`vfo-input ${errors.hrDepartment ? 'vfo-input-error' : ''}`}
-                                        placeholder={t.hrDepartment}
-                                    />
-                                    {errors.hrDepartment && <span className="vfo-error">{errors.hrDepartment}</span>}
-                                </div> */}
-
-                {/* <div className="vfo-form-group">
-                                    <label>{t.infoDesk} *</label>
-                                    <input
-                                        type="text"
-                                        name="infoDesk"
-                                        value={formData.infoDesk}
-                                        onChange={handleInputChange}
-                                        className={`vfo-input ${errors.infoDesk ? 'vfo-input-error' : ''}`}
-                                        placeholder={t.infoDesk}
-                                    />
-                                    {errors.infoDesk && <span className="vfo-error">{errors.infoDesk}</span>}
-                                </div> */}
-
-                {/* <div className="vfo-form-group">
-                                    <label>{t.reception} *</label>
-                                    <input
-                                        type="text"
-                                        name="reception"
-                                        value={formData.reception}
-                                        onChange={handleInputChange}
-                                        className={`vfo-input ${errors.reception ? 'vfo-input-error' : ''}`}
-                                        placeholder={t.reception}
-                                    />
-                                    {errors.reception && <span className="vfo-error">{errors.reception}</span>}
-                                </div> */}
-
-                <div className="vfo-form-group">
-                  <label>{t.telegramLink}</label>
-                  <input
-                    type="url"
-                    name="telegramLink"
-                    value={formData.telegramLink}
-                    onChange={handleInputChange}
-                    placeholder={t.telegramPlaceholder}
-                    className="vfo-input"
-                  />
-                </div>
-
-                <div className="vfo-form-group">
-                  <label>{t.whatsappLink}</label>
-                  <input
-                    type="url"
-                    name="whatsappLink"
-                    value={formData.whatsappLink}
-                    onChange={handleInputChange}
-                    placeholder={t.whatsappPlaceholder}
-                    className="vfo-input"
-                  />
-                </div>
+                {/* Optional URL Fields */}
+                {[
+                  { name: "telegramLink", label: t.telegramLink, placeholder: t.telegramPlaceholder },
+                  { name: "whatsappLink", label: t.whatsappLink, placeholder: t.whatsappPlaceholder },
+                  { name: "wechatLink", label: t.wechatLink, placeholder: t.wechatPlaceholder },
+                  { name: "instagramLink1", label: t.instagramLink1, placeholder: t.instagramPlaceholder },
+                  { name: "instagramLink2", label: t.instagramLink2, placeholder: t.instagramPlaceholder },
+                  { name: "youtubeLink", label: t.youtubeLink, placeholder: t.youtubePlaceholder },
+                ].map(({ name, label, placeholder }) => (
+                  <div className="vfo-form-group" key={name}>
+                    <label>{label}</label>
+                    <input
+                      type="url"
+                      name={name}
+                      value={formData[name]}
+                      onChange={handleInputChange}
+                      placeholder={placeholder}
+                      className="vfo-input"
+                    />
+                  </div>
+                ))}
               </div>
 
-              {errors.submit && (
-                <div className="vfo-error-message">{errors.submit}</div>
-              )}
+              {errors.submit && <div className="vfo-error-message">{errors.submit}</div>}
 
               <div className="vfo-modal-footer">
                 <button

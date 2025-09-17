@@ -80,14 +80,14 @@ function App() {
   const token = localStorage.getItem("token");
 
   const isSmsPage = location.pathname.includes("/sms");
-  const isAdminLoginPage = location.pathname.includes("/admin/servoce");
+  const isAdminLoginPage = location.pathname.includes("/admin/service");
   const isAdminDashboardPage = location.pathname.includes(
     `/admin/${token}/dashboard`
   );
 
   // Prefetch products data on app load
   useEffect(() => {
-    dispatch(productApi.endpoints.getProducts.initiate());
+    dispatch(productApi.endpoints.getBazsStations.initiate());
   }, [dispatch]);
 
   const handleChatClick = () => {
@@ -179,3 +179,6 @@ function App() {
 }
 
 export default App;
+
+
+

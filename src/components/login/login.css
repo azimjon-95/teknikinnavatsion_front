@@ -1,11 +1,3 @@
-/* Login.css - NaNO₃ Zavod Admin Login Styles */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .log-container {
   min-height: 100vh;
   background-color: #fafafa;
@@ -31,21 +23,15 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background: radial-gradient(
-      circle at 20% 30%,
-      rgba(255, 215, 0, 0.1) 0%,
-      transparent 50%
-    ),
-    radial-gradient(
-      circle at 80% 70%,
-      rgba(255, 215, 0, 0.08) 0%,
-      transparent 50%
-    ),
-    radial-gradient(
-      circle at 40% 80%,
-      rgba(255, 215, 0, 0.06) 0%,
-      transparent 50%
-    );
+  background: radial-gradient(circle at 20% 30%,
+      #0028561a 0%,
+      transparent 50%),
+    radial-gradient(circle at 80% 70%,
+      #00285614 0%,
+      transparent 50%),
+    radial-gradient(circle at 40% 80%,
+      #0028560a 0%,
+      transparent 50%);
   animation: log-float 20s ease-in-out infinite;
 }
 
@@ -53,16 +39,15 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(
-      rgba(255, 215, 0, 0.03) 1px,
-      transparent 1px
-    ),
+  background-image: linear-gradient(rgba(255, 215, 0, 0.03) 1px,
+      transparent 1px),
     linear-gradient(90deg, rgba(255, 215, 0, 0.03) 1px, transparent 1px);
   background-size: 50px 50px;
   opacity: 0.3;
 }
 
 @keyframes log-float {
+
   0%,
   100% {
     transform: translateY(0px) rotate(0deg);
@@ -102,32 +87,29 @@
 .log-factory-icon {
   width: 48px;
   height: 48px;
-  color: #ffd700;
+  color: #002856;
   filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.3));
 }
 
 .log-formula {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   font-weight: 700;
-  color: #ffd700;
-  text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
-  font-family: "Times New Roman", serif;
+  line-height: 30px;
+  color: #002856;
+  text-shadow: 0 0 20px #0028565c;
+  text-align: start;
 }
 
 .log-title {
   font-size: 2.2rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
-  /* background: linear-gradient(135deg, #ffffff 0%, #FFD700 100%); */
-  /* -webkit-background-clip: text; */
-  /* -webkit-text-fill-color: transparent; */
-  /* background-clip: text; */
-  color: #ffd700;
+  color: #002856;
 }
 
 .log-subtitle {
   font-size: 1.1rem;
-  color: #ffd700;
+  color: #002856;
   font-weight: 400;
 }
 
@@ -158,7 +140,7 @@
   left: 1rem;
   width: 20px;
   height: 20px;
-  color: rgba(255, 215, 0, 0.8);
+  color: #002856;
   z-index: 2;
 }
 
@@ -166,20 +148,20 @@
   width: 100%;
   padding: 1rem 1rem 1rem 3rem;
   background: rgba(255, 255, 255, 0.1);
-  border: 2px solid rgba(255, 215, 0, 0.2);
+  border: 2px solid #00285629;
   border-radius: 12px;
-  color: #444;
+  color: #002856a6;
   font-size: 1rem;
   transition: all 0.3s ease;
   outline: none;
 }
 
 .log-input::placeholder {
-  color: rgba(255, 215, 0, 0.5);
+  color: #0028564a;
 }
 
 .log-input:focus {
-  border-color: #ffd700;
+  border-color: #002856;
   box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.1);
   background: rgba(255, 255, 255, 0.15);
 }
@@ -189,7 +171,7 @@
   right: 1rem;
   background: none;
   border: none;
-  color: rgba(255, 215, 0, 0.8);
+  color: #002856;
   cursor: pointer;
   padding: 0.5rem;
   border-radius: 8px;
@@ -198,8 +180,8 @@
 }
 
 .log-password-toggle:hover {
-  background: rgba(255, 215, 0, 0.1);
-  color: #ffd700;
+  background: rgba(0, 128, 255, 0.1);
+  color: #002856;
 }
 
 /* Error Message */
@@ -211,7 +193,7 @@
   font-size: 0.9rem;
   margin-bottom: 1rem;
   padding: 0.75rem;
-  background: rgba(255, 107, 107, 0.1);
+  background: rgba(107, 198, 255, 0.1);
   border-radius: 8px;
   border-left: 3px solid #ff6b6b;
 }
@@ -220,7 +202,7 @@
 .log-submit-btn {
   width: 100%;
   padding: 1rem 1.5rem;
-  background: linear-gradient(135deg, #ffd700 0%, #ffa500 100%);
+  background: linear-gradient(135deg, #0077ff 0%, #002856 100%);
   color: #fafafa;
   border: none;
   border-radius: 12px;
@@ -232,7 +214,7 @@
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.3);
+  box-shadow: 0 8px 25px rgba(0, 179, 255, 0.3);
   position: relative;
   overflow: hidden;
 }
@@ -295,13 +277,13 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  color: rgba(255, 215, 0, 0.8);
+  color: #fffb00;
   font-size: 0.9rem;
   margin-bottom: 1rem;
   padding: 0.5rem 1rem;
-  background: rgba(255, 215, 0, 0.1);
+  background: #0028562c;
   border-radius: 20px;
-  border: 1px solid rgba(255, 215, 0, 0.2);
+  border: 1px solid #00285650;
 }
 
 .log-copyright {
@@ -312,11 +294,9 @@
 /* Side Panel */
 .log-side-panel {
   width: 350px;
-  background: linear-gradient(
-    135deg,
-    rgba(255, 215, 0, 0.1) 0%,
-    rgba(255, 215, 0, 0.05) 100%
-  );
+  background: linear-gradient(135deg,
+      rgba(255, 215, 0, 0.1) 0%,
+      rgba(255, 215, 0, 0.05) 100%);
   border-left: 1px solid rgba(255, 215, 0, 0.2);
   padding: 2rem;
   display: flex;
@@ -333,14 +313,14 @@
 .log-chemical-formula h3 {
   font-size: 1.3rem;
   margin-bottom: 1.5rem;
-  color: #ffd700;
+  color: #002856;
   font-weight: 500;
 }
 
 .log-formula-large {
   font-size: 4rem;
   font-weight: 700;
-  color: #ffd700;
+  color: #002856;
   text-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
   margin-bottom: 2rem;
   font-family: "Times New Roman", serif;
@@ -348,7 +328,6 @@
 
 .log-properties {
   text-align: left;
-  space-y: 1rem;
 }
 
 .log-property {
@@ -368,7 +347,7 @@
 }
 
 .log-property-value {
-  color: #ffd700;
+  color: #002856;
   font-weight: 600;
   font-size: 0.9rem;
 }
@@ -396,18 +375,18 @@
 
 .log-language-selector p:hover {
   background: rgba(255, 215, 0, 0.1);
-  color: #ffd700;
+  color: #002856;
 }
 
 .log-lang-active {
-  background: rgba(255, 215, 0, 0.3) !important;
-  color: #ffd700 !important;
-  box-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
+  background: rgba(26, 106, 234, 0.3) !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 10px rgba(0, 119, 255, 0.4);
 }
 
 /* Accessibility */
 .log-language-selector p:focus {
-  outline: 2px solid #ffd700;
+  outline: 2px solid #002856;
   outline-offset: 2px;
 }
 
@@ -492,6 +471,6 @@
 .log-input:focus,
 .log-submit-btn:focus,
 .log-password-toggle:focus {
-  outline: 2px solid #ffd700;
+  outline: 2px solid #002856;
   outline-offset: 2px;
 }
