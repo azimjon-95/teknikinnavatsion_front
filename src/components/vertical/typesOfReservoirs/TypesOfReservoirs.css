@@ -1,0 +1,148 @@
+.reservoir-types-section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  line-height: 1.6;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.title {
+  color: darkred;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.reservoir-types-section > h3 {
+  color: #900;
+  font-size: 18px;
+  margin-bottom: 8px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.reservoir-types-section a {
+  color: #b30000;
+  text-decoration: underline;
+}
+
+.reservoir-types-section ul {
+  margin: 10px 0 20px 20px;
+  padding: 0;
+}
+
+.reservoir-types-section li {
+  margin-bottom: 8px;
+}
+
+.type-block {
+  margin-bottom: 25px;
+}
+
+.type-block h3 {
+  color: #900;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.table-wrapper {
+  width: 100%;
+  padding: 10px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reservoir-types-section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  min-width: 900px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.reservoir-types-section table th,
+.reservoir-types-section table td {
+  padding: 12px 8px;
+  text-align: center;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  vertical-align: middle;
+}
+
+.reservoir-types-section table th {
+  background-color: #9b7a7a;
+  color: white;
+  font-weight: bold;
+  position: relative;
+}
+
+.reservoir-types-section table thead tr:nth-child(2) th {
+  background-color: #dfdfdf;
+  color: #333;
+  font-weight: 600;
+}
+
+.reservoir-types-section table thead tr:nth-child(3) th {
+  background-color: #f5f5f5;
+  color: #333;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.2;
+}
+
+.reservoir-types-section table tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.reservoir-types-section table tbody tr:nth-child(even) {
+  background-color: #fff;
+}
+
+.reservoir-types-section table tbody tr:hover {
+  background-color: #f0f8ff;
+  transition: background-color 0.2s ease;
+}
+
+/* 📱 Telefonlar uchun moslashuv */
+@media (max-width: 768px) {
+  .reservoir-types-section {
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+
+  .type-block h3 {
+    font-size: 16px;
+  }
+
+  .reservoir-types-section p,
+  .reservoir-types-section li {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .reservoir-types-section {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .type-block h3 {
+    font-size: 15px;
+  }
+
+  .reservoir-types-section p,
+  .reservoir-types-section li {
+    font-size: 13px;
+  }
+}

@@ -8,6 +8,7 @@ import "antd/dist/reset.css";
 function CardDetail() {
   const { id } = useParams();
   let item = data.find((d) => d.id === id);
+
   return (
     <div className="cardDetail">
       <div className="item_nav">
@@ -28,26 +29,12 @@ function CardDetail() {
           ))}
         </Image.PreviewGroup>
       </div>
+
       <div className="item_part2">
         <h1 className="item_title">{item.caption2}</h1>
         <p className="item_desc">{item.zakazText}</p>
         <p className="item_desc">{item.zakazText2}</p>
         <div className="item_part2_images">
-          {/* <Image.PreviewGroup>
-            {item.zakazImg.map((img, index) => (
-              <Image
-                className="item_image cropped-image"
-                key={index}
-                src={img}
-                alt={`Image ${index + 1}`}
-                style={{
-                  maxWidth: "220px",
-                  height: "90%",
-                  cursor: "pointer",
-                }}
-              />
-            ))}
-          </Image.PreviewGroup> */}
           <Image.PreviewGroup>
             {item.zakazImg.map((img, index) => (
               <Image
@@ -93,6 +80,7 @@ function CardDetail() {
         </ul>
         <p>{item.zakazDesc2}</p>
       </div>
+
       <div className="item_part3">
         <h1 className="item_title">{item.caption3}</h1>
         <h2 className="item_subtitle">{item.subCaption1}</h2>
@@ -180,36 +168,42 @@ function CardDetail() {
 
       <div className="item_table">
         <h1 className="item_title">{item.caption7}</h1>
-        <table>
-          <thead>
-            <tr>
-              {item.table.thead.tr1.map((item, index) => (
-                <th colSpan={index !== 0 ? 2 : 1} key={index}>
-                  {item}
-                </th>
-              ))}
-            </tr>
-            <tr>
-              {item.table.thead.tr2.map((item, index) => (
-                <th key={index}>{item}</th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            {item.table.tbody.map((item, index) => (
-              <tr key={index}>
-                {item.map((item, index) => (
-                  <td key={index}>{item}</td>
+        <div className="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                {item.table.thead.tr1.map((item, index) => (
+                  <th colSpan={index !== 0 ? 2 : 1} key={index}>
+                    {item}
+                  </th>
                 ))}
               </tr>
-            ))}
-          </tbody>
-        </table>
+              <tr>
+                {item.table.thead.tr2.map((item, index) => (
+                  <th key={index}>{item}</th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {item.table.tbody.map((item, index) => (
+                <tr key={index}>
+                  {item.map((item, index) => (
+                    <td key={index}>{item}</td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
 
         <div className="othersLinks">
           <p className="othersLinks_title">{item.allLinks.text}</p>
           {item.allLinks.links.map((link, index) => (
-            <Link key={index} to={link.to}>
+            <Link
+              key={index}
+              className={link.to?.replace("/", "") === id ? "activeLink" : ""}
+              to={link.to}
+            >
               {link.text}
             </Link>
           ))}
@@ -219,6 +213,7 @@ function CardDetail() {
       <div className="item_8">
         <h1 className="item_title">{item.caption8}</h1>
       </div>
+
       <div
         style={{
           background: `linear-gradient(#00000057, #00000057), url(${item.part8Img})`,

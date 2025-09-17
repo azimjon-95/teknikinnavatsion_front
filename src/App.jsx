@@ -22,10 +22,12 @@ import SodiumNitrateInfo from "./components/sodiumNitrateInfo/SodiumNitrateInfo"
 import Products from "./components/products/Products";
 import Horizontal from "./components/horizontal/Horizontal";
 import CardDetail from "./components/horizontal/details/CardDetail";
+import CardDetail2 from "./components/vertical/details/CardDetail";
 import AzsStationPage from "./components/bazs/Bazs";
 import ScrollToTopButton from "./components/top/ScrollToTopButton"; // Import the new component
 import GasStationsPage from "./components/azs/Azs";
 import Kazs from "./components/kazs/Kazs";
+import Vertical from "./components/vertical/Vertical";
 
 // Simulated token validation function (replace with your actual logic)
 const validateToken = (token) => {
@@ -101,7 +103,12 @@ function App() {
         <Route path="/:lang/:contact" element={<UniversalInfoPage />} />
         <Route path="/:lang/map" element={<ManzilMapPage lang={lang} />} />
         <Route path="/:lang/rgs" element={<Horizontal lang={lang} />} />
+        <Route path="/:lang/rvs" element={<Vertical lang={lang} />} />
         <Route path="/:lang/details/:id" element={<CardDetail lang={lang} />} />
+        <Route
+          path="/:lang/rvs-details/:id"
+          element={<CardDetail2 lang={lang} />}
+        />
 
         <Route
           path="/:lang/nitrat"

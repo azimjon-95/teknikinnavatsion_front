@@ -1,0 +1,82 @@
+.reservoir-section {
+  padding: 50px 20px;
+}
+
+.reservoir-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.reservoir-list li {
+  list-style-type: "- ";
+  margin-left: 20px;
+  margin-bottom: 4px;
+}
+
+.reservoir-container > p {
+  margin-bottom: 15px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+}
+.reservoir-container > p > a {
+  color: #740000;
+  text-decoration: underline;
+}
+
+.reservoir-block {
+  margin: 50px 0;
+}
+
+.reservoir-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #740000;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "myriad", sans-serif;
+}
+
+.text2 {
+  display: flex;
+  align-items: center;
+}
+
+.reservoir-text {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.reservoir-link {
+  color: #740000;
+  text-decoration: underline;
+}
+
+.reservoir-image img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.pinkPart {
+  width: 100%;
+  padding: 40px 0;
+  background-color: #f5f4f4;
+}
+.pinkPart h2 {
+  margin-top: 30px;
+}
+
+/* Responsivlik */
+@media (max-width: 768px) {
+  .reservoir-title {
+    font-size: 18px;
+  }
+
+  .reservoir-text {
+    font-size: 14px;
+  }
+}

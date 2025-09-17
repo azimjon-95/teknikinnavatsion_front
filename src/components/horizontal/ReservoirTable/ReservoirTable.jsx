@@ -77,94 +77,95 @@ export default function ReservoirTable() {
         В стандартную комплектацию РГСн входит люк-лаз, стальные ложементы и
         строповочные рымы.
       </p>
-
-      <table className="reservoir-table">
-        <thead>
-          <tr>
-            <th>Объем</th>
-            <th colSpan={10}>Наземные резервуары РГСН</th>
-          </tr>
-          <tr>
-            <th></th>
-            <th colSpan={5}>Одностенные</th>
-            <th colSpan={5}>Двухстенные</th>
-          </tr>
-          <tr>
-            <th></th>
-            <th>
-              Диаметр
-              <br />
-              мм
-            </th>
-            <th>
-              Длина
-              <br />
-              мм
-            </th>
-            <th>
-              Масса
-              <br />
-              кг
-            </th>
-            <th>
-              Высота
-              <br />
-              мм
-            </th>
-            <th>
-              Кол-во опор
-              <br />
-              шт.
-            </th>
-            <th>
-              Диаметр
-              <br />
-              мм
-            </th>
-            <th>
-              Длина
-              <br />
-              мм
-            </th>
-            <th>
-              Масса
-              <br />
-              кг
-            </th>
-            <th>
-              Высота
-              <br />
-              мм
-            </th>
-            <th>
-              Кол-во опор
-              <br />
-              шт.
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          {data.map((item, i) => (
-            <tr key={i}>
-              <td className="volume">
-                <a href="#" className="volume-link">
-                  {item.name}
-                </a>
-              </td>
-              <td>{item.single.d}</td>
-              <td>{item.single.l}</td>
-              <td>{item.single.m}</td>
-              <td>{item.single.h}</td>
-              <td>{item.single.s}</td>
-              <td>{item.double.d}</td>
-              <td>{item.double.l}</td>
-              <td>{item.double.m}</td>
-              <td>{item.double.h}</td>
-              <td>{item.double.s}</td>
+      <div className="table-wrapper">
+        <table className="reservoir-table">
+          <thead>
+            <tr>
+              <th>Объем</th>
+              <th colSpan={10}>Наземные резервуары РГСН</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+            <tr>
+              <th></th>
+              <th colSpan={5}>Одностенные</th>
+              <th colSpan={5}>Двухстенные</th>
+            </tr>
+            <tr>
+              <th></th>
+              <th>
+                Диаметр
+                <br />
+                мм
+              </th>
+              <th>
+                Длина
+                <br />
+                мм
+              </th>
+              <th>
+                Масса
+                <br />
+                кг
+              </th>
+              <th>
+                Высота
+                <br />
+                мм
+              </th>
+              <th>
+                Кол-во опор
+                <br />
+                шт.
+              </th>
+              <th>
+                Диаметр
+                <br />
+                мм
+              </th>
+              <th>
+                Длина
+                <br />
+                мм
+              </th>
+              <th>
+                Масса
+                <br />
+                кг
+              </th>
+              <th>
+                Высота
+                <br />
+                мм
+              </th>
+              <th>
+                Кол-во опор
+                <br />
+                шт.
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {data.map((item, i) => (
+              <tr key={i}>
+                <td className="volume">
+                  <a href="#" className="volume-link">
+                    {item.name}
+                  </a>
+                </td>
+                <td>{item.single.d}</td>
+                <td>{item.single.l}</td>
+                <td>{item.single.m}</td>
+                <td>{item.single.h}</td>
+                <td>{item.single.s}</td>
+                <td>{item.double.d}</td>
+                <td>{item.double.l}</td>
+                <td>{item.double.m}</td>
+                <td>{item.double.h}</td>
+                <td>{item.double.s}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }

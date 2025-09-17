@@ -1,0 +1,340 @@
+.cardDetail {
+  width: 100%;
+  padding: 50px 0 0 0;
+}
+
+.item_nav {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.item_info {
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.item_info span {
+  padding: 0 20px;
+  border-right: 1px solid #000;
+}
+
+.item_subtitle,
+.item_title {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  font-family: "myriad", sans-serif;
+  color: #740000;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.item_subtitle {
+  font-size: 20px;
+}
+
+.item_nav ul {
+  padding-left: 30px;
+  list-style-type: "-" !important;
+}
+
+p.item_desc {
+  text-align: left;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.item_images1 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  gap: 40px;
+  padding: 50px 0;
+  background-color: #dfdfdf;
+}
+
+.item_images1 .item_image {
+  width: 295px;
+  height: 217px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: transform 0.2s ease;
+}
+
+.item_images1 .item_image:hover {
+  transform: scale(1.05);
+}
+
+.part3 {
+  width: 80%;
+  /* max-width: 1200px; */
+  padding: 50px 0;
+  margin: 0 auto;
+}
+
+.item_part2_images .item_image {
+  max-width: 220px; /* Kichik ko‘rinishda kenglik */
+  height: auto;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: transform 0.2s ease;
+}
+
+.item_part2_images .item_image:hover {
+  transform: scale(1.1); /* Hover qilinganda biroz kattalashadi */
+}
+
+/* Kichik ko‘rinishdagi rasm uchun (thumbnail) */
+.cropped-image {
+  object-fit: cover; /* Rasmni konteynerga moslab qirqish */
+  object-position: top; /* Yuqori qismidan boshlash */
+  height: 95%; /* Rasmning 90% balandligini ko‘rsatish */
+  width: 100%; /* Kenglikni to‘liq ishlatish */
+  overflow: hidden; /* Ortiqcha qismlarni yashirish */
+}
+
+/* Modalda ochilgan rasm uchun */
+.ant-image-preview-img {
+  object-fit: cover; /* Rasmni qirqish */
+  object-position: 0 0; /* Yuqori chap burchakdan boshlash (pastki qismni kesish) */
+  height: 95vh !important; /* Ekran balandligining 90% */
+  width: auto; /* Proportsiyani saqlash */
+  max-width: 100%; /* Modal ichida to‘liq kenglikdan oshmaslik */
+  border-radius: 5px; /* Burchaklarni yumaloqlash */
+  transform: translateY(0); /* Rasmni yuqoriga joylashtirish */
+}
+
+/* Modal konteyneri uchun */
+.ant-image-preview-img-wrapper {
+  overflow: hidden; /* Ortiqcha qismlarni yashirish */
+  height: 95vh !important; /* Modal konteynerini ekran balandligining 90% bilan cheklash */
+  width: 100%; /* To‘liq kenglik */
+  display: flex;
+  justify-content: center; /* Rasmni gorizontal markazlashtirish */
+  align-items: flex-start; /* Rasmni vertikal ravishda yuqoridan boshlash */
+}
+
+.ant-image-preview-img {
+  object-fit: cover;
+  object-position: 0 0;
+  height: 100vh; /* Avval to‘liq balandlik */
+  clip-path: inset(0 0 10% 0); /* Pastki 10% ni qirqish */
+  border-radius: 5px;
+}
+
+.item_part3_images .ant-image-preview-img {
+  clip-path: inset(0 0 5% 0); /* Pastki 10% ni qirqish */
+}
+
+.item_part3_images {
+  .ant-image-preview-img {
+    height: 100vh !important; /* Ekran balandligining 90% */
+  }
+
+  /* Modal konteyneri uchun */
+  .ant-image-preview-img-wrapper {
+    height: 100vh !important; /* Modal konteynerini ekran balandligining 90% bilan cheklash */
+  }
+
+  .ant-image-preview-img {
+    clip-path: inset(0 0 10% 0) !important; /* Pastki 10% ni qirqish */
+  }
+}
+
+/* .cardDetail ul {
+  list-style: "- ";
+} */
+
+.cardDetail a {
+  color: #740000;
+}
+
+.item_part3_images {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.item_part3 p {
+  text-align: left;
+  font-size: 18px;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.part4 {
+  width: 100%;
+  padding: 50px 10%;
+  margin: 0 auto;
+}
+
+.part4 .part4Box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.part4 .part4Box .item_image {
+  width: 350px;
+}
+
+.part5 {
+  width: 100%;
+  padding: 50px 10%;
+  margin: 0 auto;
+}
+
+.part5 table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.part5 table thead tr:first-child {
+  background-color: #a77e7e;
+}
+
+.part5 table tbody tr:nth-child(even) {
+  background-color: #dfdfdf;
+}
+.part5 table th,
+.part5 table td {
+  padding: 8px;
+  text-align: center;
+}
+
+.part5 table thead tr th:first-child,
+.part5 table tbody tr td:first-child {
+  text-align: left;
+}
+
+.part5 > i {
+  text-align: center;
+  display: block;
+}
+
+.item_8 {
+  background-color: #dfdfdf;
+  width: 100%;
+  display: flex;
+  padding: 5% 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.item_bottom_part {
+  width: 100%;
+  height: 65vh;
+  margin: 0 auto;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item_bottom_part .item_title {
+  color: white;
+  width: 20%;
+}
+
+.part6 {
+  width: 100%;
+  padding: 50px 10%;
+  margin: 0 auto;
+}
+
+.part6_cards {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin-bottom: 50px;
+}
+
+.part6 .part4Box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.part6 .part4Box .item_image {
+  width: 350px;
+}
+.part6 .part4Box .part4Desc {
+  width: 50%;
+}
+
+.part6 .othersLinks {
+  padding-left: 7%;
+}
+
+.part6 .othersLinks a {
+  margin-right: 20px;
+}
+
+.part6 .othersLinks a.activeLink {
+  color: #000;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 768px) {
+  .item_nav {
+    width: 90%;
+  }
+
+  .item_part4 {
+    padding: 0 3%;
+  }
+
+  .item_title {
+    font-size: 30px;
+  }
+  .item_subtitle {
+    font-size: 20px;
+  }
+  .item_desc {
+    font-size: 16px;
+  }
+
+  .item_part3_images {
+    padding: 0 25px;
+  }
+
+  .item_table {
+    padding: 0 3%;
+  }
+
+  .item_bottom_part {
+    height: 50vh;
+  }
+
+  .item_bottom_part .item_title {
+    width: 90%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .item_title {
+    font-size: 24px;
+  }
+  .item_subtitle {
+    font-size: 18px;
+  }
+  .item_desc {
+    font-size: 14px;
+  }
+}
