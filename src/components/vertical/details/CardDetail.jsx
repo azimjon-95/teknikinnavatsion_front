@@ -1,13 +1,14 @@
 import React, { use } from "react";
 import "./CardDetail.css";
-import { data } from "./data.js";
+import { data } from "./data_multilang";
 import { Link, useParams } from "react-router-dom";
 import { Image } from "antd";
 import "antd/dist/reset.css";
 
-function CardDetail() {
+function CardDetail({ lang = "ru" }) {
   const { id } = useParams();
-  let item = data.find((d) => d.id === id);
+  let item = data(lang).find((d) => d.id === id);
+  console.log(data(lang));
 
   return (
     <div className="cardDetail">
@@ -22,14 +23,14 @@ function CardDetail() {
         </div>
         <p className="item_desc">{item.desc1}</p>
         <ul>
-          {item.ul.map((listItem, index) => (
-            <li>{listItem}</li>
+          {item?.ul?.map((listItem, index) => (
+            <li key={index}>{listItem}</li>
           ))}
         </ul>
       </div>
       <div className="item_images1">
         <Image.PreviewGroup>
-          {item.images.map((img, index) => (
+          {item?.images?.map((img, index) => (
             <Image
               className="item_image"
               key={index}
@@ -48,7 +49,7 @@ function CardDetail() {
 
           <div className="stages-grid">
             {item.part2_infos.map((info, index) => (
-              <div className="stage-item">
+              <div key={index} className="stage-item">
                 <h3 className="stage-heading">{info.title}</h3>
                 <p className="stage-text">{info.desc}</p>
               </div>
@@ -59,7 +60,7 @@ function CardDetail() {
 
       <div className="part3">
         <h1 className="item_title">{item.part3_caption}</h1>
-        {item.part3_text.map((text, index) => (
+        {item.part3_text?.map((text, index) => (
           <p key={index} className="item_desc">
             {text}
           </p>
@@ -88,7 +89,7 @@ function CardDetail() {
           <div className="part4Desc">
             <p>{item.part4_desc1.title}</p>
             <ul>
-              {item.part4_desc1.ul.map((listItem, index) => (
+              {item.part4_desc1?.ul?.map((listItem, index) => (
                 <li key={index}>{listItem}</li>
               ))}
             </ul>
@@ -100,7 +101,7 @@ function CardDetail() {
       <div className="part5">
         <h1 className="item_title">{item.part5_caption}</h1>
         <table border={1}>
-          {item.tableData.map((table, index) => (
+          {item.tableData?.map((table, index) => (
             <>
               <thead>
                 <tr>
@@ -128,7 +129,7 @@ function CardDetail() {
       <div className="part6">
         <h1 className="item_title">{item.part6_caption}</h1>
         <div className="part6_cards">
-          {item.part6_data.map((card, index) => (
+          {item.part6_data?.map((card, index) => (
             <div className="part4Box">
               <Image.PreviewGroup>
                 <Image
@@ -162,7 +163,7 @@ function CardDetail() {
         <p className="item_desc">{item.part6_desc}</p>
         <p className="item_desc">{item.part6_desc2}</p>
         <ul>
-          {item.part6_ul.map((listItem, index) => (
+          {item.part6_ul?.map((listItem, index) => (
             <li key={index}>{listItem}</li>
           ))}
         </ul>
@@ -171,10 +172,30 @@ function CardDetail() {
         <p className="item_desc">{item.part6_desc5}</p>
         <b>{item.part6_text2}</b>
         <p className="item_desc">{item.part6_desc6}</p>
+        {item.part6_desc7 ? (
+          <p className="item_desc">{item.part6_desc7}</p>
+        ) : (
+          ""
+        )}
+        {item.part6_desc8 ? (
+          <p className="item_desc">{item.part6_desc8}</p>
+        ) : (
+          ""
+        )}
+        {item.part6_desc9 ? (
+          <p className="item_desc">{item.part6_desc9}</p>
+        ) : (
+          ""
+        )}
+        {item.part6_desc10 ? (
+          <p className="item_desc">{item.part6_desc10}</p>
+        ) : (
+          ""
+        )}
 
         <div className="othersLinks">
           <p className="othersLinks_title">{item.allLinks.text}</p>
-          {item.allLinks.links.map((link, index) => (
+          {item.allLinks?.links?.map((link, index) => (
             <Link
               key={index}
               className={link.to?.replace("/", "") === id ? "activeLink" : ""}
