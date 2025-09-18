@@ -1,12 +1,14 @@
-import React, { use } from "react";
+import React from "react";
 import "./CardDetail.css";
-import { data } from "./data.js";
+import { dataRu, dataEn, dataUz } from "./data.js";
 import { Link, useParams } from "react-router-dom";
 import { Image } from "antd";
 import "antd/dist/reset.css";
 
-function CardDetail() {
+function CardDetail({ lang }) {
   const { id } = useParams();
+  // Select dataset based on lang prop
+  const data = lang === "en" ? dataEn : lang === "uz" ? dataUz : dataRu;
   let item = data.find((d) => d.id === id);
 
   return (
@@ -112,7 +114,7 @@ function CardDetail() {
         <div className="item_part3_images">
           <Image.PreviewGroup>
             <Image
-              className="item_image  cropped-image"
+              className="item_image cropped-image"
               src={item.part3Img2.img1}
               alt={`Image`}
               style={{
@@ -122,7 +124,7 @@ function CardDetail() {
               }}
             />
             <Image
-              className="item_image cropped-image "
+              className="item_image cropped-image"
               src={item.part3Img2.img2}
               alt={`Image`}
               style={{

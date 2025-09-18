@@ -215,7 +215,8 @@ import rgs100_3_4 from "./assets/rgs100/rgs100_3_4.jpg";
 
 import rgs100_footerbg from "./assets/rgs100/rgs100_footbg.jpg";
 
-export const data = [
+// ru
+export const dataRu = [
   {
     id: "rgs-3",
     // part 1
@@ -1539,6 +1540,7 @@ export const data = [
       "РГС-75 м3, резервуар горизонтальный стальной наземный / подземный",
     part8Img: rgs75_footbg,
   },
+  // ----------
   {
     id: "rgs-100",
     // part 1
@@ -1660,4 +1662,2423 @@ export const data = [
       "РГС-100 м3, резервуар горизонтальный стальной наземный / подземный",
     part8Img: rgs100_footerbg,
   },
+  // ---------
 ];
+
+// en
+export const dataEn = [
+  {
+    id: "rgs-3",
+    // part 1
+    caption: "RGS-3 m³, horizontal steel tank above ground / underground",
+    desc1: "ZMK «REZERVUAROSTROITEL» manufactures horizontal cylindrical steel tanks type RGS with a volume of 3 m³ (RGS-3).",
+    desc2: "RGS-3 tanks are used for storage and dispensing of liquid raw materials with a density not exceeding 1 t/m³ at temperatures from –60°C to +90°C with an internal pressure up to 0.07 MPa under seismic vibrations up to 7 points.",
+    desc3: "The RGS-3 tank is manufactured in accordance with GOST 17032-2010 'Horizontal steel tanks for petroleum products,' GOST R 52630-2012 'Welded steel vessels and apparatus.' The quality of our horizontal tanks is confirmed by the Permit for Use №RRS.00-047039 and the Certificate of Conformity №Ross.RU.AB17.po1286.",
+    images: [rgs3_1, rgs3_2, rgs3_3, rgs3_4],
+    // part 2
+    caption2: "Ordering an RGS-3 tank",
+    zakazText: "Our customers can always purchase an RGS-3 tank manufactured according to the standard drawings of our design bureau (see technical specifications and drawings below).",
+    zakazText2: "We also frequently develop design documentation based on specific customer requirements (e.g., when space constraints are an issue) or manufacture RGS tanks according to your drawings.",
+    zakazImg: [rgs3_2_1, rgs3_2_2, rgs3_2_3, rgs3_2_4],
+    zakazDesc: "The RGS-3 m³ tank manufactured by ZMK «REZERVUAROSTROITEL» can be ordered:",
+    zakazList: [
+      "directly from the website;",
+      "by phone +99893 738 55 58;",
+      "by sending a request to email: teknikinnovatsion.info@gmail.com",
+    ],
+    zakazDesc2: "Your request will be processed within a day.",
+    // part 3
+    caption3: "Standard RGS-3 tanks from ZMK «REZERVUAROSTROITEL»",
+    subCaption1: "Above-ground tank RGSn-3:",
+    part3Img1: {
+      img1: part3Img1_1,
+      img2: part3Img1_2,
+    },
+    subCaption2: "Underground tank RGSp-3:",
+    part3Img2: {
+      img1: part3Img2_1,
+      img2: part3Img2_2,
+    },
+    // part 4
+    caption4: "RGS-3 tank variants",
+    part4desc: "ZMK «REZERVUAROSTROITEL» manufactures RGS-3 tanks in several basic configurations:",
+    part4SubCaption1: "Underground / above-ground RGS-3:",
+    part4List1: [
+      "RGSn-3 – above-ground placement;",
+      "RGSp-3 – underground placement with a technological well;",
+    ],
+    part4SubCaption2: "Single-wall / double-wall RGS-3:",
+    part4List2: [
+      "RGSn-3: single-wall horizontal tank for above-ground placement;",
+      "RGSDn-3: double-wall horizontal tank for above-ground placement;",
+      "RGSp-3: single-wall horizontal tank for underground placement;",
+      "RGSDp-3: double-wall horizontal tank for underground placement.",
+    ],
+    part4desc2: "When manufacturing a double-wall tank, the space between the walls is filled with nitrogen or liquid. The entire inter-wall space is filled, and the tank is equipped with a closed evacuation system.",
+    // part 5
+    caption5: "Requirements for the liquid in the inter-wall space:",
+    part5List: [
+      "flash point not lower than 100°C;",
+      "chemical neutrality to the tank construction materials and stored fuel;",
+      "higher density compared to the product stored in the RGS;",
+      "ability to retain its properties at the ambient temperatures for which the tank is designed;",
+    ],
+    // part 6
+    caption6: "Single-section / dual-section / multi-section RGS-3:",
+    part5SubCaption1: "All the above-mentioned RGS-3 configurations can be made with one or multiple chambers (sections). Chambers are formed by specially designed partitions inside the tank body. Thus, the RGS tank is divided into two or more compartments, allowing storage of different types of liquid raw materials. When manufacturing dual-chamber or multi-chamber horizontal tanks, we guarantee chamber sealing.",
+    part5SubCaption2: "The table below provides the main technical specifications of 3 m³ tanks manufactured by ZMK «REZERVUAROSTROITEL» in various configurations.",
+    // part 7
+    caption7: "RGS-3 tank specifications",
+    table: {
+      thead: {
+        tr1: ["RGS-3", "ABOVE-GROUND", "UNDERGROUND"],
+        tr2: ["", "SINGLE-WALL", "DOUBLE-WALL", "SINGLE-WALL", "DOUBLE-WALL"],
+      },
+      tbody: [
+        ["nominal capacity, m³", "3.00", "3.00", "3.00", "3.00"],
+        ["diameter, m", "1.40", "1.42", "1.90", "1.42"],
+        ["height on supports, m", "1.60", "1.60", "1.60", "1.60"],
+        ["height on supports with technological well, m", "", "", "2.96", "2.96"],
+        ["tank length, m", "2.06", "2.08", "2.06", "2.08"],
+        ["total weight, t", "0.53", "0.83", "0.83", "1.13"],
+        ["number of supports, pcs", "2.00", "2.00", "2.00", "2.00"],
+        ["shell thickness, mm", "4.00", "4.00", "4.00", "4.00"],
+      ],
+    },
+    allLinks: {
+      text: "Other horizontal tank volumes:",
+      links: [
+        { to: "/rgs-3", text: "RGS-3" },
+        { to: "/rgs-5", text: "RGS-5" },
+        { to: "/rgs-10", text: "RGS-10" },
+        { to: "/rgs-15", text: "RGS-15" },
+        { to: "/rgs-20", text: "RGS-20" },
+        { to: "/rgs-25", text: "RGS-25" },
+        { to: "/rgs-30", text: "RGS-30" },
+        { to: "/rgs-40", text: "RGS-40" },
+        { to: "/rgs-50", text: "RGS-50" },
+        { to: "/rgs-60", text: "RGS-60" },
+        { to: "/rgs-75", text: "RGS-75" },
+        { to: "/rgs-100", text: "RGS-100" },
+      ],
+    },
+    // part 8
+    caption8: "Delivery calculation",
+    part8desc: "RGS-3 m³, horizontal steel tank above ground / underground",
+    part8Img: part8Img,
+  },
+  {
+    "id": "rgs-5",
+    // part 1
+    "caption": "RGS-5 m³, Horizontal Steel Tank Above Ground / Underground",
+    "desc1": "ZMK 'REZERVUAROSTROITEL' manufactures horizontal cylindrical steel tanks type RGS with a volume of 5 m³ (RGS-5).",
+    "desc2": "RGS-5 tanks are used for storing and dispensing liquid raw materials with a density not exceeding 1 t/m³ at temperatures from –60°C to +90°C, with an internal pressure up to 0.07 MPa and seismic activity up to 7 points.",
+    "desc3": "The RGS-5 tank is manufactured in accordance with GOST 17032-2010 'Horizontal Steel Tanks for Petroleum Products' and GOST R 52630-2012 'Welded Steel Vessels and Apparatus.' The quality of our horizontal tanks is confirmed by Application Permit No. РРС.00-047039 and Certificate of Conformity No. Росс.RU.АВ17.по1286.",
+    "images": [rgs5_1, rgs5_2, rgs5_3, rgs5_4],
+    // part 2
+    "caption2": "Ordering an RGS-5 Tank",
+    "zakazText": "Our customers can always purchase an RGS-5 tank manufactured according to standard drawings from our design bureau (see technical specifications and drawings below).",
+    "zakazText2": "We also frequently develop design documentation based on specific customer requirements (e.g., for constrained installation conditions) or manufacture RGS tanks according to your drawings.",
+    "zakazImg": [rgs5_2_1, rgs5_2_2, rgs5_2_3, rgs5_2_4],
+    "zakazDesc": "The RGS-5 m³ tank manufactured by ZMK 'REZERVUAROSTROITEL' can be ordered:",
+    "zakazList": [
+      "directly from the website;",
+      "by phone at +99893 738 55 58;",
+      "by sending a request to the email: teknikinnovatsion.info@gmail.com"
+    ],
+    "zakazDesc2": "Your request will be processed within one day.",
+    // part 3
+    "caption3": "Standard RGS-5 Tanks from ZMK 'REZERVUAROSTROITEL'",
+    "subCaption1": "Above-ground RGSn-5 Tank:",
+    "part3Img1": {
+      "img1": rgs5_3_1,
+      "img2": rgs5_3_2
+    },
+    "subCaption2": "Underground RGSp-5 Tank:",
+    "part3Img2": {
+      "img1": rgs5_3_3,
+      "img2": rgs5_3_4
+    },
+    // part 4
+    "caption4": "Underground / Above-ground RGS-5",
+    "part4desc": "ZMK 'REZERVUAROSTROITEL' manufactures RGS-5 tanks in several basic configurations:",
+    "part4SubCaption1": "Underground / Above-ground RGS-5:",
+    "part4List1": [
+      "RGSn-5 – above-ground placement;",
+      "RGSp-5 – underground placement with a technical well;"
+    ],
+    "part4SubCaption2": "Single-walled / Double-walled RGS-5:",
+    "part4List2": [
+      "RGSn-5: single-walled horizontal tank for above-ground placement;",
+      "RGSDn-5: double-walled horizontal tank for above-ground placement;",
+      "RGSp-5: single-walled horizontal tank for underground placement;",
+      "RGSDp-5: double-walled horizontal tank for underground placement."
+    ],
+    "part4desc2": "When manufacturing a double-walled tank, the space between the walls is filled with nitrogen or liquid. The entire inter-wall space is filled, and the tank is equipped with a closed evacuation system.",
+    // part 5
+    "caption5": "Requirements for the Liquid in the Inter-wall Space:",
+    "part5List": [
+      "flash point not lower than 100°C;",
+      "chemical neutrality to the tank’s construction materials and the stored fuel;",
+      "higher density compared to the product stored in the RGS;",
+      "ability to retain its properties at the environmental temperatures for which the tank is designed;"
+    ],
+    // part 6
+    "caption6": "Single-section / Double-section / Multi-section RGS-5:",
+    "part5SubCaption1": "All the above-mentioned RGS-5 configurations can be made with one or multiple chambers (sections). Chambers are formed by specially designed partitions inside the tank body. Thus, the RGS tank can be divided into two or more compartments, allowing storage of different types of liquid raw materials. When manufacturing two-chamber or multi-chamber horizontal tanks, we guarantee the sealing of the chambers.",
+    "part5SubCaption2": "The table below provides the main technical specifications of 5 m³ horizontal steel tanks manufactured by ZMK 'REZERVUAROSTROITEL' in various configurations.",
+    // part 7
+    "caption7": "RGS-5 Tank Specifications",
+    "table": {
+      "thead": {
+        "tr1": ["RGS-5", "ABOVE-GROUND", "UNDERGROUND"],
+        "tr2": ["", "SINGLE-WALLED", "DOUBLE-WALLED", "SINGLE-WALLED", "DOUBLE-WALLED"]
+      },
+      "tbody": [
+        ["Nominal capacity, m³", "5.00", "5.00", "5.00", "5.00"],
+        ["Diameter, m", "1.90", "1.92", "1.90", "1.92"],
+        ["Height on supports, m", "2.05", "2.05", "2.05", "2.05"],
+        ["Height on supports with technical well, m", "", "", "3.40", "3.40"],
+        ["Tank length, m", "1.90", "1.92", "1.90", "1.92"],
+        ["Total weight, t", "0.70", "0.83", "1.00", "1.40"],
+        ["Number of supports, units", "2.00", "2.00", "2.00", "2.00"],
+        ["Shell thickness, mm", "4.00", "4.00", "4.00", "4.00"]
+      ]
+    },
+    "allLinks": {
+      "text": "Other volumes of horizontal tanks:",
+      "links": [
+        { "to": "/rgs-3", "text": "RGS-3" },
+        { "to": "/rgs-5", "text": "RGS-5" },
+        { "to": "/rgs-10", "text": "RGS-10" },
+        { "to": "/rgs-15", "text": "RGS-15" },
+        { "to": "/rgs-20", "text": "RGS-20" },
+        { "to": "/rgs-25", "text": "RGS-25" },
+        { "to": "/rgs-30", "text": "RGS-30" },
+        { "to": "/rgs-40", "text": "RGS-40" },
+        { "to": "/rgs-50", "text": "RGS-50" },
+        { "to": "/rgs-60", "text": "RGS-60" },
+        { "to": "/rgs-75", "text": "RGS-75" },
+        { "to": "/rgs-100", "text": "RGS-100" }
+      ]
+    },
+    // part 8
+    "caption8": "Delivery Calculation",
+    "part8desc": "RGS-5 m³, horizontal steel tank above ground / underground",
+    "part8Img": rgs5BottomBg
+  },
+  {
+    "id": "rgs-10",
+    // part 1
+    "caption": "RGS-10 m³, Horizontal Steel Tank Above Ground / Underground",
+    "desc1": "ZMK 'REZERVUAROSTROITEL' manufactures horizontal cylindrical steel tanks type RGS with a volume of 10 m³ (RGS-10).",
+    "desc2": "RGS-10 tanks for petroleum products are used for storing and dispensing liquid raw materials with a density not exceeding 1 t/m³ at temperatures from –60°C to +90°C, with an internal pressure up to 0.07 MPa and seismic activity up to 7 points.",
+    "desc3": "The RGS-10 m³ tank is manufactured in accordance with GOST 17032-2010 'Horizontal Steel Tanks for Petroleum Products' and GOST R 52630-2012 'Welded Steel Vessels and Apparatus.' The quality of our horizontal tanks is confirmed by Application Permit No. РРС.00-047039 and Certificate of Conformity No. Росс.RU.АВ17.по1286.",
+    "images": [rgs10_1, rgs10_2, rgs10_3],
+    // part 2
+    "caption2": "Ordering an RGS-10 Tank",
+    "zakazText": "Our customers can always purchase an RGS-10 tank manufactured according to standard drawings from our design bureau (see technical specifications and drawings below).",
+    "zakazText2": "We also frequently develop design documentation based on specific customer requirements (e.g., for constrained installation conditions) or manufacture RGS tanks according to your drawings.",
+    "zakazImg": [rgs10_2_1, rgs10_2_2, rgs10_2_3, rgs10_2_4],
+    "zakazDesc": "Standard RGS-10 Tanks from ZMK 'REZERVUAROSTROITEL'",
+    "zakazList": [
+      "directly from the website;",
+      "by phone at +99893 738 55 58;",
+      "by sending a request to the email: teknikinnovatsion.info@gmail.com"
+    ],
+    "zakazDesc2": "Your request will be processed within one day.",
+    // part 3
+    "caption3": "Standard RGS-10 Tanks from ZMK 'REZERVUAROSTROITEL'",
+    "subCaption1": "Above-ground RGSn-10 Tank:",
+    "part3Img1": {
+      "img1": rgs10_3_1,
+      "img2": rgs10_3_2
+    },
+    "subCaption2": "Underground RGSp-10 Tank:",
+    "part3Img2": {
+      "img1": rgs10_3_3,
+      "img2": rgs10_3_4
+    },
+    "part3Desc": "The price of the RGS-10 m³ tank varies depending on the thickness of the walls and the tank bottom.",
+    // part 4
+    "caption4": "Underground / Above-ground RGS-10",
+    "part4desc": "ZMK 'REZERVUAROSTROITEL' manufactures horizontal RGS-10 tanks in several basic configurations:",
+    "part4SubCaption1": "Underground / Above-ground RGS-10 Tanks:",
+    "part4List1": [
+      "RGSn-10 – above-ground placement;",
+      "RGSp-10 – underground placement with a technical well;"
+    ],
+    "part4SubCaption2": "Single-walled / Double-walled RGS-10:",
+    "part4List2": [
+      "RGSn-10: single-walled horizontal tank for above-ground placement;",
+      "RGSDn-10: double-walled horizontal tank for above-ground placement;",
+      "RGSp-10: single-walled horizontal tank for underground placement;",
+      "RGSDp-10: double-walled horizontal tank for underground placement."
+    ],
+    "part4desc2": "When manufacturing a double-walled tank, the space between the walls is filled with nitrogen or liquid. The entire inter-wall space is filled, and the tank is equipped with a closed evacuation system.",
+    // part 5
+    "caption5": "Requirements for the Liquid in the Inter-wall Space:",
+    "part5List": [
+      "flash point not lower than 100°C;",
+      "chemical neutrality to the tank’s construction materials and the stored fuel;",
+      "higher density compared to the product stored in the RGS;",
+      "ability to retain its properties at the environmental temperatures for which the tank is designed;"
+    ],
+    // part 6
+    "caption6": "Single-section / Double-section / Multi-section RGS-10:",
+    "part5SubCaption1": "All the above-mentioned horizontal tank configurations can be made with one or multiple chambers (sections). Chambers are formed by specially designed partitions inside the tank body. Thus, the RGS tank can be divided into two or more compartments, allowing storage of different types of liquid raw materials. When manufacturing two-chamber or multi-chamber horizontal tanks, we guarantee the sealing of the chambers.",
+    "part5SubCaption2": "The table below provides the main technical specifications of 10 m³ RGS tanks manufactured by ZMK 'REZERVUAROSTROITEL' in various configurations.",
+    // part 7
+    "caption7": "Technical Specifications of RGS-10 m³ Tanks",
+    "table": {
+      "thead": {
+        "tr1": ["RGS-10", "ABOVE-GROUND", "UNDERGROUND"],
+        "tr2": ["", "SINGLE-WALLED", "DOUBLE-WALLED", "SINGLE-WALLED", "DOUBLE-WALLED"]
+      },
+      "tbody": [
+        ["Nominal capacity, m³", "10.00", "10.00", "10.00", "10.00"],
+        ["Diameter, m", "2.07", "2.09", "2.07", "2.09"],
+        ["Height on supports, m", "2.22", "2.22", "2.22", "2.22"],
+        ["Height on supports with technical well, m", "", "", "3.52", "3.52"],
+        ["Tank length, m", "3.40", "3.42", "3.40", "3.42"],
+        ["Total weight, t", "0.99", "1.80", "1.29", "2.10"],
+        ["Number of supports, units", "2.00", "2.00", "2.00", "2.00"],
+        ["Shell thickness, mm", "4.00", "4.00", "4.00", "4.00"]
+      ]
+    },
+    "allLinks": {
+      "text": "Other volumes of horizontal tanks:",
+      "links": [
+        { "to": "/rgs-3", "text": "RGS-3" },
+        { "to": "/rgs-5", "text": "RGS-5" },
+        { "to": "/rgs-10", "text": "RGS-10" },
+        { "to": "/rgs-15", "text": "RGS-15" },
+        { "to": "/rgs-20", "text": "RGS-20" },
+        { "to": "/rgs-25", "text": "RGS-25" },
+        { "to": "/rgs-30", "text": "RGS-30" },
+        { "to": "/rgs-40", "text": "RGS-40" },
+        { "to": "/rgs-50", "text": "RGS-50" },
+        { "to": "/rgs-60", "text": "RGS-60" },
+        { "to": "/rgs-75", "text": "RGS-75" },
+        { "to": "/rgs-100", "text": "RGS-100" }
+      ]
+    },
+    // part 8
+    "caption8": "Delivery Calculation",
+    "part8desc": "RGS-10 m³, horizontal steel tank above ground / underground",
+    "part8Img": rgs10_footerbg
+  },
+  {
+    "id": "rgs-15",
+    // part 1
+    "caption": "RGS-15 m³, Horizontal Steel Tank Above Ground / Underground",
+    "desc1": "ZMK 'REZERVUAROSTROITEL' manufactures horizontal cylindrical steel tanks type RGS with a volume of 15 m³ (RGS-15).",
+    "desc2": "RGS-15 tanks are used for storing and dispensing liquid raw materials with a density not exceeding 1 t/m³ at temperatures from –60°C to +90°C, with an internal pressure up to 0.07 MPa and seismic activity up to 7 points.",
+    "desc3": "The 15 m³ tank is manufactured in accordance with GOST 17032-2010 'Horizontal Steel Tanks for Petroleum Products' and GOST R 52630-2012 'Welded Steel Vessels and Apparatus.' The quality of our horizontal tanks is confirmed by Application Permit No. РРС.00-047039 and Certificate of Conformity No. Росс.RU.АВ17.по1286.",
+    "images": [rgs15_1, rgs15_2, rgs15_3, rgs15_4],
+    // part 2
+    "caption2": "Ordering an RGS-15 Tank",
+    "zakazText": "Our customers can always purchase an RGS-15 tank manufactured according to standard drawings from our design bureau (see technical specifications and drawings below).",
+    "zakazText2": "We also frequently develop design documentation based on specific customer requirements (e.g., for constrained installation conditions) or manufacture RGS tanks according to your drawings.",
+    "zakazImg": [rgs15_2_1, rgs15_2_2, rgs15_2_3, rgs15_2_4],
+    "zakazDesc": "The 15 m³ tank manufactured by ZMK 'REZERVUAROSTROITEL' can be ordered:",
+    "zakazList": [
+      "directly from the website;",
+      "by phone at +99893 738 55 58;",
+      "by sending a request to the email: teknikinnovatsion.info@gmail.com"
+    ],
+    "zakazDesc2": "Your request will be processed within one day.",
+    // part 3
+    "caption3": "Standard RGS-15 Tanks from ZMK 'REZERVUAROSTROITEL'",
+    "subCaption1": "Above-ground RGSn-15 Tank:",
+    "part3Img1": {
+      "img1": rgs15_3_1,
+      "img2": rgs15_3_2
+    },
+    "subCaption2": "Underground RGSp-15 Tank:",
+    "part3Img2": {
+      "img1": rgs15_3_3,
+      "img2": rgs15_3_4
+    },
+    // part 4
+    "caption4": "Underground / Above-ground RGS-15",
+    "part4desc": "ZMK 'REZERVUAROSTROITEL' manufactures RGS-15 tanks in several basic configurations:",
+    "part4SubCaption1": "Underground / Above-ground RGS-15:",
+    "part4List1": [
+      "RGSn-15 – above-ground placement;",
+      "RGSp-15 – underground placement with a technical well;"
+    ],
+    "part4SubCaption2": "Single-walled / Double-walled RGS-15:",
+    "part4List2": [
+      "RGSn-15: single-walled horizontal tank for above-ground placement;",
+      "RGSDn-15: double-walled horizontal tank for above-ground placement;",
+      "RGSp-15: single-walled horizontal tank for underground placement;",
+      "RGSDp-15: double-walled horizontal tank for underground placement."
+    ],
+    "part4desc2": "When manufacturing a 15 m³ double-walled tank, the space between the walls is filled with nitrogen or liquid. The entire inter-wall space is filled, and the tank is equipped with a closed evacuation system.",
+    // part 5
+    "caption5": "Requirements for the Liquid in the Inter-wall Space:",
+    "part5List": [
+      "flash point not lower than 100°C;",
+      "chemical neutrality to the tank’s construction materials and the stored fuel;",
+      "higher density compared to the product stored in the RGS;",
+      "ability to retain its properties at the environmental temperatures for which the tank is designed;"
+    ],
+    // part 6
+    "caption6": "Single-section / Double-section / Multi-section RGS-15:",
+    "part5SubCaption1": "All the above-mentioned RGS configurations can be made with one or multiple chambers (sections). Chambers are formed by specially designed partitions inside the tank body. Thus, the RGS tank can be divided into two or more compartments, allowing storage of different types of liquid raw materials. When manufacturing two-chamber or multi-chamber horizontal tanks, we guarantee the sealing of the chambers.",
+    "part5SubCaption2": "The table below provides the main technical specifications of 15 m³ tanks manufactured by ZMK 'REZERVUAROSTROITEL' in various configurations.",
+    // part 7
+    "caption7": "Technical Specifications of RGS-15 m³ Tanks:",
+    "table": {
+      "thead": {
+        "tr1": ["RGS-15", "ABOVE-GROUND", "UNDERGROUND"],
+        "tr2": ["", "SINGLE-WALLED", "DOUBLE-WALLED", "SINGLE-WALLED", "DOUBLE-WALLED"]
+      },
+      "tbody": [
+        ["Nominal capacity, m³", "15.00", "15.00", "15.00", "15.00"],
+        ["Diameter, m", "2.07", "2.09", "2.07", "2.09"],
+        ["Height on supports, m", "2.22", "2.22", "2.22", "2.22"],
+        ["Height on supports with technical well, m", "", "", "3.86", "3.86"],
+        ["Tank length, m", "4.90", "4.92", "4.90", "4.92"],
+        ["Total weight, t", "1.40", "2.60", "1.70", "2.90"],
+        ["Number of supports, units", "2.00", "2.00", "2.00", "2.00"],
+        ["Shell thickness, mm", "4.00", "4.00", "4.00", "4.00"]
+      ]
+    },
+    "allLinks": {
+      "text": "Other volumes of horizontal tanks:",
+      "links": [
+        { "to": "/rgs-3", "text": "RGS-3" },
+        { "to": "/rgs-5", "text": "RGS-5" },
+        { "to": "/rgs-10", "text": "RGS-10" },
+        { "to": "/rgs-15", "text": "RGS-15" },
+        { "to": "/rgs-20", "text": "RGS-20" },
+        { "to": "/rgs-25", "text": "RGS-25" },
+        { "to": "/rgs-30", "text": "RGS-30" },
+        { "to": "/rgs-40", "text": "RGS-40" },
+        { "to": "/rgs-50", "text": "RGS-50" },
+        { "to": "/rgs-60", "text": "RGS-60" },
+        { "to": "/rgs-75", "text": "RGS-75" },
+        { "to": "/rgs-100", "text": "RGS-100" }
+      ]
+    },
+    // part 8
+    "caption8": "Delivery Calculation",
+    "part8desc": "RGS-15 m³, horizontal steel tank above ground / underground",
+    "part8Img": rgs15_footbg
+  },
+  {
+    "id": "rgs-20",
+    // part 1
+    "caption": "RGS-20 m³, Horizontal Steel Tank Above Ground / Underground",
+    "desc1": "ZMK 'REZERVUAROSTROITEL' manufactures horizontal cylindrical steel tanks type RGS with a volume of 20 m³ (RGS-20).",
+    "desc2": "RGS-20 tanks are used for storing and dispensing liquid raw materials with a density not exceeding 1 t/m³ at temperatures from –60°C to +90°C, with an internal pressure up to 0.07 MPa and seismic activity up to 7 points.",
+    "desc3": "The RGS-20 tank is manufactured in accordance with GOST 17032-2010 'Horizontal Steel Tanks for Petroleum Products' and GOST R 52630-2012 'Welded Steel Vessels and Apparatus.' The quality of our horizontal tanks is confirmed by Application Permit No. РРС.00-047039 and Certificate of Conformity No. Росс.RU.АВ17.по1286.",
+    "images": [rgs20_1, rgs20_2, rgs20_3, rgs20_4],
+    // part 2
+    "caption2": "Ordering an RGS-20 Tank",
+    "zakazText": "Our customers can always purchase a 20 m³ tank manufactured according to standard drawings from our design bureau (see technical specifications and drawings below).",
+    "zakazText2": "We also frequently develop design documentation based on specific customer requirements (e.g., for constrained installation conditions) or manufacture RGS tanks according to your drawings.",
+    "zakazImg": [rgs20_2_1, rgs20_2_2, rgs20_2_3, rgs20_2_4],
+    "zakazDesc": "The 20 m³ tank manufactured by ZMK 'REZERVUAROSTROITEL' can be ordered:",
+    "zakazList": [
+      "directly from the website;",
+      "by phone at +99893 738 55 58;",
+      "by sending a request to the email: teknikinnovatsion.info@gmail.com"
+    ],
+    "zakazDesc2": "Your request will be processed within one day.",
+    // part 3
+    "caption3": "Standard RGS-20 Tanks from ZMK 'REZERVUAROSTROITEL'",
+    "subCaption1": "Above-ground RGSn-20 Tank:",
+    "part3Img1": {
+      "img1": rgs20_3_1,
+      "img2": rgs20_3_2
+    },
+    "subCaption2": "Underground RGSp-20 Tank:",
+    "part3Img2": {
+      "img1": rgs20_3_3,
+      "img2": rgs20_3_4
+    },
+    // part 4
+    "caption4": "RGS-20 Configurations",
+    "part4desc": "ZMK 'REZERVUAROSTROITEL' manufactures 20 m³ tanks in several basic configurations:",
+    "part4SubCaption1": "Underground / Above-ground RGS-20:",
+    "part4List1": [
+      "RGSn-20 – above-ground placement;",
+      "RGSp-20 – underground placement with a technical well;"
+    ],
+    "part4SubCaption2": "Single-walled / Double-walled RGS-20:",
+    "part4List2": [
+      "RGSn-20: single-walled horizontal tank for above-ground placement;",
+      "RGSDn-20: double-walled horizontal tank for above-ground placement;",
+      "RGSp-20: single-walled horizontal tank for underground placement;",
+      "RGSDp-20: double-walled horizontal tank for underground placement."
+    ],
+    "part4desc2": "When manufacturing a 20 m³ double-walled tank, the space between the walls is filled with nitrogen or liquid. The entire inter-wall space is filled, and the tank is equipped with a closed evacuation system.",
+    // part 5
+    "caption5": "Requirements for the Liquid in the Inter-wall Space:",
+    "part5List": [
+      "flash point not lower than 100°C;",
+      "chemical neutrality to the tank’s construction materials and the stored fuel;",
+      "higher density compared to the product stored in the RGS;",
+      "ability to retain its properties at the environmental temperatures for which the tank is designed;"
+    ],
+    // part 6
+    "caption6": "Single-section / Double-section / Multi-section RGS-20:",
+    "part5SubCaption1": "All the above-mentioned RGS configurations can be made with one or multiple chambers (sections). Chambers are formed by specially designed partitions inside the tank body. Thus, the RGS tank can be divided into two or more compartments, allowing storage of different types of liquid raw materials. When manufacturing two-chamber or multi-chamber horizontal tanks, we guarantee the sealing of the chambers.",
+    "part5SubCaption2": "The table below provides the main technical specifications of 20 m³ tanks manufactured by ZMK 'REZERVUAROSTROITEL' in various configurations.",
+    // part 7
+    "caption7": "Technical Specifications of RGS-20 Tanks",
+    "table": {
+      "thead": {
+        "tr1": ["RGS-20", "ABOVE-GROUND", "UNDERGROUND"],
+        "tr2": ["", "SINGLE-WALLED", "DOUBLE-WALLED", "SINGLE-WALLED", "DOUBLE-WALLED"]
+      },
+      "tbody": [
+        ["Nominal capacity, m³", "20.00", "20.00", "20.00", "20.00"],
+        ["Diameter, m", "2.40", "2.42", "2.40", "2.42"],
+        ["Height on supports, m", "2.56", "2.56", "2.56", "2.56"],
+        ["Height on supports with technical well, m", "", "", "3.86", "3.86"],
+        ["Tank length, m", "4.90", "4.92", "4.90", "4.92"],
+        ["Total weight, t", "1.70", "3.10", "2.00", "3.40"],
+        ["Number of supports, units", "2.00", "2.00", "2.00", "2.00"],
+        ["Shell thickness, mm", "4.00", "4.00", "4.00", "4.00"]
+      ]
+    },
+    "allLinks": {
+      "text": "Other volumes of horizontal tanks:",
+      "links": [
+        { "to": "/rgs-3", "text": "RGS-3" },
+        { "to": "/rgs-5", "text": "RGS-5" },
+        { "to": "/rgs-10", "text": "RGS-10" },
+        { "to": "/rgs-15", "text": "RGS-15" },
+        { "to": "/rgs-20", "text": "RGS-20" },
+        { "to": "/rgs-25", "text": "RGS-25" },
+        { "to": "/rgs-30", "text": "RGS-30" },
+        { "to": "/rgs-40", "text": "RGS-40" },
+        { "to": "/rgs-50", "text": "RGS-50" },
+        { "to": "/rgs-60", "text": "RGS-60" },
+        { "to": "/rgs-75", "text": "RGS-75" },
+        { "to": "/rgs-100", "text": "RGS-100" }
+      ]
+    },
+    // part 8
+    "caption8": "Delivery Calculation",
+    "part8desc": "RGS-20 m³, horizontal steel tank above ground / underground",
+    "part8Img": rgs20_footbg
+  },
+  {
+    "id": "rgs-25",
+    // part 1
+    "caption": "RGS-25 m³, Horizontal Steel Tank Above Ground / Underground",
+    "desc1": "ZMK 'REZERVUAROSTROITEL' manufactures horizontal cylindrical steel tanks type RGS with a volume of 25 m³ (RGS-25).",
+    "desc2": "The 25 m³ tanks are used for storing and dispensing liquid raw materials with a density not exceeding 1 t/m³ at temperatures from –60°C to +90°C, with an internal pressure up to 0.07 MPa and seismic activity up to 7 points.",
+    "desc3": "The RGS-25 tank is manufactured in accordance with GOST 17032-2010 'Horizontal Steel Tanks for Petroleum Products' and GOST R 52630-2012 'Welded Steel Vessels and Apparatus.' The quality of our horizontal tanks is confirmed by Application Permit No. РРС.00-047039 and Certificate of Conformity No. Росс.RU.АВ17.по1286.",
+    "images": [rgs25_1, rgs25_2, rgs25_3, rgs25_4],
+    // part 2
+    "caption2": "Ordering an RGS-25 Tank",
+    "zakazText": "Our customers can always purchase an RGS-25 tank manufactured according to standard drawings from our design bureau (see technical specifications and drawings below).",
+    "zakazText2": "We also frequently develop design documentation based on specific customer requirements (e.g., for constrained installation conditions) or manufacture horizontal steel tanks according to your drawings.",
+    "zakazImg": [rgs25_2_1, rgs25_2_2, rgs25_2_3, rgs25_2_4],
+    "zakazDesc": "The 25 m³ tank manufactured by ZMK 'REZERVUAROSTROITEL' can be ordered:",
+    "zakazList": [
+      "directly from the website;",
+      "by phone at +99893 738 55 58;",
+      "by sending a request to the email: teknikinnovatsion.info@gmail.com"
+    ],
+    "zakazDesc2": "Your request will be processed within one day.",
+    // part 3
+    "caption3": "Standard RGS-25 Tanks from ZMK 'REZERVUAROSTROITEL'",
+    "subCaption1": "Above-ground RGSn-25 Tank:",
+    "part3Img1": {
+      "img1": rgs25_3_1,
+      "img2": rgs25_3_2
+    },
+    "subCaption2": "Underground RGSp-25 Tank:",
+    "part3Img2": {
+      "img1": rgs25_3_3,
+      "img2": rgs25_3_4
+    },
+    "part3Desc": "The price of the RGS-25 depends on the thickness of the walls, the bottom, and the steel grade.",
+    // part 4
+    "caption4": "Underground / Above-ground RGS-25",
+    "part4desc": "ZMK 'REZERVUAROSTROITEL' manufactures 25 m³ horizontal tanks in several basic configurations:",
+    "part4SubCaption1": "Underground / Above-ground RGS-25:",
+    "part4List1": [
+      "RGSn-25 – above-ground placement;",
+      "RGSp-25 – underground placement with a technical well;"
+    ],
+    "part4SubCaption2": "Single-walled / Double-walled RGS-25:",
+    "part4List2": [
+      "RGSn-25: single-walled horizontal tank for above-ground placement;",
+      "RGSDn-25: double-walled horizontal tank for above-ground placement;",
+      "RGSp-25: single-walled horizontal tank for underground placement;",
+      "RGSDp-25: double-walled horizontal tank for underground placement."
+    ],
+    "part4desc2": "When manufacturing a 25 m³ double-walled tank, the space between the walls is filled with nitrogen or liquid. The entire inter-wall space is filled, and the tank is equipped with a closed evacuation system.",
+    // part 5
+    "caption5": "Requirements for the Liquid in the Inter-wall Space:",
+    "part5List": [
+      "flash point not lower than 100°C;",
+      "chemical neutrality to the tank’s construction materials and the stored fuel;",
+      "higher density compared to the product stored in the RGS;",
+      "ability to retain its properties at the environmental temperatures for which the tank is designed;"
+    ],
+    // part 6
+    "caption6": "Single-section / Double-section / Multi-section RGS-25:",
+    "part5SubCaption1": "All the above-mentioned RGS-25 tank configurations can be made with one or multiple chambers (sections). Chambers are formed by specially designed partitions inside the tank body. Thus, the 25 m³ tank can be divided into two or more compartments, allowing storage of different types of liquid raw materials. When manufacturing two-chamber or multi-chamber RGS tanks, we guarantee the sealing of the chambers.",
+    "part5SubCaption2": "The table below provides the main technical specifications of RGS-25 tanks manufactured by ZMK 'REZERVUAROSTROITEL' in various configurations.",
+    // part 7
+    "caption7": "Technical Specifications of 25 m³ Tanks",
+    "table": {
+      "thead": {
+        "tr1": ["RGS-25", "ABOVE-GROUND", "UNDERGROUND"],
+        "tr2": ["", "SINGLE-WALLED", "DOUBLE-WALLED", "SINGLE-WALLED", "DOUBLE-WALLED"]
+      },
+      "tbody": [
+        ["Nominal capacity, m³", "25.00", "25.00", "25.00", "25.00"],
+        ["Diameter, m", "2.40", "2.42", "2.40", "2.42"],
+        ["Height on supports, m", "6.60", "6.60", "6.60", "6.60"],
+        ["Height on supports with technical well, m", "", "", "3.86", "3.86"],
+        ["Tank length, m", "6.60", "6.62", "6.60", "6.62"],
+        ["Total weight, t", "2.15", "3.70", "2.45", "4.00"],
+        ["Number of supports, units", "2.00", "2.00", "2.00", "2.00"],
+        ["Shell thickness, mm", "4.00", "4.00", "4.00", "4.00"]
+      ]
+    },
+    "allLinks": {
+      "text": "Other volumes of horizontal tanks:",
+      "links": [
+        { "to": "/rgs-3", "text": "RGS-3" },
+        { "to": "/rgs-5", "text": "RGS-5" },
+        { "to": "/rgs-10", "text": "RGS-10" },
+        { "to": "/rgs-15", "text": "RGS-15" },
+        { "to": "/rgs-20", "text": "RGS-20" },
+        { "to": "/rgs-25", "text": "RGS-25" },
+        { "to": "/rgs-30", "text": "RGS-30" },
+        { "to": "/rgs-40", "text": "RGS-40" },
+        { "to": "/rgs-50", "text": "RGS-50" },
+        { "to": "/rgs-60", "text": "RGS-60" },
+        { "to": "/rgs-75", "text": "RGS-75" },
+        { "to": "/rgs-100", "text": "RGS-100" }
+      ]
+    },
+    // part 8
+    "caption8": "Delivery Calculation",
+    "part8desc": "RGS-25 m³, horizontal steel tank above ground / underground",
+    "part8Img": rgs5BottomBg
+  },
+  {
+    "id": "rgs-30",
+    // part 1
+    "caption": "RGS-30 m³, Horizontal Steel Tank Above Ground / Underground",
+    "desc1": "ZMK 'REZERVUAROSTROITEL' manufactures horizontal cylindrical steel tanks type RGS with a volume of 30 m³ (RGS-30).",
+    "desc2": "RGS-30 tanks are used for storing and dispensing liquid raw materials with a density not exceeding 1 t/m³ at temperatures from –60°C to +90°C, with an internal pressure up to 0.07 MPa and seismic activity up to 7 points.",
+    "desc3": "The RGS-30 tank is manufactured in accordance with GOST 17032-2010 'Horizontal Steel Tanks for Petroleum Products' and GOST R 52630-2012 'Welded Steel Vessels and Apparatus.' The quality of our horizontal tanks is confirmed by Application Permit No. РРС.00-047039 and Certificate of Conformity No. Росс.RU.АВ17.по1286.",
+    "images": [rgs30_1, rgs30_2, rgs30_3, rgs30_4],
+    // part 2
+    "caption2": "Ordering an RGS-30 Tank",
+    "zakazText": "Our customers can always purchase a 30 m³ tank manufactured according to standard drawings from our design bureau (see technical specifications and drawings below).",
+    "zakazText2": "We also frequently develop design documentation based on specific customer requirements (e.g., for constrained installation conditions) or manufacture horizontal steel tanks according to your drawings.",
+    "zakazImg": [rgs30_2_1, rgs30_2_2, rgs30_2_3, rgs30_2_4],
+    "zakazDesc": "The 30 m³ tank manufactured by ZMK 'REZERVUAROSTROITEL' can be ordered:",
+    "zakazList": [
+      "directly from the website;",
+      "by phone at +99893 738 55 58;",
+      "by sending a request to the email: teknikinnovatsion.info@gmail.com"
+    ],
+    "zakazDesc2": "Your request will be processed within one day.",
+    // part 3
+    "caption3": "Standard RGS-30 Tanks from ZMK 'REZERVUAROSTROITEL'",
+    "subCaption1": "Above-ground RGSn-30 Tank:",
+    "part3Img1": {
+      "img1": rgs30_3_1,
+      "img2": rgs30_3_2
+    },
+    "subCaption2": "Underground RGSp-30 Tank:",
+    "part3Img2": {
+      "img1": rgs30_3_3,
+      "img2": rgs30_3_4
+    },
+    // part 4
+    "caption4": "RGS-30 Configurations",
+    "part4desc": "ZMK 'REZERVUAROSTROITEL' manufactures 30 m³ tanks in several basic configurations:",
+    "part4SubCaption1": "Underground / Above-ground RGS-30:",
+    "part4List1": [
+      "RGSn-30 – above-ground placement;",
+      "RGSp-30 – underground placement with a technical well;"
+    ],
+    "part4SubCaption2": "Single-walled / Double-walled RGS-30:",
+    "part4List2": [
+      "RGSn-30: single-walled horizontal tank for above-ground placement;",
+      "RGSDn-30: double-walled horizontal tank for above-ground placement;",
+      "RGSp-30: single-walled horizontal tank for underground placement;",
+      "RGSDp-30: double-walled horizontal tank for underground placement."
+    ],
+    "part4desc2": "When manufacturing a 30 m³ double-walled tank, the space between the walls is filled with nitrogen or liquid. The entire inter-wall space is filled, and the tank is equipped with a closed evacuation system.",
+    // part 5
+    "caption5": "Requirements for the Liquid in the Inter-wall Space:",
+    "part5List": [
+      "flash point not lower than 100°C;",
+      "chemical neutrality to the tank’s construction materials and the stored fuel;",
+      "higher density compared to the product stored in the RGS;",
+      "ability to retain its properties at the environmental temperatures for which the tank is designed;"
+    ],
+    // part 6
+    "caption6": "Single-section / Double-section / Multi-section RGS-30:",
+    "part5SubCaption1": "All the above-mentioned RGS-30 configurations can be made with one or multiple chambers (sections). Chambers are formed by specially designed partitions inside the tank body. Thus, the RGS tank can be divided into two or more compartments, allowing storage of different types of liquid raw materials. When manufacturing two-chamber or multi-chamber horizontal tanks, we guarantee the sealing of the chambers.",
+    "part5SubCaption2": "The table below provides the main technical specifications of 30 m³ tanks manufactured by ZMK 'REZERVUAROSTROITEL' in various configurations.",
+    // part 7
+    "caption7": "Technical Specifications of RGS-30 Tanks",
+    "table": {
+      "thead": {
+        "tr1": ["RGS-30", "ABOVE-GROUND", "UNDERGROUND"],
+        "tr2": ["", "SINGLE-WALLED", "DOUBLE-WALLED", "SINGLE-WALLED", "DOUBLE-WALLED"]
+      },
+      "tbody": [
+        ["Nominal capacity, m³", "30.00", "30.00", "30.00", "30.00"],
+        ["Diameter, m", "2.40", "2.42", "2.40", "2.42"],
+        ["Height on supports, m", "2.56", "2.56", "2.56", "2.56"],
+        ["Height on supports with technical well, m", "", "", "3.86", "3.86"],
+        ["Tank length, m", "2.00", "2.02", "2.00", "2.02"],
+        ["Total weight, t", "2.65", "4.40", "2.95", "4.70"],
+        ["Number of supports, units", "3.00", "3.00", "3.00", "3.00"],
+        ["Shell thickness, mm", "4.00", "4.00", "4.00", "4.00"]
+      ]
+    },
+    "allLinks": {
+      "text": "Other volumes of horizontal tanks:",
+      "links": [
+        { "to": "/rgs-3", "text": "RGS-3" },
+        { "to": "/rgs-5", "text": "RGS-5" },
+        { "to": "/rgs-10", "text": "RGS-10" },
+        { "to": "/rgs-15", "text": "RGS-15" },
+        { "to": "/rgs-20", "text": "RGS-20" },
+        { "to": "/rgs-25", "text": "RGS-25" },
+        { "to": "/rgs-30", "text": "RGS-30" },
+        { "to": "/rgs-40", "text": "RGS-40" },
+        { "to": "/rgs-50", "text": "RGS-50" },
+        { "to": "/rgs-60", "text": "RGS-60" },
+        { "to": "/rgs-75", "text": "RGS-75" },
+        { "to": "/rgs-100", "text": "RGS-100" }
+      ]
+    },
+    // part 8
+    "caption8": "Delivery Calculation",
+    "part8desc": "RGS-30 m³, horizontal steel tank above ground / underground",
+    "part8Img": rgs30_footbg
+  },
+  {
+    "id": "rgs-40",
+    // part 1
+    "caption": "RGS-40 m³, Horizontal Steel Tank Above Ground / Underground",
+    "desc1": "ZMK 'REZERVUAROSTROITEL' manufactures horizontal cylindrical steel tanks type RGS with a volume of 40 m³ (RGS-40).",
+    "desc2": "RGS-40 tanks are used for storing and dispensing liquid raw materials with a density not exceeding 1 t/m³ at temperatures from –60°C to +90°C, with an internal pressure up to 0.07 MPa and seismic activity up to 7 points.",
+    "desc3": "The RGS-40 tank is manufactured in accordance with GOST 17032-2010 'Horizontal Steel Tanks for Petroleum Products' and GOST R 52630-2012 'Welded Steel Vessels and Apparatus.' The quality of our horizontal tanks is confirmed by Application Permit No. РРС.00-047039 and Certificate of Conformity No. Росс.RU.АВ17.по1286.",
+    "images": [rgs40_1, rgs40_2, rgs40_3, rgs40_4],
+    // part 2
+    "caption2": "Ordering an RGS-40 Tank",
+    "zakazText": "Our customers can always purchase a 40 m³ tank manufactured according to standard drawings from our design bureau (see technical specifications and drawings below).",
+    "zakazText2": "We also frequently develop design documentation based on specific customer requirements (e.g., for constrained installation conditions) or manufacture RGS tanks according to your drawings.",
+    "zakazImg": [rgs40_2_1, rgs40_2_2, rgs40_2_3, rgs40_2_4],
+    "zakazDesc": "The RGS-40 tank manufactured by ZMK 'REZERVUAROSTROITEL' can be ordered:",
+    "zakazList": [
+      "directly from the website;",
+      "by phone at +99893 738 55 58;",
+      "by sending a request to the email: teknikinnovatsion.info@gmail.com"
+    ],
+    "zakazDesc2": "Your request will be processed within one day.",
+    // part 3
+    "caption3": "Standard RGS-40 Tanks from ZMK 'REZERVUAROSTROITEL'",
+    "subCaption1": "Above-ground RGSn-40 Tank:",
+    "part3Img1": {
+      "img1": rgs40_3_1,
+      "img2": rgs40_3_2
+    },
+    "subCaption2": "Underground RGSp-40 Tank:",
+    "part3Img2": {
+      "img1": rgs40_3_3,
+      "img2": rgs40_3_4
+    },
+    // part 4
+    "caption4": "RGS-40 Configurations",
+    "part4desc": "ZMK 'REZERVUAROSTROITEL' manufactures RGS-40 horizontal tanks in several basic configurations:",
+    "part4SubCaption1": "Underground / Above-ground RGS-40:",
+    "part4List1": [
+      "RGSn-40 – above-ground placement;",
+      "RGSp-40 – underground placement with a technical well;"
+    ],
+    "part4SubCaption2": "Single-walled / Double-walled RGS-40:",
+    "part4List2": [
+      "RGSn-40: single-walled horizontal tank for above-ground placement;",
+      "RGSDn-40: double-walled horizontal tank for above-ground placement;",
+      "RGSp-40: single-walled horizontal tank for underground placement;",
+      "RGSDp-40: double-walled horizontal tank for underground placement."
+    ],
+    "part4desc2": "When manufacturing a 40 m³ double-walled tank, the space between the walls is filled with nitrogen or liquid. The entire inter-wall space is filled, and the tank is equipped with a closed evacuation system.",
+    // part 5
+    "caption5": "Requirements for the Liquid in the Inter-wall Space:",
+    "part5List": [
+      "flash point not lower than 100°C;",
+      "chemical neutrality to the tank’s construction materials and the stored fuel;",
+      "higher density compared to the product stored in the RGS;",
+      "ability to retain its properties at the environmental temperatures for which the tank is designed;"
+    ],
+    // part 6
+    "caption6": "Single-section / Double-section / Multi-section RGS-40:",
+    "part5SubCaption1": "All the above-mentioned RGS-40 configurations can be made with one or multiple chambers (sections). Chambers are formed by specially designed partitions inside the tank body. Thus, the RGS tank can be divided into two or more compartments, allowing storage of different types of liquid raw materials. When manufacturing two-chamber or multi-chamber horizontal tanks, we guarantee the sealing of the chambers.",
+    "part5SubCaption2": "The table below provides the main technical specifications of 40 m³ tanks manufactured by ZMK 'REZERVUAROSTROITEL' in various configurations.",
+    // part 7
+    "caption7": "Technical Specifications of RGS-40 Tanks",
+    "table": {
+      "thead": {
+        "tr1": ["RGS-40", "ABOVE-GROUND", "UNDERGROUND"],
+        "tr2": ["", "SINGLE-WALLED", "DOUBLE-WALLED", "SINGLE-WALLED", "DOUBLE-WALLED"]
+      },
+      "tbody": [
+        ["Nominal capacity, m³", "40.00", "40.00", "40.00", "40.00"],
+        ["Diameter, m", "2.40", "2.42", "2.40", "2.42"],
+        ["Height on supports, m", "2.56", "2.56", "2.56", "2.56"],
+        ["Height on supports with technical well, m", "", "", "3.86", "3.86"],
+        ["Tank length, m", "9.60", "9.62", "9.60", "9.62"],
+        ["Total weight, t", "3.10", "5.50", "3.40", "5.80"],
+        ["Number of supports, units", "4.00", "4.00", "4.00", "4.00"],
+        ["Shell thickness, mm", "4.00", "4.00", "4.00", "4.00"]
+      ]
+    },
+    "allLinks": {
+      "text": "Other volumes of horizontal tanks:",
+      "links": [
+        { "to": "/rgs-3", "text": "RGS-3" },
+        { "to": "/rgs-5", "text": "RGS-5" },
+        { "to": "/rgs-10", "text": "RGS-10" },
+        { "to": "/rgs-15", "text": "RGS-15" },
+        { "to": "/rgs-20", "text": "RGS-20" },
+        { "to": "/rgs-25", "text": "RGS-25" },
+        { "to": "/rgs-30", "text": "RGS-30" },
+        { "to": "/rgs-40", "text": "RGS-40" },
+        { "to": "/rgs-50", "text": "RGS-50" },
+        { "to": "/rgs-60", "text": "RGS-60" },
+        { "to": "/rgs-75", "text": "RGS-75" },
+        { "to": "/rgs-100", "text": "RGS-100" }
+      ]
+    },
+    // part 8
+    "caption8": "Delivery Calculation",
+    "part8desc": "RGS-40 m³, horizontal steel tank above ground / underground",
+    "part8Img": rgs40_footbg
+  },
+  {
+    "id": "rgs-50",
+    // part 1
+    "caption": "RGS-50 m³, Horizontal Steel Tank Above Ground / Underground",
+    "desc1": "ZMK 'REZERVUAROSTROITEL' manufactures horizontal cylindrical steel tanks type RGS with a volume of 50 m³ (RGS-50).",
+    "desc2": "RGS-50 tanks are used for storing and dispensing liquid raw materials with a density not exceeding 1 t/m³ at temperatures from –60°C to +90°C, with an internal pressure up to 0.07 MPa and seismic activity up to 7 points.",
+    "desc3": "The RGS-50 m³ tank is manufactured in accordance with GOST 17032-2010 'Horizontal Steel Tanks for Petroleum Products' and GOST R 52630-2012 'Welded Steel Vessels and Apparatus.' The quality of our horizontal tanks is confirmed by Application Permit No. РРС.00-047039 and Certificate of Conformity No. Росс.RU.АВ17.по1286.",
+    "images": [rgs50_1, rgs50_2, rgs50_3, rgs50_4],
+    // part 2
+    "caption2": "Ordering an RGS-50 Tank",
+    "zakazText": "Our customers can always purchase a 50 m³ RGS-50 tank manufactured according to standard drawings from our design bureau (see technical specifications and drawings below).",
+    "zakazText2": "We also frequently develop design documentation based on specific customer requirements (e.g., for constrained installation conditions) or manufacture RGS tanks according to your drawings.",
+    "zakazImg": [rgs50_2_1, rgs50_2_2, rgs50_2_3, rgs50_2_4],
+    "zakazDesc": "The 50 m³ RGS-50 tank manufactured by ZMK 'REZERVUAROSTROITEL' can be ordered:",
+    "zakazList": [
+      "directly from the website;",
+      "by phone at +99893 738 55 58;",
+      "by sending a request to the email: teknikinnovatsion.info@gmail.com"
+    ],
+    "zakazDesc2": "Your request will be processed within one day.",
+    // part 3
+    "caption3": "Standard RGS-50 Tanks from ZMK 'REZERVUAROSTROITEL'",
+    "subCaption1": "Above-ground RGSn-50 Tank:",
+    "part3Img1": {
+      "img1": rgs50_3_1,
+      "img2": rgs50_3_2
+    },
+    "subCaption2": "Underground RGSp-50 Tank:",
+    "part3Img2": {
+      "img1": rgs50_3_3,
+      "img2": rgs50_3_4
+    },
+    "part3Desc": "The price of the RGS-50 is determined based on the tank’s configuration.",
+    // part 4
+    "caption4": "RGS-50 Configurations",
+    "part4desc": "ZMK 'REZERVUAROSTROITEL' manufactures 50 m³ RGS-50 horizontal tanks in several basic configurations:",
+    "part4SubCaption1": "Underground / Above-ground RGS-50:",
+    "part4List1": [
+      "RGSn-50 – above-ground placement;",
+      "RGSp-50 – underground placement with a technical well;"
+    ],
+    "part4SubCaption2": "Single-walled / Double-walled RGS-50:",
+    "part4List2": [
+      "RGSn-50: single-walled horizontal tank for above-ground placement;",
+      "RGSDn-50: double-walled horizontal tank for above-ground placement;",
+      "RGSp-50: single-walled horizontal tank for underground placement;",
+      "RGSDp-50: double-walled horizontal tank for underground placement."
+    ],
+    "part4desc2": "When manufacturing a 50 m³ double-walled tank, the space between the walls is filled with nitrogen or liquid. The entire inter-wall space is filled, and the tank is equipped with a closed evacuation system.",
+    // part 5
+    "caption5": "Requirements for the Liquid in the Inter-wall Space:",
+    "part5List": [
+      "flash point not lower than 100°C;",
+      "chemical neutrality to the tank’s construction materials and the stored fuel;",
+      "higher density compared to the product stored in the RGS;",
+      "ability to retain its properties at the environmental temperatures for which the tank is designed;"
+    ],
+    // part 6
+    "caption6": "Single-section / Double-section / Multi-section RGS-50 m³:",
+    "part5SubCaption1": "All the above-mentioned RGS-50 configurations can be made with one or multiple chambers (sections). Chambers are formed by specially designed partitions inside the tank body. Thus, the RGS tank can be divided into two or more compartments, allowing storage of different types of liquid raw materials. When manufacturing two-chamber or multi-chamber horizontal tanks, we guarantee the sealing of the chambers.",
+    "part5SubCaption2": "The table below provides the main technical specifications of 50 m³ RGS tanks manufactured by ZMK 'REZERVUAROSTROITEL' in various configurations.",
+    // part 7
+    "caption7": "Technical Specifications of RGS-50 m³ Tanks",
+    "table": {
+      "thead": {
+        "tr1": ["RGS-50", "ABOVE-GROUND", "UNDERGROUND"],
+        "tr2": ["", "SINGLE-WALLED", "DOUBLE-WALLED", "SINGLE-WALLED", "DOUBLE-WALLED"]
+      },
+      "tbody": [
+        ["Nominal capacity, m³", "50.00", "50.00", "50.00", "50.00"],
+        ["Diameter, m", "2.80", "2.82", "2.80", "2.82"],
+        ["Height on supports, m", "2.96", "2.96", "2.96", "2.96"],
+        ["Height on supports with technical well, m", "", "", "4.21", "4.21"],
+        ["Tank length, m", "9.60", "9.62", "9.60", "9.62"],
+        ["Total weight, t", "3.70", "6.50", "4.00", "6.80"],
+        ["Number of supports, units", "4.00", "4.00", "4.00", "4.00"],
+        ["Shell thickness, mm", "4.00", "4.00", "4.00", "4.00"]
+      ]
+    },
+    "allLinks": {
+      "text": "Other volumes of horizontal tanks:",
+      "links": [
+        { "to": "/rgs-3", "text": "RGS-3" },
+        { "to": "/rgs-5", "text": "RGS-5" },
+        { "to": "/rgs-10", "text": "RGS-10" },
+        { "to": "/rgs-15", "text": "RGS-15" },
+        { "to": "/rgs-20", "text": "RGS-20" },
+        { "to": "/rgs-25", "text": "RGS-25" },
+        { "to": "/rgs-30", "text": "RGS-30" },
+        { "to": "/rgs-40", "text": "RGS-40" },
+        { "to": "/rgs-50", "text": "RGS-50" },
+        { "to": "/rgs-60", "text": "RGS-60" },
+        { "to": "/rgs-75", "text": "RGS-75" },
+        { "to": "/rgs-100", "text": "RGS-100" }
+      ]
+    },
+    // part 8
+    "caption8": "Delivery Calculation",
+    "part8desc": "RGS-50 m³, horizontal steel tank above ground / underground",
+    "part8Img": rgs50_footbg
+  },
+  {
+    "id": "rgs-60",
+    // part 1
+    "caption": "RGS-60 m³, Horizontal Steel Tank Above Ground / Underground",
+    "desc1": "ZMK 'REZERVUAROSTROITEL' manufactures horizontal cylindrical steel tanks type RGS with a volume of 60 m³ (RGS-60).",
+    "desc2": "RGS-60 tanks are used for storing and dispensing liquid raw materials with a density not exceeding 1 t/m³ at temperatures from –60°C to +90°C, with an internal pressure up to 0.07 MPa and seismic activity up to 7 points.",
+    "desc3": "The RGS-60 tank is manufactured in accordance with GOST 17032-2010 'Horizontal Steel Tanks for Petroleum Products' and GOST R 52630-2012 'Welded Steel Vessels and Apparatus.' The quality of our horizontal tanks is confirmed by Application Permit No. РРС.00-047039 and Certificate of Conformity No. Росс.RU.АВ17.по1286.",
+    "images": [rgs60_1, rgs60_2, rgs60_3, rgs60_4, rgs60_5, rgs60_6, rgs60_7],
+    // part 2
+    "caption2": "Ordering an RGS-60 Tank",
+    "zakazText": "Our customers can always purchase a 60 m³ tank manufactured according to standard drawings from our design bureau (see technical specifications and drawings below).",
+    "zakazText2": "We also frequently develop design documentation based on specific customer requirements (e.g., for constrained installation conditions) or manufacture horizontal steel tanks according to your drawings.",
+    "zakazImg": [rgs60_2_1, rgs60_2_2, rgs60_2_3, rgs60_2_4],
+    "zakazDesc": "The 60 m³ tank manufactured by ZMK 'REZERVUAROSTROITEL' can be ordered:",
+    "zakazList": [
+      "directly from the website;",
+      "by phone at +99893 738 55 58;",
+      "by sending a request to the email: teknikinnovatsion.info@gmail.com"
+    ],
+    "zakazDesc2": "Your request will be processed within one day.",
+    // part 3
+    "caption3": "Standard RGS-60 Tanks from ZMK 'REZERVUAROSTROITEL'",
+    "subCaption1": "Above-ground RGSn-60 Tank:",
+    "part3Img1": {
+      "img1": rgs60_3_1,
+      "img2": rgs60_3_2
+    },
+    "subCaption2": "Underground RGSp-60 Tank:",
+    "part3Img2": {
+      "img1": rgs60_3_3,
+      "img2": rgs60_3_4
+    },
+    // part 4
+    "caption4": "RGS-60 Configurations",
+    "part4desc": "ZMK 'REZERVUAROSTROITEL' manufactures 60 m³ horizontal tanks in several basic configurations:",
+    "part4SubCaption1": "Underground / Above-ground RGS-60:",
+    "part4List1": [
+      "RGSn-60 – above-ground placement;",
+      "RGSp-60 – underground placement with a technical well;"
+    ],
+    "part4SubCaption2": "Single-walled / Double-walled RGS-60:",
+    "part4List2": [
+      "RGSn-60: single-walled horizontal tank for above-ground placement;",
+      "RGSDn-60: double-walled horizontal tank for above-ground placement;",
+      "RGSp-60: single-walled horizontal tank for underground placement;",
+      "RGSDp-60: double-walled horizontal tank for underground placement."
+    ],
+    "part4desc2": "When manufacturing a 60 m³ double-walled tank, the space between the walls is filled with nitrogen or liquid. The entire inter-wall space is filled, and the tank is equipped with a closed evacuation system.",
+    // part 5
+    "caption5": "Requirements for the Liquid in the Inter-wall Space:",
+    "part5List": [
+      "flash point not lower than 100°C;",
+      "chemical neutrality to the tank’s construction materials and the stored fuel;",
+      "higher density compared to the product stored in the RGS;",
+      "ability to retain its properties at the environmental temperatures for which the tank is designed;"
+    ],
+    // part 6
+    "caption6": "Single-section / Double-section / Multi-section RGS-60:",
+    "part5SubCaption1": "All the above-mentioned RGS-60 configurations can be made with one or multiple chambers (sections). Chambers are formed by specially designed partitions inside the tank body. Thus, the 60 m³ tank can be divided into two or more compartments, allowing storage of different types of liquid raw materials. When manufacturing two-chamber or multi-chamber horizontal tanks, we guarantee the sealing of the chambers.",
+    "part5SubCaption2": "The table below provides the main technical specifications of 60 m³ RGS tanks manufactured by ZMK 'REZERVUAROSTROITEL' in various configurations.",
+    // part 7
+    "caption7": "Technical Specifications of RGS-60 Tanks",
+    "table": {
+      "thead": {
+        "tr1": ["RGS-60", "ABOVE-GROUND", "UNDERGROUND"],
+        "tr2": ["", "SINGLE-WALLED", "DOUBLE-WALLED", "SINGLE-WALLED", "DOUBLE-WALLED"]
+      },
+      "tbody": [
+        ["Nominal capacity, m³", "60.00", "60.00", "60.00", "60.00"],
+        ["Diameter, m", "2.80", "2.82", "2.80", "2.82"],
+        ["Height on supports, m", "2.96", "2.96", "2.96", "2.96"],
+        ["Height on supports with technical well, m", "", "", "4.21", "4.21"],
+        ["Tank length, m", "10.60", "10.62", "10.60", "10.62"],
+        ["Total weight, t", "4.00", "7.10", "4.30", "7.40"],
+        ["Number of supports, units", "4.00", "4.00", "4.00", "4.00"],
+        ["Shell thickness, mm", "4.00", "4.00", "4.00", "4.00"]
+      ]
+    },
+    "allLinks": {
+      "text": "Other volumes of horizontal tanks:",
+      "links": [
+        { "to": "/rgs-3", "text": "RGS-3" },
+        { "to": "/rgs-5", "text": "RGS-5" },
+        { "to": "/rgs-10", "text": "RGS-10" },
+        { "to": "/rgs-15", "text": "RGS-15" },
+        { "to": "/rgs-20", "text": "RGS-20" },
+        { "to": "/rgs-25", "text": "RGS-25" },
+        { "to": "/rgs-30", "text": "RGS-30" },
+        { "to": "/rgs-40", "text": "RGS-40" },
+        { "to": "/rgs-50", "text": "RGS-50" },
+        { "to": "/rgs-60", "text": "RGS-60" },
+        { "to": "/rgs-75", "text": "RGS-75" },
+        { "to": "/rgs-100", "text": "RGS-100" }
+      ]
+    },
+    // part 8
+    "caption8": "Delivery Calculation",
+    "part8desc": "RGS-60 m³, horizontal steel tank above ground / underground",
+    "part8Img": rgs60_footbg
+  },
+  {
+    "id": "rgs-75",
+    // part 1
+    "caption": "RGS-75 m³, Horizontal Steel Tank Above Ground / Underground",
+    "desc1": "ZMK 'REZERVUAROSTROITEL' manufactures horizontal cylindrical steel tanks type RGS with a volume of 75 m³ (RGS-75).",
+    "desc2": "RGS-75 tanks are used for storing and dispensing liquid raw materials with a density not exceeding 1 t/m³ at temperatures from –60°C to +90°C, with an internal pressure up to 0.07 MPa and seismic activity up to 7 points.",
+    "desc3": "The RGS-75 m³ tank is manufactured in accordance with GOST 17032-2010 'Horizontal Steel Tanks for Petroleum Products' and GOST R 52630-2012 'Welded Steel Vessels and Apparatus.' The quality of our horizontal tanks is confirmed by Application Permit No. РРС.00-047039 and Certificate of Conformity No. Росс.RU.АВ17.по1286.",
+    "images": [rgs75_1, rgs75_2, rgs75_3, rgs75_4],
+    // part 2
+    "caption2": "Ordering an RGS-75 Tank",
+    "zakazText": "Our customers can always purchase a 75 m³ tank manufactured according to standard drawings from our design bureau (see technical specifications and drawings below).",
+    "zakazText2": "We also frequently develop design documentation based on specific customer requirements (e.g., for constrained installation conditions) or manufacture horizontal steel tanks according to your drawings.",
+    "zakazImg": [rgs75_2_1, rgs75_2_2, rgs75_2_3, rgs75_2_4],
+    "zakazDesc": "The 75 m³ tank manufactured by ZMK 'REZERVUAROSTROITEL' can be ordered:",
+    "zakazList": [
+      "directly from the website;",
+      "by phone at +99893 738 55 58;",
+      "by sending a request to the email: teknikinnovatsion.info@gmail.com"
+    ],
+    "zakazDesc2": "Your request will be processed within one day.",
+    // part 3
+    "caption3": "Standard RGS-75 Tanks from ZMK 'REZERVUAROSTROITEL'",
+    "subCaption1": "Above-ground RGSn-75 Tank:",
+    "part3Img1": {
+      "img1": rgs75_3_1,
+      "img2": rgs75_3_2
+    },
+    "subCaption2": "Underground RGSp-75 Tank:",
+    "part3Img2": {
+      "img1": rgs75_3_3,
+      "img2": rgs75_3_4
+    },
+    "part3Desc": "The price of the RGS-75 tank is determined based on the tank’s configuration.",
+    // part 4
+    "caption4": "RGS-75 Configurations",
+    "part4desc": "ZMK 'REZERVUAROSTROITEL' manufactures 75 m³ RGS-75 horizontal tanks in several basic configurations:",
+    "part4SubCaption1": "Underground / Above-ground RGS-75:",
+    "part4List1": [
+      "RGSn-75 – above-ground placement;",
+      "RGSp-75 – underground placement with a technical well;"
+    ],
+    "part4SubCaption2": "Single-walled / Double-walled RGS-75 Tanks:",
+    "part4List2": [
+      "RGSn-75: single-walled horizontal tank for above-ground placement;",
+      "RGSDn-75: double-walled horizontal tank for above-ground placement;",
+      "RGSp-75: single-walled horizontal tank for underground placement;",
+      "RGSDp-75: double-walled horizontal tank for underground placement."
+    ],
+    "part4desc2": "When manufacturing a 75 m³ double-walled tank, the space between the walls is filled with nitrogen or liquid. The entire inter-wall space is filled, and the tank is equipped with a closed evacuation system.",
+    // part 5
+    "caption5": "Requirements for the Liquid in the Inter-wall Space:",
+    "part5List": [
+      "flash point not lower than 100°C;",
+      "chemical neutrality to the tank’s construction materials and the stored fuel;",
+      "higher density compared to the product stored in the RGS;",
+      "ability to retain its properties at the environmental temperatures for which the tank is designed;"
+    ],
+    // part 6
+    "caption6": "Single-section / Double-section / Multi-section RGS-75:",
+    "part5SubCaption1": "All the above-mentioned RGS-75 tank configurations can be made with one or multiple chambers (sections). Chambers are formed by specially designed partitions inside the tank body. Thus, the RGS tank can be divided into two or more compartments, allowing storage of different types of liquid raw materials. When manufacturing two-chamber or multi-chamber horizontal tanks, we guarantee the sealing of the chambers.",
+    "part5SubCaption2": "The table below provides the main technical specifications of 75 m³ tanks manufactured by ZMK 'REZERVUAROSTROITEL' in various configurations.",
+    // part 7
+    "caption7": "Technical Specifications of 75 m³ Tanks",
+    "table": {
+      "thead": {
+        "tr1": ["RGS-75", "ABOVE-GROUND", "UNDERGROUND"],
+        "tr2": ["", "SINGLE-WALLED", "DOUBLE-WALLED", "SINGLE-WALLED", "DOUBLE-WALLED"]
+      },
+      "tbody": [
+        ["Nominal capacity, m³", "75.00", "75.00", "75.00", "75.00"],
+        ["Diameter, m", "3.24", "3.26", "3.24", "3.26"],
+        ["Height on supports, m", "3.40", "3.40", "3.40", "3.40"],
+        ["Height on supports with technical well, m", "", "", "4.70", "4.70"],
+        ["Tank length, m", "9.60", "9.62", "9.60", "9.62"],
+        ["Total weight, t", "4.50", "8.50", "4.80", "8.80"],
+        ["Number of supports, units", "4.00", "4.00", "4.00", "4.00"],
+        ["Shell thickness, mm", "5.00", "5.00", "5.00", "5.00"]
+      ]
+    },
+    "allLinks": {
+      "text": "Other volumes of horizontal tanks:",
+      "links": [
+        { "to": "/rgs-3", "text": "RGS-3" },
+        { "to": "/rgs-5", "text": "RGS-5" },
+        { "to": "/rgs-10", "text": "RGS-10" },
+        { "to": "/rgs-15", "text": "RGS-15" },
+        { "to": "/rgs-20", "text": "RGS-20" },
+        { "to": "/rgs-25", "text": "RGS-25" },
+        { "to": "/rgs-30", "text": "RGS-30" },
+        { "to": "/rgs-40", "text": "RGS-40" },
+        { "to": "/rgs-50", "text": "RGS-50" },
+        { "to": "/rgs-60", "text": "RGS-60" },
+        { "to": "/rgs-75", "text": "RGS-75" },
+        { "to": "/rgs-100", "text": "RGS-100" }
+      ]
+    },
+    // part 8
+    "caption8": "Delivery Calculation",
+    "part8desc": "RGS-75 m³, horizontal steel tank above ground / underground",
+    "part8Img": rgs75_footbg
+  },
+  {
+    "id": "rgs-100",
+    // part 1
+    "caption": "RGS-100 m³, Horizontal Steel Tank Above Ground / Underground",
+    "desc1": "ZMK 'REZERVUAROSTROITEL' manufactures horizontal cylindrical steel tanks type RGS with a volume of 100 m³ (RGS-100).",
+    "desc2": "RGS-100 tanks are used for storing and dispensing liquid raw materials with a density not exceeding 1 t/m³ at temperatures from –60°C to +90°C, with an internal pressure up to 0.07 MPa and seismic activity up to 7 points.",
+    "desc3": "The RGS-100 m³ tank is manufactured in accordance with GOST 17032-2010 'Horizontal Steel Tanks for Petroleum Products' and GOST R 52630-2012 'Welded Steel Vessels and Apparatus.' The quality of our horizontal tanks is confirmed by Application Permit No. РРС.00-047039 and Certificate of Conformity No. Росс.RU.АВ17.по1286.",
+    "images": [rgs100_1, rgs100_2, rgs100_3, rgs100_4],
+    // part 2
+    "caption2": "Ordering an RGS-100 Tank",
+    "zakazText": "Our customers can always purchase a 100 m³ tank manufactured according to standard drawings from our design bureau (see technical specifications and drawings below).",
+    "zakazText2": "We also frequently develop design documentation based on specific customer requirements (e.g., for constrained installation conditions) or manufacture RGS tanks according to your drawings.",
+    "zakazImg": [rgs100_2_1, rgs100_2_2, rgs100_2_3, rgs100_2_4],
+    "zakazDesc": "The 100 m³ tank manufactured by ZMK 'REZERVUAROSTROITEL' can be ordered:",
+    "zakazList": [
+      "directly from the website;",
+      "by phone at +99893 738 55 58;",
+      "by sending a request to the email: teknikinnovatsion.info@gmail.com"
+    ],
+    "zakazDesc2": "Your request will be processed within one day.",
+    // part 3
+    "caption3": "Standard RGS-100 Tanks from ZMK 'REZERVUAROSTROITEL'",
+    "subCaption1": "Above-ground RGSn-100 Tank:",
+    "part3Img1": {
+      "img1": rgs100_3_1,
+      "img2": rgs100_3_2
+    },
+    "subCaption2": "Underground RGSp-100 Tank:",
+    "part3Img2": {
+      "img1": rgs100_3_3,
+      "img2": rgs100_3_4
+    },
+    "part3Desc": "The price of the RGS-100 is determined based on the tank’s configuration.",
+    // part 4
+    "caption4": "RGS-100 Configurations",
+    "part4desc": "ZMK 'REZERVUAROSTROITEL' manufactures 100 m³ RGS-100 horizontal tanks in several basic configurations:",
+    "part4SubCaption1": "Underground / Above-ground RGS-100:",
+    "part4List1": [
+      "RGSp-100 – underground placement with a technical well;",
+      "RGSn-100 – above-ground placement."
+    ],
+    "part4SubCaption2": "Single-walled / Double-walled RGS-100 Tanks:",
+    "part4List2": [
+      "RGSn-100: single-walled horizontal tank for above-ground placement;",
+      "RGSDn-100: double-walled horizontal tank for above-ground placement;",
+      "RGSp-100: single-walled horizontal tank for underground placement;",
+      "RGSDp-100: double-walled horizontal tank for underground placement."
+    ],
+    "part4desc2": "When manufacturing a 100 m³ double-walled tank, the space between the walls is filled with nitrogen or liquid. The entire inter-wall space is filled, and the tank is equipped with a closed evacuation system.",
+    // part 5
+    "caption5": "Requirements for the Liquid in the Inter-wall Space:",
+    "part5List": [
+      "flash point not lower than 100°C;",
+      "chemical neutrality to the tank’s construction materials and the stored fuel;",
+      "higher density compared to the product stored in the RGS;",
+      "ability to retain its properties at the environmental temperatures for which the tank is designed;"
+    ],
+    // part 6
+    "caption6": "Single-section / Double-section / Multi-section RGS-100:",
+    "part5SubCaption1": "All the above-mentioned RGS-100 configurations can be made with one or multiple chambers (sections). Chambers are formed by specially designed partitions inside the tank body. Thus, the RGS-100 tank can be divided into two or more compartments, allowing storage of different types of liquid raw materials. When manufacturing two-chamber or multi-chamber horizontal tanks, we guarantee the sealing of the chambers.",
+    "part5SubCaption2": "The table below provides the main technical specifications of 100 m³ tanks manufactured by ZMK 'REZERVUAROSTROITEL' in various configurations.",
+    // part 7
+    "caption7": "Technical Specifications of 100 m³ Tanks",
+    "table": {
+      "thead": {
+        "tr1": ["RGS-100", "ABOVE-GROUND", "UNDERGROUND"],
+        "tr2": ["", "SINGLE-WALLED", "DOUBLE-WALLED", "SINGLE-WALLED", "DOUBLE-WALLED"]
+      },
+      "tbody": [
+        ["Nominal capacity, m³", "100.00", "100.00", "100.00", "100.00"],
+        ["Diameter, m", "3.24", "3.26", "3.24", "3.26"],
+        ["Height on supports, m", "3.40", "3.40", "3.40", "3.40"],
+        ["Height on supports with technical well, m", "", "", "4.99", "4.99"],
+        ["Tank length, m", "9.60", "9.62", "9.60", "9.62"],
+        ["Total weight, t", "5.40", "10.90", "5.70", "11.20"],
+        ["Number of supports, units", "5.00", "5.00", "5.00", "5.00"],
+        ["Shell thickness, mm", "5.00", "5.00", "5.00", "5.00"]
+      ]
+    },
+    "allLinks": {
+      "text": "Other volumes of horizontal tanks:",
+      "links": [
+        { "to": "/rgs-3", "text": "RGS-3" },
+        { "to": "/rgs-5", "text": "RGS-5" },
+        { "to": "/rgs-10", "text": "RGS-10" },
+        { "to": "/rgs-15", "text": "RGS-15" },
+        { "to": "/rgs-20", "text": "RGS-20" },
+        { "to": "/rgs-25", "text": "RGS-25" },
+        { "to": "/rgs-30", "text": "RGS-30" },
+        { "to": "/rgs-40", "text": "RGS-40" },
+        { "to": "/rgs-50", "text": "RGS-50" },
+        { "to": "/rgs-60", "text": "RGS-60" },
+        { "to": "/rgs-75", "text": "RGS-75" },
+        { "to": "/rgs-100", "text": "RGS-100" }
+      ]
+    },
+    // part 8
+    "caption8": "Delivery Calculation",
+    "part8desc": "RGS-100 m³, horizontal steel tank above ground / underground",
+    "part8Img": rgs100_footerbg
+  }
+]
+
+// uz
+export const dataUz = [
+  {
+    id: "rgs-3",
+    // part 1
+    caption: "RGS-3 m³, gorizontal po‘lat rezervuar yer usti / yer osti",
+    desc1: "ZMK «REZERVUAROSTROITEL» 3 m³ hajmli RGS tipidagi gorizontal silindrsimon po‘lat rezervuarlarni ishlab chiqaradi (RGS-3).",
+    desc2: "RGS-3 rezervuarlari zichligi 1 t/m³ dan oshmaydigan suyuq xom ashyoni saqlash va tarqatish uchun ishlatiladi, harorat –60°C dan +90°C gacha, ichki bosim 0,07 MPa gacha va seysmik tebranishlar 7 ballgacha bo‘lgan sharoitlarda.",
+    desc3: "RGS-3 rezervuari GOST 17032-2010 “Neft mahsulotlari uchun gorizontal po‘lat rezervuarlar” va GOST R 52630-2012 “Payvandlangan po‘lat idishlar va apparatlar” standartlariga muvofiq ishlab chiqariladi. Bizning gorizontal rezervuarlarimizning sifati №RRS.00-047039 foydalanishga ruxsatnoma va №Ross.RU.AB17.po1286 muvofiqlik sertifikati bilan tasdiqlangan.",
+    images: [rgs3_1, rgs3_2, rgs3_3, rgs3_4],
+    // part 2
+    caption2: "RGS-3 rezervuarini buyurtma qilish",
+    zakazText: "Mijozlarimiz har doim bizning konstruktorlik byuromizning standart chizmalari bo‘yicha ishlab chiqarilgan RGS-3 rezervuarini sotib olishlari mumkin (quyida texnik xususiyatlar va chizmalar bilan tanishishingiz mumkin).",
+    zakazText2: "Shuningdek, biz ko‘pincha mijozning maxsus talablariga ko‘ra konstruktorlik hujjatlarini ishlab chiqamiz (masalan, bu rezervuar joylashuvi uchun cheklangan sharoitlarda kerak bo‘lishi mumkin) yoki sizning chizmalaringiz bo‘yicha RGS ishlab chiqaramiz.",
+    zakazImg: [rgs3_2_1, rgs3_2_2, rgs3_2_3, rgs3_2_4],
+    zakazDesc: "ZMK «REZERVUAROSTROITEL» tomonidan ishlab chiqarilgan RGS-3 m³ rezervuarini buyurtma qilish mumkin:",
+    zakazList: [
+      "to‘g‘ridan-to‘g‘ri saytdan;",
+      "telefon orqali: +99893 738 55 58;",
+      "elektron pochta orqali so‘rov yuborish: teknikinnovatsion.info@gmail.com",
+    ],
+    zakazDesc2: "Sizning so‘rovingiz bir kun ichida ko‘rib chiqiladi.",
+    // part 3
+    caption3: "ZMK «REZERVUAROSTROITEL» dan standart RGS-3 rezervuarlari",
+    subCaption1: "Yer usti rezervuari RGSn-3:",
+    part3Img1: {
+      img1: part3Img1_1,
+      img2: part3Img1_2,
+    },
+    subCaption2: "Yer osti rezervuari RGSp-3:",
+    part3Img2: {
+      img1: part3Img2_1,
+      img2: part3Img2_2,
+    },
+    // part 4
+    caption4: "RGS-3 rezervuarining turlari",
+    part4desc: "ZMK «REZERVUAROSTROITEL» RGS-3 rezervuarlarini bir nechta asosiy konfiguratsiyalarda ishlab chiqaradi:",
+    part4SubCaption1: "Yer osti / yer usti RGS-3:",
+    part4List1: [
+      "RGSn-3 – yer usti joylashuvi;",
+      "RGSp-3 – texnologik quduq bilan yer osti joylashuvi;",
+    ],
+    part4SubCaption2: "Bir devorli / ikki devorli RGS-3:",
+    part4List2: [
+      "RGSn-3: yer usti joylashuvi uchun bir devorli gorizontal rezervuar;",
+      "RGSDn-3: yer usti joylashuvi uchun ikki devorli gorizontal rezervuar;",
+      "RGSp-3: yer osti joylashuvi uchun bir devorli gorizontal rezervuar;",
+      "RGSDp-3: yer osti joylashuvi uchun ikki devorli gorizontal rezervuar.",
+    ],
+    part4desc2: "Ikk devorli rezervuar ishlab chiqarilganda devorlar orasidagi bo‘shliq azot yoki suyuqlik bilan to‘ldiriladi. Butun devorlararo bo‘shliq to‘ldiriladi va rezervuar yopiq evakuatsiya tizimi bilan jihozlanadi.",
+    // part 5
+    caption5: "Devorlararo bo‘shliq uchun suyuqlik talablari:",
+    part5List: [
+      "yonish harorati 100°C dan past bo‘lmasligi kerak;",
+      "rezervuar konstruktsiyasi materiallari va saqlanadigan yoqilg‘iga kimyoviy jihatdan neytral bo‘lishi;",
+      "RGSda saqlanadigan mahsulotga nisbatan yuqori zichlikka ega bo‘lishi;",
+      "rezervuar mo‘ljallangan atrof-muhit haroratlarida o‘z xususiyatlarini saqlab qolish qobiliyati;",
+    ],
+    // part 6
+    caption6: "Bir sektsiyali / ikki sektsiyali / ko‘p sektsiyali RGS-3:",
+    part5SubCaption1: "Yuqorida aytib o‘tilgan barcha RGS-3 konfiguratsiyalari bir yoki bir nechta kamerali (sektsiyali) bo‘lishi mumkin. Kameralar rezervuar korpusi ichida maxsus mo‘ljallangan devorlar orqali hosil qilinadi. Shunday qilib, RGS rezervuari ikki yoki undan ko‘p bo‘linmalarga bo‘linadi, bu esa turli xil suyuq xom ashyolarni saqlash imkonini beradi. Ikk kamerali yoki ko‘p kamerali gorizontal rezervuarlar ishlab chiqarilganda biz kameralarning muhrlanishini kafolatlaymiz.",
+    part5SubCaption2: "Quyidagi jadvalda ZMK «REZERVUAROSTROITEL» tomonidan ishlab chiqarilgan 3 m³ hajmli rezervuarlarning turli konfiguratsiyalardagi asosiy texnik xususiyatlari keltirilgan.",
+    // part 7
+    caption7: "RGS-3 rezervuarlarining xususiyatlari",
+    table: {
+      thead: {
+        tr1: ["RGS-3", "YER USTI", "YER OSTI"],
+        tr2: ["", "BIR DEVORLI", "IKKI DEVORLI", "BIR DEVORLI", "IKKI DEVORLI"],
+      },
+      tbody: [
+        ["nominallik hajmi, m³", "3,00", "3,00", "3,00", "3,00"],
+        ["diametri, m", "1,40", "1,42", "1,90", "1,42"],
+        ["tayanchlardagi balandligi, m", "1,60", "1,60", "1,60", "1,60"],
+        ["texnologik quduq bilan tayanchlardagi balandligi, m", "", "", "2,96", "2,96"],
+        ["rezervuar uzunligi, m", "2,06", "2,08", "2,06", "2,08"],
+        ["umumiy og‘irligi, t", "0,53", "0,83", "0,83", "1,13"],
+        ["tayanchlar soni, dona", "2,00", "2,00", "2,00", "2,00"],
+        ["qobiq qalinligi, mm", "4,00", "4,00", "4,00", "4,00"],
+      ],
+    },
+    allLinks: {
+      text: "Boshqa gorizontal rezervuarlar hajmlari:",
+      links: [
+        { to: "/rgs-3", text: "RGS-3" },
+        { to: "/rgs-5", text: "RGS-5" },
+        { to: "/rgs-10", text: "RGS-10" },
+        { to: "/rgs-15", text: "RGS-15" },
+        { to: "/rgs-20", text: "RGS-20" },
+        { to: "/rgs-25", text: "RGS-25" },
+        { to: "/rgs-30", text: "RGS-30" },
+        { to: "/rgs-40", text: "RGS-40" },
+        { to: "/rgs-50", text: "RGS-50" },
+        { to: "/rgs-60", text: "RGS-60" },
+        { to: "/rgs-75", text: "RGS-75" },
+        { to: "/rgs-100", text: "RGS-100" },
+      ],
+    },
+    // part 8
+    caption8: "Yetkazib berishni hisoblash",
+    part8desc: "RGS-3 m³, gorizontal po‘lat rezervuar yer usti / yer osti",
+    part8Img: part8Img,
+  },
+  {
+    "id": "rgs-5",
+    // part 1
+    "caption": "RGS-5 m³, Gorizontal po'lat idish yer usti / yer osti",
+    "desc1": "ZMK 'REZERVUAROSTROITEL' 5 m³ hajmli RGS tipidagi gorizontal silindrsimon po'lat idishlarni ishlab chiqaradi (RGS-5).",
+    "desc2": "RGS-5 idishlari zichligi 1 t/m³ dan oshmaydigan suyuq xomashyoni saqlash va tarqatish uchun ishlatiladi, harorat –60°C dan +90°C gacha, ichki bosim 0,07 MPa gacha va seysmik tebranishlar 7 ballgacha bo'lgan sharoitlarda.",
+    "desc3": "RGS-5 idishi GOST 17032-2010 'Neft mahsulotlari uchun gorizontal po'lat idishlar' va GOST R 52630-2012 'Payvandlangan po'lat idishlar va apparatlar' standartlariga muvofiq ishlab chiqariladi. Gorizontal idishlarimizning sifati №РРС.00-047039 foydalanishga ruxsatnomasi va №Росс.RU.АВ17.по1286 muvofiqlik sertifikati bilan tasdiqlangan.",
+    "images": [rgs5_1, rgs5_2, rgs5_3, rgs5_4],
+    // part 2
+    "caption2": "RGS-5 idishiga buyurtma berish",
+    "zakazText": "Mijozlarimiz har doim konstruktorlik byuromizning standart chizmalariga muvofiq ishlab chiqarilgan RGS-5 idishini sotib olishlari mumkin (quyida texnik xususiyatlar va chizmalar bilan tanishish mumkin).",
+    "zakazText2": "Shuningdek, biz mijozning maxsus talablariga ko'ra konstruktorlik hujjatlarni ishlab chiqishni (masalan, idishni joylashtirish uchun cheklangan sharoitlarda) yoki sizning chizmalaringiz bo'yicha RGS ishlab chiqarishni tez-tez amalga oshiramiz.",
+    "zakazImg": [rgs5_2_1, rgs5_2_2, rgs5_2_3, rgs5_2_4],
+    "zakazDesc": "ZMK 'REZERVUAROSTROITEL' tomonidan ishlab chiqarilgan RGS-5 m³ idishiga buyurtma berish mumkin:",
+    "zakazList": [
+      "to'g'ridan-to'g'ri veb-saytdan;",
+      "+99893 738 55 58 telefon orqali;",
+      "teknikinnovatsion.info@gmail.com elektron pochta orqali so'rov yuborish orqali."
+    ],
+    "zakazDesc2": "Sizning so'rovingiz bir kun ichida ko'rib chiqiladi.",
+    // part 3
+    "caption3": "ZMK 'REZERVUAROSTROITEL' dan standart RGS-5 idishlari",
+    "subCaption1": "Yer usti RGSn-5 idishi:",
+    "part3Img1": {
+      "img1": rgs5_3_1,
+      "img2": rgs5_3_2
+    },
+    "subCaption2": "Yer osti RGSp-5 idishi:",
+    "part3Img2": {
+      "img1": rgs5_3_3,
+      "img2": rgs5_3_4
+    },
+    // part 4
+    "caption4": "Yer osti / Yer usti RGS-5",
+    "part4desc": "ZMK 'REZERVUAROSTROITEL' bir nechta asosiy konfiguratsiyalarda RGS-5 idishlarini ishlab chiqaradi:",
+    "part4SubCaption1": "Yer osti / Yer usti RGS-5:",
+    "part4List1": [
+      "RGSn-5 – yer usti joylashuvi;",
+      "RGSp-5 – texnik quduq bilan yer osti joylashuvi;"
+    ],
+    "part4SubCaption2": "Bir devorli / Ikki devorli RGS-5:",
+    "part4List2": [
+      "RGSn-5: yer usti joylashuvi uchun bir devorli gorizontal idish;",
+      "RGSDn-5: yer usti joylashuvi uchun ikki devorli gorizontal idish;",
+      "RGSp-5: yer osti joylashuvi uchun bir devorli gorizontal idish;",
+      "RGSDp-5: yer osti joylashuvi uchun ikki devorli gorizontal idish."
+    ],
+    "part4desc2": "Ikki devorli idish ishlab chiqarilganda, devorlar orasidagi bo'shliq azot yoki suyuqlik bilan to'ldiriladi. Butun devorlar orasi bo'shliq to'ldiriladi va idish yopiq evakuatsiya tizimi bilan jihozlanadi.",
+    // part 5
+    "caption5": "Devorlar orasi bo'shliq uchun suyuqlik talablari:",
+    "part5List": [
+      "yonish harorati 100°C dan past bo'lmasligi kerak;",
+      "idishning konstruktsiya materiallari va saqlanadigan yoqilg'iga kimyoviy jihatdan neytral bo'lishi;",
+      "RGSda saqlanadigan mahsulotga nisbatan yuqori zichlik;",
+      "idish mo'ljallangan atrof-muhit haroratlarida o'z xususiyatlarini saqlab qolish qobiliyati;"
+    ],
+    // part 6
+    "caption6": "Bir sektsiyali / Ikki sektsiyali / Ko'p sektsiyali RGS-5:",
+    "part5SubCaption1": "Yuqorida aytib o'tilgan barcha RGS-5 konfiguratsiyalari bir yoki bir nechta kamerali (sektsiyali) bo'lishi mumkin. Kameralar idish korpusidagi maxsus konstruktsiyali bo'linmalar orqali shakllanadi. Shunday qilib, RGS idishi ikki yoki undan ortiq bo'limlarga bo'linadi, bu esa turli xil suyuq xomashyolarni saqlash imkonini beradi. Ikki kamerali yoki ko'p kamerali gorizontal idishlarni ishlab chiqarishda biz kameralarning muhrlanishini kafolatlaymiz.",
+    "part5SubCaption2": "Quyidagi jadvalda ZMK 'REZERVUAROSTROITEL' tomonidan ishlab chiqarilgan 5 m³ hajmli gorizontal po'lat idishlarning turli konfiguratsiyalardagi asosiy texnik xususiyatlari keltirilgan.",
+    // part 7
+    "caption7": "RGS-5 idishlari xususiyatlari",
+    "table": {
+      "thead": {
+        "tr1": ["RGS-5", "YER USTI", "YER OSTI"],
+        "tr2": ["", "BIR DEVORLI", "IKKI DEVORLI", "BIR DEVORLI", "IKKI DEVORLI"]
+      },
+      "tbody": [
+        ["Nominal hajm, m³", "5.00", "5.00", "5.00", "5.00"],
+        ["Diametr, m", "1.90", "1.92", "1.90", "1.92"],
+        ["Tayanchlardagi balandlik, m", "2.05", "2.05", "2.05", "2.05"],
+        ["Texnik quduq bilan tayanchlardagi balandlik, m", "", "", "3.40", "3.40"],
+        ["Idish uzunligi, m", "1.90", "1.92", "1.90", "1.92"],
+        ["Umumiy og'irlik, t", "0.70", "0.83", "1.00", "1.40"],
+        ["Tayanchlar soni, dona", "2.00", "2.00", "2.00", "2.00"],
+        ["Korpus qalinligi, mm", "4.00", "4.00", "4.00", "4.00"]
+      ]
+    },
+    "allLinks": {
+      "text": "Gorizontal idishlarning boshqa hajmlari:",
+      "links": [
+        { "to": "/rgs-3", "text": "RGS-3" },
+        { "to": "/rgs-5", "text": "RGS-5" },
+        { "to": "/rgs-10", "text": "RGS-10" },
+        { "to": "/rgs-15", "text": "RGS-15" },
+        { "to": "/rgs-20", "text": "RGS-20" },
+        { "to": "/rgs-25", "text": "RGS-25" },
+        { "to": "/rgs-30", "text": "RGS-30" },
+        { "to": "/rgs-40", "text": "RGS-40" },
+        { "to": "/rgs-50", "text": "RGS-50" },
+        { "to": "/rgs-60", "text": "RGS-60" },
+        { "to": "/rgs-75", "text": "RGS-75" },
+        { "to": "/rgs-100", "text": "RGS-100" }
+      ]
+    },
+    // part 8
+    "caption8": "Yetkazib berishni hisoblash",
+    "part8desc": "RGS-5 m³, gorizontal po'lat idish yer usti / yer osti",
+    "part8Img": rgs5BottomBg
+  },
+  {
+    "id": "rgs-10",
+    // part 1
+    "caption": "RGS-10 m³, Gorizontal po'lat idish yer usti / yer osti",
+    "desc1": "ZMK 'REZERVUAROSTROITEL' 10 m³ hajmli RGS tipidagi gorizontal silindrsimon po'lat idishlarni ishlab chiqaradi (RGS-10).",
+    "desc2": "Neft mahsulotlari uchun RGS-10 idishlari zichligi 1 t/m³ dan oshmaydigan suyuq xomashyoni saqlash va tarqatish uchun ishlatiladi, harorat –60°C dan +90°C gacha, ichki bosim 0,07 MPa gacha va seysmik tebranishlar 7 ballgacha bo'lgan sharoitlarda.",
+    "desc3": "RGS-10 m³ idishi GOST 17032-2010 'Neft mahsulotlari uchun gorizontal po'lat idishlar' va GOST R 52630-2012 'Payvandlangan po'lat idishlar va apparatlar' standartlariga muvofiq ishlab chiqariladi. Gorizontal idishlarimizning sifati №РРС.00-047039 foydalanishga ruxsatnomasi va №Росс.RU.АВ17.по1286 muvofiqlik sertifikati bilan tasdiqlangan.",
+    "images": [rgs10_1, rgs10_2, rgs10_3],
+    // part 2
+    "caption2": "RGS-10 idishiga buyurtma berish",
+    "zakazText": "Mijozlarimiz har doim konstruktorlik byuromizning standart chizmalariga muvofiq ishlab chiqarilgan RGS-10 idishini sotib olishlari mumkin (quyida texnik xususiyatlar va chizmalar bilan tanishish mumkin).",
+    "zakazText2": "Shuningdek, biz mijozning maxsus talablariga ko'ra konstruktorlik hujjatlarni ishlab chiqishni (masalan, idishni joylashtirish uchun cheklangan sharoitlarda) yoki sizning chizmalaringiz bo'yicha RGS ishlab chiqarishni tez-tez amalga oshiramiz.",
+    "zakazImg": [rgs10_2_1, rgs10_2_2, rgs10_2_3, rgs10_2_4],
+    "zakazDesc": "ZMK 'REZERVUAROSTROITEL' dan standart RGS-10 idishlari",
+    "zakazList": [
+      "to'g'ridan-to'g'ri veb-saytdan;",
+      "+99893 738 55 58 telefon orqali;",
+      "teknikinnovatsion.info@gmail.com elektron pochta orqali so'rov yuborish orqali."
+    ],
+    "zakazDesc2": "Sizning so'rovingiz bir kun ichida ko'rib chiqiladi.",
+    // part 3
+    "caption3": "ZMK 'REZERVUAROSTROITEL' dan standart RGS-10 idishlari",
+    "subCaption1": "Yer usti RGSn-10 idishi:",
+    "part3Img1": {
+      "img1": rgs10_3_1,
+      "img2": rgs10_3_2
+    },
+    "subCaption2": "Yer osti RGSp-10 idishi:",
+    "part3Img2": {
+      "img1": rgs10_3_3,
+      "img2": rgs10_3_4
+    },
+    "part3Desc": "RGS-10 m³ idishining narxi devorlar va idish tubining qalinligiga qarab o'zgaradi.",
+    // part 4
+    "caption4": "Yer osti / Yer usti RGS-10",
+    "part4desc": "ZMK 'REZERVUAROSTROITEL' bir nechta asosiy konfiguratsiyalarda gorizontal RGS-10 idishlarini ishlab chiqaradi:",
+    "part4SubCaption1": "Yer osti / Yer usti RGS-10 idishlari:",
+    "part4List1": [
+      "RGSn-10 – yer usti joylashuvi;",
+      "RGSp-10 – texnik quduq bilan yer osti joylashuvi;"
+    ],
+    "part4SubCaption2": "Bir devorli / Ikki devorli RGS-10:",
+    "part4List2": [
+      "RGSn-10: yer usti joylashuvi uchun bir devorli gorizontal idish;",
+      "RGSDn-10: yer usti joylashuvi uchun ikki devorli gorizontal idish;",
+      "RGSp-10: yer osti joylashuvi uchun bir devorli gorizontal idish;",
+      "RGSDp-10: yer osti joylashuvi uchun ikki devorli gorizontal idish."
+    ],
+    "part4desc2": "Ikki devorli idish ishlab chiqarilganda, devorlar orasidagi bo'shliq azot yoki suyuqlik bilan to'ldiriladi. Butun devorlar orasi bo'shliq to'ldiriladi va idish yopiq evakuatsiya tizimi bilan jihozlanadi.",
+    // part 5
+    "caption5": "Devorlar orasi bo'shliq uchun suyuqlik talablari:",
+    "part5List": [
+      "yonish harorati 100°C dan past bo'lmasligi kerak;",
+      "idishning konstruktsiya materiallari va saqlanadigan yoqilg'iga kimyoviy jihatdan neytral bo'lishi;",
+      "RGSda saqlanadigan mahsulotga nisbatan yuqori zichlik;",
+      "idish mo'ljallangan atrof-muhit haroratlarida o'z xususiyatlarini saqlab qolish qobiliyati;"
+    ],
+    // part 6
+    "caption6": "Bir sektsiyali / Ikki sektsiyali / Ko'p sektsiyali RGS-10:",
+    "part5SubCaption1": "Yuqorida aytib o'tilgan barcha gorizontal idish konfiguratsiyalari bir yoki bir nechta kamerali (sektsiyali) bo'lishi mumkin. Kameralar idish korpusidagi maxsus konstruktsiyali bo'linmalar orqali shakllanadi. Shunday qilib, RGS idishi ikki yoki undan ortiq bo'limlarga bo'linadi, bu esa turli xil suyuq xomashyolarni saqlash imkonini beradi. Ikki kamerali yoki ko'p kamerali gorizontal idishlarni ishlab chiqarishda biz kameralarning muhrlanishini kafolatlaymiz.",
+    "part5SubCaption2": "Quyidagi jadvalda ZMK 'REZERVUAROSTROITEL' tomonidan ishlab chiqarilgan 10 m³ hajmli RGS idishlarining turli konfiguratsiyalardagi asosiy texnik xususiyatlari keltirilgan.",
+    // part 7
+    "caption7": "RGS-10 m³ idishlarining texnik xususiyatlari",
+    "table": {
+      "thead": {
+        "tr1": ["RGS-10", "YER USTI", "YER OSTI"],
+        "tr2": ["", "BIR DEVORLI", "IKKI DEVORLI", "BIR DEVORLI", "IKKI DEVORLI"]
+      },
+      "tbody": [
+        ["Nominal hajm, m³", "10.00", "10.00", "10.00", "10.00"],
+        ["Diametr, m", "2.07", "2.09", "2.07", "2.09"],
+        ["Tayanchlardagi balandlik, m", "2.22", "2.22", "2.22", "2.22"],
+        ["Texnik quduq bilan tayanchlardagi balandlik, m", "", "", "3.52", "3.52"],
+        ["Idish uzunligi, m", "3.40", "3.42", "3.40", "3.42"],
+        ["Umumiy og'irlik, t", "0.99", "1.80", "1.29", "2.10"],
+        ["Tayanchlar soni, dona", "2.00", "2.00", "2.00", "2.00"],
+        ["Korpus qalinligi, mm", "4.00", "4.00", "4.00", "4.00"]
+      ]
+    },
+    "allLinks": {
+      "text": "Gorizontal idishlarning boshqa hajmlari:",
+      "links": [
+        { "to": "/rgs-3", "text": "RGS-3" },
+        { "to": "/rgs-5", "text": "RGS-5" },
+        { "to": "/rgs-10", "text": "RGS-10" },
+        { "to": "/rgs-15", "text": "RGS-15" },
+        { "to": "/rgs-20", "text": "RGS-20" },
+        { "to": "/rgs-25", "text": "RGS-25" },
+        { "to": "/rgs-30", "text": "RGS-30" },
+        { "to": "/rgs-40", "text": "RGS-40" },
+        { "to": "/rgs-50", "text": "RGS-50" },
+        { "to": "/rgs-60", "text": "RGS-60" },
+        { "to": "/rgs-75", "text": "RGS-75" },
+        { "to": "/rgs-100", "text": "RGS-100" }
+      ]
+    },
+    // part 8
+    "caption8": "Yetkazib berishni hisoblash",
+    "part8desc": "RGS-10 m³, gorizontal po'lat idish yer usti / yer osti",
+    "part8Img": rgs10_footerbg
+  },
+  {
+    "id": "rgs-15",
+    // part 1
+    "caption": "RGS-15 m³, Gorizontal po'lat idish yer usti / yer osti",
+    "desc1": "ZMK 'REZERVUAROSTROITEL' 15 m³ hajmli RGS tipidagi gorizontal silindrsimon po'lat idishlarni ishlab chiqaradi (RGS-15).",
+    "desc2": "RGS-15 idishlari zichligi 1 t/m³ dan oshmaydigan suyuq xomashyoni saqlash va tarqatish uchun ishlatiladi, harorat –60°C dan +90°C gacha, ichki bosim 0,07 MPa gacha va seysmik tebranishlar 7 ballgacha bo'lgan sharoitlarda.",
+    "desc3": "15 m³ idishi GOST 17032-2010 'Neft mahsulotlari uchun gorizontal po'lat idishlar' va GOST R 52630-2012 'Payvandlangan po'lat idishlar va apparatlar' standartlariga muvofiq ishlab chiqariladi. Gorizontal idishlarimizning sifati №РРС.00-047039 foydalanishga ruxsatnomasi va №Росс.RU.АВ17.по1286 muvofiqlik sertifikati bilan tasdiqlangan.",
+    "images": [rgs15_1, rgs15_2, rgs15_3, rgs15_4],
+    // part 2
+    "caption2": "RGS-15 idishiga buyurtma berish",
+    "zakazText": "Mijozlarimiz har doim konstruktorlik byuromizning standart chizmalariga muvofiq ishlab chiqarilgan RGS-15 idishini sotib olishlari mumkin (quyida texnik xususiyatlar va chizmalar bilan tanishish mumkin).",
+    "zakazText2": "Shuningdek, biz mijozning maxsus talablariga ko'ra konstruktorlik hujjatlarni ishlab chiqishni (masalan, idishni joylashtirish uchun cheklangan sharoitlarda) yoki sizning chizmalaringiz bo'yicha RGS ishlab chiqarishni tez-tez amalga oshiramiz.",
+    "zakazImg": [rgs15_2_1, rgs15_2_2, rgs15_2_3, rgs15_2_4],
+    "zakazDesc": "ZMK 'REZERVUAROSTROITEL' tomonidan ishlab chiqarilgan 15 m³ idishiga buyurtma berish mumkin:",
+    "zakazList": [
+      "to'g'ridan-to'g'ri veb-saytdan;",
+      "+99893 738 55 58 telefon orqali;",
+      "teknikinnovatsion.info@gmail.com elektron pochta orqali so'rov yuborish orqali."
+    ],
+    "zakazDesc2": "Sizning so'rovingiz bir kun ichida ko'rib chiqiladi.",
+    // part 3
+    "caption3": "ZMK 'REZERVUAROSTROITEL' dan standart RGS-15 idishlari",
+    "subCaption1": "Yer usti RGSn-15 idishi:",
+    "part3Img1": {
+      "img1": rgs15_3_1,
+      "img2": rgs15_3_2
+    },
+    "subCaption2": "Yer osti RGSp-15 idishi:",
+    "part3Img2": {
+      "img1": rgs15_3_3,
+      "img2": rgs15_3_4
+    },
+    // part 4
+    "caption4": "Yer osti / Yer usti RGS-15",
+    "part4desc": "ZMK 'REZERVUAROSTROITEL' bir nechta asosiy konfiguratsiyalarda RGS-15 idishlarini ishlab chiqaradi:",
+    "part4SubCaption1": "Yer osti / Yer usti RGS-15:",
+    "part4List1": [
+      "RGSn-15 – yer usti joylashuvi;",
+      "RGSp-15 – texnik quduq bilan yer osti joylashuvi;"
+    ],
+    "part4SubCaption2": "Bir devorli / Ikki devorli RGS-15:",
+    "part4List2": [
+      "RGSn-15: yer usti joylashuvi uchun bir devorli gorizontal idish;",
+      "RGSDn-15: yer usti joylashuvi uchun ikki devorli gorizontal idish;",
+      "RGSp-15: yer osti joylashuvi uchun bir devorli gorizontal idish;",
+      "RGSDp-15: yer osti joylashuvi uchun ikki devorli gorizontal idish."
+    ],
+    "part4desc2": "15 m³ ikki devorli idish ishlab chiqarilganda, devorlar orasidagi bo'shliq azot yoki suyuqlik bilan to'ldiriladi. Butun devorlar orasi bo'shliq to'ldiriladi va idish yopiq evakuatsiya tizimi bilan jihozlanadi.",
+    // part 5
+    "caption5": "Devorlar orasi bo'shliq uchun suyuqlik talablari:",
+    "part5List": [
+      "yonish harorati 100°C dan past bo'lmasligi kerak;",
+      "idishning konstruktsiya materiallari va saqlanadigan yoqilg'iga kimyoviy jihatdan neytral bo'lishi;",
+      "RGSda saqlanadigan mahsulotga nisbatan yuqori zichlik;",
+      "idish mo'ljallangan atrof-muhit haroratlarida o'z xususiyatlarini saqlab qolish qobiliyati;"
+    ],
+    // part 6
+    "caption6": "Bir sektsiyali / Ikki sektsiyali / Ko'p sektsiyali RGS-15:",
+    "part5SubCaption1": "Yuqorida aytib o'tilgan barcha RGS konfiguratsiyalari bir yoki bir nechta kamerali (sektsiyali) bo'lishi mumkin. Kameralar idish korpusidagi maxsus konstruktsiyali bo'linmalar orqali shakllanadi. Shunday qilib, RGS idishi ikki yoki undan ortiq bo'limlarga bo'linadi, bu esa turli xil suyuq xomashyolarni saqlash imkonini beradi. Ikki kamerali yoki ko'p kamerali gorizontal idishlarni ishlab chiqarishda biz kameralarning muhrlanishini kafolatlaymiz.",
+    "part5SubCaption2": "Quyidagi jadvalda ZMK 'REZERVUAROSTROITEL' tomonidan ishlab chiqarilgan 15 m³ hajmli idishlarning turli konfiguratsiyalardagi asosiy texnik xususiyatlari keltirilgan.",
+    // part 7
+    "caption7": "RGS-15 m³ idishlarining texnik xususiyatlari:",
+    "table": {
+      "thead": {
+        "tr1": ["RGS-15", "YER USTI", "YER OSTI"],
+        "tr2": ["", "BIR DEVORLI", "IKKI DEVORLI", "BIR DEVORLI", "IKKI DEVORLI"]
+      },
+      "tbody": [
+        ["Nominal hajm, m³", "15.00", "15.00", "15.00", "15.00"],
+        ["Diametr, m", "2.07", "2.09", "2.07", "2.09"],
+        ["Tayanchlardagi balandlik, m", "2.22", "2.22", "2.22", "2.22"],
+        ["Texnik quduq bilan tayanchlardagi balandlik, m", "", "", "3.86", "3.86"],
+        ["Idish uzunligi, m", "4.90", "4.92", "4.90", "4.92"],
+        ["Umumiy og'irlik, t", "1.40", "2.60", "1.70", "2.90"],
+        ["Tayanchlar soni, dona", "2.00", "2.00", "2.00", "2.00"],
+        ["Korpus qalinligi, mm", "4.00", "4.00", "4.00", "4.00"]
+      ]
+    },
+    "allLinks": {
+      "text": "Gorizontal idishlarning boshqa hajmlari:",
+      "links": [
+        { "to": "/rgs-3", "text": "RGS-3" },
+        { "to": "/rgs-5", "text": "RGS-5" },
+        { "to": "/rgs-10", "text": "RGS-10" },
+        { "to": "/rgs-15", "text": "RGS-15" },
+        { "to": "/rgs-20", "text": "RGS-20" },
+        { "to": "/rgs-25", "text": "RGS-25" },
+        { "to": "/rgs-30", "text": "RGS-30" },
+        { "to": "/rgs-40", "text": "RGS-40" },
+        { "to": "/rgs-50", "text": "RGS-50" },
+        { "to": "/rgs-60", "text": "RGS-60" },
+        { "to": "/rgs-75", "text": "RGS-75" },
+        { "to": "/rgs-100", "text": "RGS-100" }
+      ]
+    },
+    // part 8
+    "caption8": "Yetkazib berishni hisoblash",
+    "part8desc": "RGS-15 m³, gorizontal po'lat idish yer usti / yer osti",
+    "part8Img": rgs15_footbg
+  },
+  {
+    "id": "rgs-20",
+    // part 1
+    "caption": "RGS-20 m³, Gorizontal po'lat idish yer usti / yer osti",
+    "desc1": "ZMK 'REZERVUAROSTROITEL' 20 m³ hajmli RGS tipidagi gorizontal silindrsimon po'lat idishlarni ishlab chiqaradi (RGS-20).",
+    "desc2": "RGS-20 idishlari zichligi 1 t/m³ dan oshmaydigan suyuq xomashyoni saqlash va tarqatish uchun ishlatiladi, harorat –60°C dan +90°C gacha, ichki bosim 0,07 MPa gacha va seysmik tebranishlar 7 ballgacha bo'lgan sharoitlarda.",
+    "desc3": "RGS-20 idishi GOST 17032-2010 'Neft mahsulotlari uchun gorizontal po'lat idishlar' va GOST R 52630-2012 'Payvandlangan po'lat idishlar va apparatlar' standartlariga muvofiq ishlab chiqariladi. Gorizontal idishlarimizning sifati №РРС.00-047039 foydalanishga ruxsatnomasi va №Росс.RU.АВ17.по1286 muvofiqlik sertifikati bilan tasdiqlangan.",
+    "images": [rgs20_1, rgs20_2, rgs20_3, rgs20_4],
+    // part 2
+    "caption2": "RGS-20 idishiga buyurtma berish",
+    "zakazText": "Mijozlarimiz har doim konstruktorlik byuromizning standart chizmalariga muvofiq ishlab chiqarilgan 20 m³ idishni sotib olishlari mumkin (quyida texnik xususiyatlar va chizmalar bilan tanishish mumkin).",
+    "zakazText2": "Shuningdek, biz mijozning maxsus talablariga ko'ra konstruktorlik hujjatlarni ishlab chiqishni (masalan, idishni joylashtirish uchun cheklangan sharoitlarda) yoki sizning chizmalaringiz bo'yicha RGS ishlab chiqarishni tez-tez amalga oshiramiz.",
+    "zakazImg": [rgs20_2_1, rgs20_2_2, rgs20_2_3, rgs20_2_4],
+    "zakazDesc": "ZMK 'REZERVUAROSTROITEL' tomonidan ishlab chiqarilgan 20 m³ idishiga buyurtma berish mumkin:",
+    "zakazList": [
+      "to'g'ridan-to'g'ri veb-saytdan;",
+      "+99893 738 55 58 telefon orqali;",
+      "teknikinnovatsion.info@gmail.com elektron pochta orqali so'rov yuborish orqali."
+    ],
+    "zakazDesc2": "Sizning so'rovingiz bir kun ichida ko'rib chiqiladi.",
+    // part 3
+    "caption3": "ZMK 'REZERVUAROSTROITEL' dan standart RGS-20 idishlari",
+    "subCaption1": "Yer usti RGSn-20 idishi:",
+    "part3Img1": {
+      "img1": rgs20_3_1,
+      "img2": rgs20_3_2
+    },
+    "subCaption2": "Yer osti RGSp-20 idishi:",
+    "part3Img2": {
+      "img1": rgs20_3_3,
+      "img2": rgs20_3_4
+    },
+    // part 4
+    "caption4": "RGS-20 konfiguratsiyalari",
+    "part4desc": "ZMK 'REZERVUAROSTROITEL' bir nechta asosiy konfiguratsiyalarda 20 m³ idishlarni ishlab chiqaradi:",
+    "part4SubCaption1": "Yer osti / Yer usti RGS-20:",
+    "part4List1": [
+      "RGSn-20 – yer usti joylashuvi;",
+      "RGSp-20 – texnik quduq bilan yer osti joylashuvi;"
+    ],
+    "part4SubCaption2": "Bir devorli / Ikki devorli RGS-20:",
+    "part4List2": [
+      "RGSn-20: yer usti joylashuvi uchun bir devorli gorizontal idish;",
+      "RGSDn-20: yer usti joylashuvi uchun ikki devorli gorizontal idish;",
+      "RGSp-20: yer osti joylashuvi uchun bir devorli gorizontal idish;",
+      "RGSDp-20: yer osti joylashuvi uchun ikki devorli gorizontal idish."
+    ],
+    "part4desc2": "20 m³ ikki devorli idish ishlab chiqarilganda, devorlar orasidagi bo'shliq azot yoki suyuqlik bilan to'ldiriladi. Butun devorlar orasi bo'shliq to'ldiriladi va idish yopiq evakuatsiya tizimi bilan jihozlanadi.",
+    // part 5
+    "caption5": "Devorlar orasi bo'shliq uchun suyuqlik talablari:",
+    "part5List": [
+      "yonish harorati 100°C dan past bo'lmasligi kerak;",
+      "idishning konstruktsiya materiallari va saqlanadigan yoqilg'iga kimyoviy jihatdan neytral bo'lishi;",
+      "RGSda saqlanadigan mahsulotga nisbatan yuqori zichlik;",
+      "idish mo'ljallangan atrof-muhit haroratlarida o'z xususiyatlarini saqlab qolish qobiliyati;"
+    ],
+    // part 6
+    "caption6": "Bir sektsiyali / Ikki sektsiyali / Ko'p sektsiyali RGS-20:",
+    "part5SubCaption1": "Yuqorida aytib o'tilgan barcha RGS konfiguratsiyalari bir yoki bir nechta kamerali (sektsiyali) bo'lishi mumkin. Kameralar idish korpusidagi maxsus konstruktsiyali bo'linmalar orqali shakllanadi. Shunday qilib, RGS idishi ikki yoki undan ortiq bo'limlarga bo'linadi, bu esa turli xil suyuq xomashyolarni saqlash imkonini beradi. Ikki kamerali yoki ko'p kamerali gorizontal idishlarni ishlab chiqarishda biz kameralarning muhrlanishini kafolatlaymiz.",
+    "part5SubCaption2": "Quyidagi jadvalda ZMK 'REZERVUAROSTROITEL' tomonidan ishlab chiqarilgan 20 m³ hajmli idishlarning turli konfiguratsiyalardagi asosiy texnik xususiyatlari keltirilgan.",
+    // part 7
+    "caption7": "RGS-20 idishlarining texnik xususiyatlari",
+    "table": {
+      "thead": {
+        "tr1": ["RGS-20", "YER USTI", "YER OSTI"],
+        "tr2": ["", "BIR DEVORLI", "IKKI DEVORLI", "BIR DEVORLI", "IKKI DEVORLI"]
+      },
+      "tbody": [
+        ["Nominal hajm, m³", "20.00", "20.00", "20.00", "20.00"],
+        ["Diametr, m", "2.40", "2.42", "2.40", "2.42"],
+        ["Tayanchlardagi balandlik, m", "2.56", "2.56", "2.56", "2.56"],
+        ["Texnik quduq bilan tayanchlardagi balandlik, m", "", "", "3.86", "3.86"],
+        ["Idish uzunligi, m", "4.90", "4.92", "4.90", "4.92"],
+        ["Umumiy og'irlik, t", "1.70", "3.10", "2.00", "3.40"],
+        ["Tayanchlar soni, dona", "2.00", "2.00", "2.00", "2.00"],
+        ["Korpus qalinligi, mm", "4.00", "4.00", "4.00", "4.00"]
+      ]
+    },
+    "allLinks": {
+      "text": "Gorizontal idishlarning boshqa hajmlari:",
+      "links": [
+        { "to": "/rgs-3", "text": "RGS-3" },
+        { "to": "/rgs-5", "text": "RGS-5" },
+        { "to": "/rgs-10", "text": "RGS-10" },
+        { "to": "/rgs-15", "text": "RGS-15" },
+        { "to": "/rgs-20", "text": "RGS-20" },
+        { "to": "/rgs-25", "text": "RGS-25" },
+        { "to": "/rgs-30", "text": "RGS-30" },
+        { "to": "/rgs-40", "text": "RGS-40" },
+        { "to": "/rgs-50", "text": "RGS-50" },
+        { "to": "/rgs-60", "text": "RGS-60" },
+        { "to": "/rgs-75", "text": "RGS-75" },
+        { "to": "/rgs-100", "text": "RGS-100" }
+      ]
+    },
+    // part 8
+    "caption8": "Yetkazib berishni hisoblash",
+    "part8desc": "RGS-20 m³, gorizontal po'lat idish yer usti / yer osti",
+    "part8Img": rgs20_footbg
+  },
+  {
+    "id": "rgs-25",
+    // part 1
+    "caption": "RGS-25 m³, Gorizontal po'lat idish yer usti / yer osti",
+    "desc1": "ZMK 'REZERVUAROSTROITEL' 25 m³ hajmli RGS tipidagi gorizontal silindrsimon po'lat idishlarni ishlab chiqaradi (RGS-25).",
+    "desc2": "25 m³ idishlar zichligi 1 t/m³ dan oshmaydigan suyuq xomashyoni saqlash va tarqatish uchun ishlatiladi, harorat –60°C dan +90°C gacha, ichki bosim 0,07 MPa gacha va seysmik tebranishlar 7 ballgacha bo'lgan sharoitlarda.",
+    "desc3": "RGS-25 idishi GOST 17032-2010 'Neft mahsulotlari uchun gorizontal po'lat idishlar' va GOST R 52630-2012 'Payvandlangan po'lat idishlar va apparatlar' standartlariga muvofiq ishlab chiqariladi. Gorizontal idishlarimizning sifati №РРС.00-047039 foydalanishga ruxsatnomasi va №Росс.RU.АВ17.по1286 muvofiqlik sertifikati bilan tasdiqlangan.",
+    "images": [rgs25_1, rgs25_2, rgs25_3, rgs25_4],
+    // part 2
+    "caption2": "RGS-25 idishiga buyurtma berish",
+    "zakazText": "Mijozlarimiz har doim konstruktorlik byuromizning standart chizmalariga muvofiq ishlab chiqarilgan RGS-25 idishini sotib olishlari mumkin (quyida texnik xususiyatlar va chizmalar bilan tanishish mumkin).",
+    "zakazText2": "Shuningdek, biz mijozning maxsus talablariga ko'ra konstruktorlik hujjatlarni ishlab chiqishni (masalan, idishni joylashtirish uchun cheklangan sharoitlarda) yoki sizning chizmalaringiz bo'yicha gorizontal po'lat idishlarni ishlab chiqarishni tez-tez amalga oshiramiz.",
+    "zakazImg": [rgs25_2_1, rgs25_2_2, rgs25_2_3, rgs25_2_4],
+    "zakazDesc": "ZMK 'REZERVUAROSTROITEL' tomonidan ishlab chiqarilgan 25 m³ idishiga buyurtma berish mumkin:",
+    "zakazList": [
+      "to'g'ridan-to'g'ri veb-saytdan;",
+      "+99893 738 55 58 telefon orqali;",
+      "teknikinnovatsion.info@gmail.com elektron pochta orqali so'rov yuborish orqali."
+    ],
+    "zakazDesc2": "Sizning so'rovingiz bir kun ichida ko'rib chiqiladi.",
+    // part 3
+    "caption3": "ZMK 'REZERVUAROSTROITEL' dan standart RGS-25 idishlari",
+    "subCaption1": "Yer usti RGSn-25 idishi:",
+    "part3Img1": {
+      "img1": rgs25_3_1,
+      "img2": rgs25_3_2
+    },
+    "subCaption2": "Yer osti RGSp-25 idishi:",
+    "part3Img2": {
+      "img1": rgs25_3_3,
+      "img2": rgs25_3_4
+    },
+    "part3Desc": "RGS-25 narxi devorlar, tub va po'lat markasining qalinligiga bog'liq.",
+    // part 4
+    "caption4": "Yer osti / Yer usti RGS-25",
+    "part4desc": "ZMK 'REZERVUAROSTROITEL' bir nechta asosiy konfiguratsiyalarda 25 m³ gorizontal idishlarni ishlab chiqaradi:",
+    "part4SubCaption1": "Yer osti / Yer usti RGS-25:",
+    "part4List1": [
+      "RGSn-25 – yer usti joylashuvi;",
+      "RGSp-25 – texnik quduq bilan yer osti joylashuvi;"
+    ],
+    "part4SubCaption2": "Bir devorli / Ikki devorli RGS-25:",
+    "part4List2": [
+      "RGSn-25: yer usti joylashuvi uchun bir devorli gorizontal idish;",
+      "RGSDn-25: yer usti joylashuvi uchun ikki devorli gorizontal idish;",
+      "RGSp-25: yer osti joylashuvi uchun bir devorli gorizontal idish;",
+      "RGSDp-25: yer osti joylashuvi uchun ikki devorli gorizontal idish."
+    ],
+    "part4desc2": "25 m³ ikki devorli idish ishlab chiqarilganda, devorlar orasidagi bo'shliq azot yoki suyuqlik bilan to'ldiriladi. Butun devorlar orasi bo'shliq to'ldiriladi va idish yopiq evakuatsiya tizimi bilan jihozlanadi.",
+    // part 5
+    "caption5": "Devorlar orasi bo'shliq uchun suyuqlik talablari:",
+    "part5List": [
+      "yonish harorati 100°C dan past bo'lmasligi kerak;",
+      "idishning konstruktsiya materiallari va saqlanadigan yoqilg'iga kimyoviy jihatdan neytral bo'lishi;",
+      "RGSda saqlanadigan mahsulotga nisbatan yuqori zichlik;",
+      "idish mo'ljallangan atrof-muhit haroratlarida o'z xususiyatlarini saqlab qolish qobiliyati;"
+    ],
+    // part 6
+    "caption6": "Bir sektsiyali / Ikki sektsiyali / Ko'p sektsiyali RGS-25:",
+    "part5SubCaption1": "Yuqorida aytib o'tilgan RGS-25 idish konfiguratsiyalari bir yoki bir nechta kamerali (sektsiyali) bo'lishi mumkin. Kameralar idish korpusidagi maxsus konstruktsiyali bo'linmalar orqali shakllanadi. Shunday qilib, 25 m³ idish ikki yoki undan ortiq bo'limlarga bo'linadi, bu esa turli xil suyuq xomashyolarni saqlash imkonini beradi. Ikki kamerali yoki ko'p kamerali RGS idishlarni ishlab chiqarishda biz kameralarning muhrlanishini kafolatlaymiz.",
+    "part5SubCaption2": "Quyidagi jadvalda ZMK 'REZERVUAROSTROITEL' tomonidan ishlab chiqarilgan RGS-25 idishlarining turli konfiguratsiyalardagi asosiy texnik xususiyatlari keltirilgan.",
+    // part 7
+    "caption7": "25 m³ idishlarining texnik xususiyatlari",
+    "table": {
+      "thead": {
+        "tr1": ["RGS-25", "YER USTI", "YER OSTI"],
+        "tr2": ["", "BIR DEVORLI", "IKKI DEVORLI", "BIR DEVORLI", "IKKI DEVORLI"]
+      },
+      "tbody": [
+        ["Nominal hajm, m³", "25.00", "25.00", "25.00", "25.00"],
+        ["Diametr, m", "2.40", "2.42", "2.40", "2.42"],
+        ["Tayanchlardagi balandlik, m", "6.60", "6.60", "6.60", "6.60"],
+        ["Texnik quduq bilan tayanchlardagi balandlik, m", "", "", "3.86", "3.86"],
+        ["Idish uzunligi, m", "6.60", "6.62", "6.60", "6.62"],
+        ["Umumiy og'irlik, t", "2.15", "3.70", "2.45", "4.00"],
+        ["Tayanchlar soni, dona", "2.00", "2.00", "2.00", "2.00"],
+        ["Korpus qalinligi, mm", "4.00", "4.00", "4.00", "4.00"]
+      ]
+    },
+    "allLinks": {
+      "text": "Gorizontal idishlarning boshqa hajmlari:",
+      "links": [
+        { "to": "/rgs-3", "text": "RGS-3" },
+        { "to": "/rgs-5", "text": "RGS-5" },
+        { "to": "/rgs-10", "text": "RGS-10" },
+        { "to": "/rgs-15", "text": "RGS-15" },
+        { "to": "/rgs-20", "text": "RGS-20" },
+        { "to": "/rgs-25", "text": "RGS-25" },
+        { "to": "/rgs-30", "text": "RGS-30" },
+        { "to": "/rgs-40", "text": "RGS-40" },
+        { "to": "/rgs-50", "text": "RGS-50" },
+        { "to": "/rgs-60", "text": "RGS-60" },
+        { "to": "/rgs-75", "text": "RGS-75" },
+        { "to": "/rgs-100", "text": "RGS-100" }
+      ]
+    },
+    // part 8
+    "caption8": "Yetkazib berishni hisoblash",
+    "part8desc": "RGS-25 m³, gorizontal po'lat idish yer usti / yer osti",
+    "part8Img": rgs5BottomBg
+  },
+  {
+    "id": "rgs-30",
+    // part 1
+    "caption": "RGS-30 m³, Gorizontal po'lat idish yer usti / yer osti",
+    "desc1": "ZMK 'REZERVUAROSTROITEL' 30 m³ hajmli RGS tipidagi gorizontal silindrsimon po'lat idishlarni ishlab chiqaradi (RGS-30).",
+    "desc2": "RGS-30 idishlari zichligi 1 t/m³ dan oshmaydigan suyuq xomashyoni saqlash va tarqatish uchun ishlatiladi, harorat –60°C dan +90°C gacha, ichki bosim 0,07 MPa gacha va seysmik tebranishlar 7 ballgacha bo'lgan sharoitlarda.",
+    "desc3": "RGS-30 idishi GOST 17032-2010 'Neft mahsulotlari uchun gorizontal po'lat idishlar' va GOST R 52630-2012 'Payvandlangan po'lat idishlar va apparatlar' standartlariga muvofiq ishlab chiqariladi. Gorizontal idishlarimizning sifati №РРС.00-047039 foydalanishga ruxsatnomasi va №Росс.RU.АВ17.по1286 muvofiqlik sertifikati bilan tasdiqlangan.",
+    "images": [rgs30_1, rgs30_2, rgs30_3, rgs30_4],
+    // part 2
+    "caption2": "RGS-30 idishiga buyurtma berish",
+    "zakazText": "Mijozlarimiz har doim konstruktorlik byuromizning standart chizmalariga muvofiq ishlab chiqarilgan 30 m³ idishni sotib olishlari mumkin (quyida texnik xususiyatlar va chizmalar bilan tanishish mumkin).",
+    "zakazText2": "Shuningdek, biz mijozning maxsus talablariga ko'ra konstruktorlik hujjatlarni ishlab chiqishni (masalan, idishni joylashtirish uchun cheklangan sharoitlarda) yoki sizning chizmalaringiz bo'yicha gorizontal po'lat idishlarni ishlab chiqarishni tez-tez amalga oshiramiz.",
+    "zakazImg": [rgs30_2_1, rgs30_2_2, rgs30_2_3, rgs30_2_4],
+    "zakazDesc": "ZMK 'REZERVUAROSTROITEL' tomonidan ishlab chiqarilgan 30 m³ idishiga buyurtma berish mumkin:",
+    "zakazList": [
+      "to'g'ridan-to'g'ri veb-saytdan;",
+      "+99893 738 55 58 telefon orqali;",
+      "teknikinnovatsion.info@gmail.com elektron pochta orqali so'rov yuborish orqali."
+    ],
+    "zakazDesc2": "Sizning so'rovingiz bir kun ichida ko'rib chiqiladi.",
+    // part 3
+    "caption3": "ZMK 'REZERVUAROSTROITEL' dan standart RGS-30 idishlari",
+    "subCaption1": "Yer usti RGSn-30 idishi:",
+    "part3Img1": {
+      "img1": rgs30_3_1,
+      "img2": rgs30_3_2
+    },
+    "subCaption2": "Yer osti RGSp-30 idishi:",
+    "part3Img2": {
+      "img1": rgs30_3_3,
+      "img2": rgs30_3_4
+    },
+    // part 4
+    "caption4": "RGS-30 konfiguratsiyalari",
+    "part4desc": "ZMK 'REZERVUAROSTROITEL' bir nechta asosiy konfiguratsiyalarda 30 m³ idishlarni ishlab chiqaradi:",
+    "part4SubCaption1": "Yer osti / Yer usti RGS-30:",
+    "part4List1": [
+      "RGSn-30 – yer usti joylashuvi;",
+      "RGSp-30 – texnik quduq bilan yer osti joylashuvi;"
+    ],
+    "part4SubCaption2": "Bir devorli / Ikki devorli RGS-30:",
+    "part4List2": [
+      "RGSn-30: yer usti joylashuvi uchun bir devorli gorizontal idish;",
+      "RGSDn-30: yer usti joylashuvi uchun ikki devorli gorizontal idish;",
+      "RGSp-30: yer osti joylashuvi uchun bir devorli gorizontal idish;",
+      "RGSDp-30: yer osti joylashuvi uchun ikki devorli gorizontal idish."
+    ],
+    "part4desc2": "30 m³ ikki devorli idish ishlab chiqarilganda, devorlar orasidagi bo'shliq azot yoki suyuqlik bilan to'ldiriladi. Butun devorlar orasi bo'shliq to'ldiriladi va idish yopiq evakuatsiya tizimi bilan jihozlanadi.",
+    // part 5
+    "caption5": "Devorlar orasi bo'shliq uchun suyuqlik talablari:",
+    "part5List": [
+      "yonish harorati 100°C dan past bo'lmasligi kerak;",
+      "idishning konstruktsiya materiallari va saqlanadigan yoqilg'iga kimyoviy jihatdan neytral bo'lishi;",
+      "RGSda saqlanadigan mahsulotga nisbatan yuqori zichlik;",
+      "idish mo'ljallangan atrof-muhit haroratlarida o'z xususiyatlarini saqlab qolish qobiliyati;"
+    ],
+    // part 6
+    "caption6": "Bir sektsiyali / Ikki sektsiyali / Ko'p sektsiyali RGS-30:",
+    "part5SubCaption1": "Yuqorida aytib o'tilgan RGS-30 konfiguratsiyalari bir yoki bir nechta kamerali (sektsiyali) bo'lishi mumkin. Kameralar idish korpusidagi maxsus konstruktsiyali bo'linmalar orqali shakllanadi. Shunday qilib, RGS idishi ikki yoki undan ortiq bo'limlarga bo'linadi, bu esa turli xil suyuq xomashyolarni saqlash imkonini beradi. Ikki kamerali yoki ko'p kamerali gorizontal idishlarni ishlab chiqarishda biz kameralarning muhrlanishini kafolatlaymiz.",
+    "part5SubCaption2": "Quyidagi jadvalda ZMK 'REZERVUAROSTROITEL' tomonidan ishlab chiqarilgan 30 m³ hajmli idishlarning turli konfiguratsiyalardagi asosiy texnik xususiyatlari keltirilgan.",
+    // part 7
+    "caption7": "RGS-30 idishlarining texnik xususiyatlari",
+    "table": {
+      "thead": {
+        "tr1": ["RGS-30", "YER USTI", "YER OSTI"],
+        "tr2": ["", "BIR DEVORLI", "IKKI DEVORLI", "BIR DEVORLI", "IKKI DEVORLI"]
+      },
+      "tbody": [
+        ["Nominal hajm, m³", "30.00", "30.00", "30.00", "30.00"],
+        ["Diametr, m", "2.40", "2.42", "2.40", "2.42"],
+        ["Tayanchlardagi balandlik, m", "2.56", "2.56", "2.56", "2.56"],
+        ["Texnik quduq bilan tayanchlardagi balandlik, m", "", "", "3.86", "3.86"],
+        ["Idish uzunligi, m", "2.00", "2.02", "2.00", "2.02"],
+        ["Umumiy og'irlik, t", "2.65", "4.40", "2.95", "4.70"],
+        ["Tayanchlar soni, dona", "3.00", "3.00", "3.00", "3.00"],
+        ["Korpus qalinligi, mm", "4.00", "4.00", "4.00", "4.00"]
+      ]
+    },
+    "allLinks": {
+      "text": "Gorizontal idishlarning boshqa hajmlari:",
+      "links": [
+        { "to": "/rgs-3", "text": "RGS-3" },
+        { "to": "/rgs-5", "text": "RGS-5" },
+        { "to": "/rgs-10", "text": "RGS-10" },
+        { "to": "/rgs-15", "text": "RGS-15" },
+        { "to": "/rgs-20", "text": "RGS-20" },
+        { "to": "/rgs-25", "text": "RGS-25" },
+        { "to": "/rgs-30", "text": "RGS-30" },
+        { "to": "/rgs-40", "text": "RGS-40" },
+        { "to": "/rgs-50", "text": "RGS-50" },
+        { "to": "/rgs-60", "text": "RGS-60" },
+        { "to": "/rgs-75", "text": "RGS-75" },
+        { "to": "/rgs-100", "text": "RGS-100" }
+      ]
+    },
+    // part 8
+    "caption8": "Yetkazib berishni hisoblash",
+    "part8desc": "RGS-30 m³, gorizontal po'lat idish yer usti / yer osti",
+    "part8Img": rgs30_footbg
+  },
+  {
+    "id": "rgs-40",
+    // part 1
+    "caption": "RGS-40 m³, Gorizontal po'lat idish yer usti / yer osti",
+    "desc1": "ZMK 'REZERVUAROSTROITEL' 40 m³ hajmli RGS tipidagi gorizontal silindrsimon po'lat idishlarni ishlab chiqaradi (RGS-40).",
+    "desc2": "RGS-40 idishlari zichligi 1 t/m³ dan oshmaydigan suyuq xomashyoni saqlash va tarqatish uchun ishlatiladi, harorat –60°C dan +90°C gacha, ichki bosim 0,07 MPa gacha va seysmik tebranishlar 7 ballgacha bo'lgan sharoitlarda.",
+    "desc3": "RGS-40 idishi GOST 17032-2010 'Neft mahsulotlari uchun gorizontal po'lat idishlar' va GOST R 52630-2012 'Payvandlangan po'lat idishlar va apparatlar' standartlariga muvofiq ishlab chiqariladi. Gorizontal idishlarimizning sifati №РРС.00-047039 foydalanishga ruxsatnomasi va №Росс.RU.АВ17.по1286 muvofiqlik sertifikati bilan tasdiqlangan.",
+    "images": [rgs40_1, rgs40_2, rgs40_3, rgs40_4],
+    // part 2
+    "caption2": "RGS-40 idishiga buyurtma berish",
+    "zakazText": "Mijozlarimiz har doim konstruktorlik byuromizning standart chizmalariga muvofiq ishlab chiqarilgan 40 m³ idishni sotib olishlari mumkin (quyida texnik xususiyatlar va chizmalar bilan tanishish mumkin).",
+    "zakazText2": "Shuningdek, biz mijozning maxsus talablariga ko'ra konstruktorlik hujjatlarni ishlab chiqishni (masalan, idishni joylashtirish uchun cheklangan sharoitlarda) yoki sizning chizmalaringiz bo'yicha RGS idishlarni ishlab chiqarishni tez-tez amalga oshiramiz.",
+    "zakazImg": [rgs40_2_1, rgs40_2_2, rgs40_2_3, rgs40_2_4],
+    "zakazDesc": "ZMK 'REZERVUAROSTROITEL' tomonidan ishlab chiqarilgan RGS-40 idishiga buyurtma berish mumkin:",
+    "zakazList": [
+      "to'g'ridan-to'g'ri veb-saytdan;",
+      "+99893 738 55 58 telefon orqali;",
+      "teknikinnovatsion.info@gmail.com elektron pochta orqali so'rov yuborish orqali."
+    ],
+    "zakazDesc2": "Sizning so'rovingiz bir kun ichida ko'rib chiqiladi.",
+    // part 3
+    "caption3": "ZMK 'REZERVUAROSTROITEL' dan standart RGS-40 idishlari",
+    "subCaption1": "Yer usti RGSn-40 idishi:",
+    "part3Img1": {
+      "img1": rgs40_3_1,
+      "img2": rgs40_3_2
+    },
+    "subCaption2": "Yer osti RGSp-40 idishi:",
+    "part3Img2": {
+      "img1": rgs40_3_3,
+      "img2": rgs40_3_4
+    },
+    // part 4
+    "caption4": "RGS-40 konfiguratsiyalari",
+    "part4desc": "ZMK 'REZERVUAROSTROITEL' bir nechta asosiy konfiguratsiyalarda RGS-40 gorizontal idishlarni ishlab chiqaradi:",
+    "part4SubCaption1": "Yer osti / Yer usti RGS-40:",
+    "part4List1": [
+      "RGSn-40 – yer usti joylashuvi;",
+      "RGSp-40 – texnik quduq bilan yer osti joylashuvi;"
+    ],
+    "part4SubCaption2": "Bir devorli / Ikki devorli RGS-40:",
+    "part4List2": [
+      "RGSn-40: yer usti joylashuvi uchun bir devorli gorizontal idish;",
+      "RGSDn-40: yer usti joylashuvi uchun ikki devorli gorizontal idish;",
+      "RGSp-40: yer osti joylashuvi uchun bir devorli gorizontal idish;",
+      "RGSDp-40: yer osti joylashuvi uchun ikki devorli gorizontal idish."
+    ],
+    "part4desc2": "40 m³ ikki devorli idish ishlab chiqarilganda, devorlar orasidagi bo'shliq azot yoki suyuqlik bilan to'ldiriladi. Butun devorlar orasi bo'shliq to'ldiriladi va idish yopiq evakuatsiya tizimi bilan jihozlanadi.",
+    // part 5
+    "caption5": "Devorlar orasi bo'shliq uchun suyuqlik talablari:",
+    "part5List": [
+      "yonish harorati 100°C dan past bo'lmasligi kerak;",
+      "idishning konstruktsiya materiallari va saqlanadigan yoqilg'iga kimyoviy jihatdan neytral bo'lishi;",
+      "RGSda saqlanadigan mahsulotga nisbatan yuqori zichlik;",
+      "idish mo'ljallangan atrof-muhit haroratlarida o'z xususiyatlarini saqlab qolish qobiliyati;"
+    ],
+    // part 6
+    "caption6": "Bir sektsiyali / Ikki sektsiyali / Ko'p sektsiyali RGS-40:",
+    "part5SubCaption1": "Yuqorida aytib o'tilgan RGS-40 konfiguratsiyalari bir yoki bir nechta kamerali (sektsiyali) bo'lishi mumkin. Kameralar idish korpusidagi maxsus konstruktsiyali bo'linmalar orqali shakllanadi. Shunday qilib, RGS idishi ikki yoki undan ortiq bo'limlarga bo'linadi, bu esa turli xil suyuq xomashyolarni saqlash imkonini beradi. Ikki kamerali yoki ko'p kamerali gorizontal idishlarni ishlab chiqarishda biz kameralarning muhrlanishini kafolatlaymiz.",
+    "part5SubCaption2": "Quyidagi jadvalda ZMK 'REZERVUAROSTROITEL' tomonidan ishlab chiqarilgan 40 m³ hajmli idishlarning turli konfiguratsiyalardagi asosiy texnik xususiyatlari keltirilgan.",
+    // part 7
+    "caption7": "RGS-40 idishlarining texnik xususiyatlari",
+    "table": {
+      "thead": {
+        "tr1": ["RGS-40", "YER USTI", "YER OSTI"],
+        "tr2": ["", "BIR DEVORLI", "IKKI DEVORLI", "BIR DEVORLI", "IKKI DEVORLI"]
+      },
+      "tbody": [
+        ["Nominal hajm, m³", "40.00", "40.00", "40.00", "40.00"],
+        ["Diametr, m", "2.40", "2.42", "2.40", "2.42"],
+        ["Tayanchlardagi balandlik, m", "2.56", "2.56", "2.56", "2.56"],
+        ["Texnik quduq bilan tayanchlardagi balandlik, m", "", "", "3.86", "3.86"],
+        ["Idish uzunligi, m", "9.60", "9.62", "9.60", "9.62"],
+        ["Umumiy og'irlik, t", "3.10", "5.50", "3.40", "5.80"],
+        ["Tayanchlar soni, dona", "4.00", "4.00", "4.00", "4.00"],
+        ["Korpus qalinligi, mm", "4.00", "4.00", "4.00", "4.00"]
+      ]
+    },
+    "allLinks": {
+      "text": "Gorizontal idishlarning boshqa hajmlari:",
+      "links": [
+        { "to": "/rgs-3", "text": "RGS-3" },
+        { "to": "/rgs-5", "text": "RGS-5" },
+        { "to": "/rgs-10", "text": "RGS-10" },
+        { "to": "/rgs-15", "text": "RGS-15" },
+        { "to": "/rgs-20", "text": "RGS-20" },
+        { "to": "/rgs-25", "text": "RGS-25" },
+        { "to": "/rgs-30", "text": "RGS-30" },
+        { "to": "/rgs-40", "text": "RGS-40" },
+        { "to": "/rgs-50", "text": "RGS-50" },
+        { "to": "/rgs-60", "text": "RGS-60" },
+        { "to": "/rgs-75", "text": "RGS-75" },
+        { "to": "/rgs-100", "text": "RGS-100" }
+      ]
+    },
+    // part 8
+    "caption8": "Yetkazib berishni hisoblash",
+    "part8desc": "RGS-40 m³, gorizontal po'lat idish yer usti / yer osti",
+    "part8Img": rgs40_footbg
+  },
+  {
+    "id": "rgs-50",
+    // part 1
+    "caption": "RGS-50 m³, Gorizontal po'lat idish yer usti / yer osti",
+    "desc1": "ZMK 'REZERVUAROSTROITEL' 50 m³ hajmli RGS tipidagi gorizontal silindrsimon po'lat idishlarni ishlab chiqaradi (RGS-50).",
+    "desc2": "RGS-50 idishlari zichligi 1 t/m³ dan oshmaydigan suyuq xomashyoni saqlash va tarqatish uchun ishlatiladi, harorat –60°C dan +90°C gacha, ichki bosim 0,07 MPa gacha va seysmik tebranishlar 7 ballgacha bo'lgan sharoitlarda.",
+    "desc3": "RGS-50 m³ idishi GOST 17032-2010 'Neft mahsulotlari uchun gorizontal po'lat idishlar' va GOST R 52630-2012 'Payvandlangan po'lat idishlar va apparatlar' standartlariga muvofiq ishlab chiqariladi. Gorizontal idishlarimizning sifati №РРС.00-047039 foydalanishga ruxsatnomasi va №Росс.RU.АВ17.по1286 muvofiqlik sertifikati bilan tasdiqlangan.",
+    "images": [rgs50_1, rgs50_2, rgs50_3, rgs50_4],
+    // part 2
+    "caption2": "RGS-50 idishiga buyurtma berish",
+    "zakazText": "Mijozlarimiz har doim konstruktorlik byuromizning standart chizmalariga muvofiq ishlab chiqarilgan 50 m³ RGS-50 idishini sotib olishlari mumkin (quyida texnik xususiyatlar va chizmalar bilan tanishish mumkin).",
+    "zakazText2": "Shuningdek, biz mijozning maxsus talablariga ko'ra konstruktorlik hujjatlarni ishlab chiqishni (masalan, idishni joylashtirish uchun cheklangan sharoitlarda) yoki sizning chizmalaringiz bo'yicha RGS idishlarni ishlab chiqarishni tez-tez amalga oshiramiz.",
+    "zakazImg": [rgs50_2_1, rgs50_2_2, rgs50_2_3, rgs50_2_4],
+    "zakazDesc": "ZMK 'REZERVUAROSTROITEL' tomonidan ishlab chiqarilgan 50 m³ RGS-50 idishiga buyurtma berish mumkin:",
+    "zakazList": [
+      "to'g'ridan-to'g'ri veb-saytdan;",
+      "+99893 738 55 58 telefon orqali;",
+      "teknikinnovatsion.info@gmail.com elektron pochta orqali so'rov yuborish orqali."
+    ],
+    "zakazDesc2": "Sizning so'rovingiz bir kun ichida ko'rib chiqiladi.",
+    // part 3
+    "caption3": "ZMK 'REZERVUAROSTROITEL' dan standart RGS-50 idishlari",
+    "subCaption1": "Yer usti RGSn-50 idishi:",
+    "part3Img1": {
+      "img1": rgs50_3_1,
+      "img2": rgs50_3_2
+    },
+    "subCaption2": "Yer osti RGSp-50 idishi:",
+    "part3Img2": {
+      "img1": rgs50_3_3,
+      "img2": rgs50_3_4
+    },
+    "part3Desc": "RGS-50 narxi idishning konfiguratsiyasiga qarab shakllanadi.",
+    // part 4
+    "caption4": "RGS-50 konfiguratsiyalari",
+    "part4desc": "ZMK 'REZERVUAROSTROITEL' bir nechta asosiy konfiguratsiyalarda 50 m³ RGS-50 gorizontal idishlarni ishlab chiqaradi:",
+    "part4SubCaption1": "Yer osti / Yer usti RGS-50:",
+    "part4List1": [
+      "RGSn-50 – yer usti joylashuvi;",
+      "RGSp-50 – texnik quduq bilan yer osti joylashuvi;"
+    ],
+    "part4SubCaption2": "Bir devorli / Ikki devorli RGS-50:",
+    "part4List2": [
+      "RGSn-50: yer usti joylashuvi uchun bir devorli gorizontal idish;",
+      "RGSDn-50: yer usti joylashuvi uchun ikki devorli gorizontal idish;",
+      "RGSp-50: yer osti joylashuvi uchun bir devorli gorizontal idish;",
+      "RGSDp-50: yer osti joylashuvi uchun ikki devorli gorizontal idish."
+    ],
+    "part4desc2": "50 m³ ikki devorli idish ishlab chiqarilganda, devorlar orasidagi bo'shliq azot yoki suyuqlik bilan to'ldiriladi. Butun devorlar orasi bo'shliq to'ldiriladi va idish yopiq evakuatsiya tizimi bilan jihozlanadi.",
+    // part 5
+    "caption5": "Devorlar orasi bo'shliq uchun suyuqlik talablari:",
+    "part5List": [
+      "yonish harorati 100°C dan past bo'lmasligi kerak;",
+      "idishning konstruktsiya materiallari va saqlanadigan yoqilg'iga kimyoviy jihatdan neytral bo'lishi;",
+      "RGSda saqlanadigan mahsulotga nisbatan yuqori zichlik;",
+      "idish mo'ljallangan atrof-muhit haroratlarida o'z xususiyatlarini saqlab qolish qobiliyati;"
+    ],
+    // part 6
+    "caption6": "Bir sektsiyali / Ikki sektsiyali / Ko'p sektsiyali RGS-50 m³:",
+    "part5SubCaption1": "Yuqorida aytib o'tilgan RGS-50 konfiguratsiyalari bir yoki bir nechta kamerali (sektsiyali) bo'lishi mumkin. Kameralar idish korpusidagi maxsus konstruktsiyali bo'linmalar orqali shakllanadi. Shunday qilib, RGS idishi ikki yoki undan ortiq bo'limlarga bo'linadi, bu esa turli xil suyuq xomashyolarni saqlash imkonini beradi. Ikki kamerali yoki ko'p kamerali gorizontal idishlarni ishlab chiqarishda biz kameralarning muhrlanishini kafolatlaymiz.",
+    "part5SubCaption2": "Quyidagi jadvalda ZMK 'REZERVUAROSTROITEL' tomonidan ishlab chiqarilgan 50 m³ hajmli RGS idishlarining turli konfiguratsiyalardagi asosiy texnik xususiyatlari keltirilgan.",
+    // part 7
+    "caption7": "RGS-50 m³ idishlarining texnik xususiyatlari",
+    "table": {
+      "thead": {
+        "tr1": ["RGS-50", "YER USTI", "YER OSTI"],
+        "tr2": ["", "BIR DEVORLI", "IKKI DEVORLI", "BIR DEVORLI", "IKKI DEVORLI"]
+      },
+      "tbody": [
+        ["Nominal hajm, m³", "50.00", "50.00", "50.00", "50.00"],
+        ["Diametr, m", "2.80", "2.82", "2.80", "2.82"],
+        ["Tayanchlardagi balandlik, m", "2.96", "2.96", "2.96", "2.96"],
+        ["Texnik quduq bilan tayanchlardagi balandlik, m", "", "", "4.21", "4.21"],
+        ["Idish uzunligi, m", "9.60", "9.62", "9.60", "9.62"],
+        ["Umumiy og'irlik, t", "3.70", "6.50", "4.00", "6.80"],
+        ["Tayanchlar soni, dona", "4.00", "4.00", "4.00", "4.00"],
+        ["Korpus qalinligi, mm", "4.00", "4.00", "4.00", "4.00"]
+      ]
+    },
+    "allLinks": {
+      "text": "Gorizontal idishlarning boshqa hajmlari:",
+      "links": [
+        { "to": "/rgs-3", "text": "RGS-3" },
+        { "to": "/rgs-5", "text": "RGS-5" },
+        { "to": "/rgs-10", "text": "RGS-10" },
+        { "to": "/rgs-15", "text": "RGS-15" },
+        { "to": "/rgs-20", "text": "RGS-20" },
+        { "to": "/rgs-25", "text": "RGS-25" },
+        { "to": "/rgs-30", "text": "RGS-30" },
+        { "to": "/rgs-40", "text": "RGS-40" },
+        { "to": "/rgs-50", "text": "RGS-50" },
+        { "to": "/rgs-60", "text": "RGS-60" },
+        { "to": "/rgs-75", "text": "RGS-75" },
+        { "to": "/rgs-100", "text": "RGS-100" }
+      ]
+    },
+    // part 8
+    "caption8": "Yetkazib berishni hisoblash",
+    "part8desc": "RGS-50 m³, gorizontal po'lat idish yer usti / yer osti",
+    "part8Img": rgs50_footbg
+  },
+  {
+    "id": "rgs-60",
+    // part 1
+    "caption": "RGS-60 m³, Gorizontal po'lat idish yer usti / yer osti",
+    "desc1": "ZMK 'REZERVUAROSTROITEL' 60 m³ hajmli RGS tipidagi gorizontal silindrsimon po'lat idishlarni ishlab chiqaradi (RGS-60).",
+    "desc2": "RGS-60 idishlari zichligi 1 t/m³ dan oshmaydigan suyuq xomashyoni saqlash va tarqatish uchun ishlatiladi, harorat –60°C dan +90°C gacha, ichki bosim 0,07 MPa gacha va seysmik tebranishlar 7 ballgacha bo'lgan sharoitlarda.",
+    "desc3": "RGS-60 idishi GOST 17032-2010 'Neft mahsulotlari uchun gorizontal po'lat idishlar' va GOST R 52630-2012 'Payvandlangan po'lat idishlar va apparatlar' standartlariga muvofiq ishlab chiqariladi. Gorizontal idishlarimizning sifati №РРС.00-047039 foydalanishga ruxsatnomasi va №Росс.RU.АВ17.по1286 muvofiqlik sertifikati bilan tasdiqlangan.",
+    "images": [rgs60_1, rgs60_2, rgs60_3, rgs60_4, rgs60_5, rgs60_6, rgs60_7],
+    // part 2
+    "caption2": "RGS-60 idishiga buyurtma berish",
+    "zakazText": "Mijozlarimiz har doim konstruktorlik byuromizning standart chizmalariga muvofiq ishlab chiqarilgan 60 m³ idishni sotib olishlari mumkin (quyida texnik xususiyatlar va chizmalar bilan tanishish mumkin).",
+    "zakazText2": "Shuningdek, biz mijozning maxsus talablariga ko'ra konstruktorlik hujjatlarni ishlab chiqishni (masalan, idishni joylashtirish uchun cheklangan sharoitlarda) yoki sizning chizmalaringiz bo'yicha gorizontal po'lat idishlarni ishlab chiqarishni tez-tez amalga oshiramiz.",
+    "zakazImg": [rgs60_2_1, rgs60_2_2, rgs60_2_3, rgs60_2_4],
+    "zakazDesc": "ZMK 'REZERVUAROSTROITEL' tomonidan ishlab chiqarilgan 60 m³ idishiga buyurtma berish mumkin:",
+    "zakazList": [
+      "to'g'ridan-to'g'ri veb-saytdan;",
+      "+99893 738 55 58 telefon orqali;",
+      "teknikinnovatsion.info@gmail.com elektron pochta orqali so'rov yuborish orqali."
+    ],
+    "zakazDesc2": "Sizning so'rovingiz bir kun ichida ko'rib chiqiladi.",
+    // part 3
+    "caption3": "ZMK 'REZERVUAROSTROITEL' dan standart RGS-60 idishlari",
+    "subCaption1": "Yer usti RGSn-60 idishi:",
+    "part3Img1": {
+      "img1": rgs60_3_1,
+      "img2": rgs60_3_2
+    },
+    "subCaption2": "Yer osti RGSp-60 idishi:",
+    "part3Img2": {
+      "img1": rgs60_3_3,
+      "img2": rgs60_3_4
+    },
+    // part 4
+    "caption4": "RGS-60 konfiguratsiyalari",
+    "part4desc": "ZMK 'REZERVUAROSTROITEL' bir nechta asosiy konfiguratsiyalarda 60 m³ gorizontal idishlarni ishlab chiqaradi:",
+    "part4SubCaption1": "Yer osti / Yer usti RGS-60:",
+    "part4List1": [
+      "RGSn-60 – yer usti joylashuvi;",
+      "RGSp-60 – texnik quduq bilan yer osti joylashuvi;"
+    ],
+    "part4SubCaption2": "Bir devorli / Ikki devorli RGS-60:",
+    "part4List2": [
+      "RGSn-60: yer usti joylashuvi uchun bir devorli gorizontal idish;",
+      "RGSDn-60: yer usti joylashuvi uchun ikki devorli gorizontal idish;",
+      "RGSp-60: yer osti joylashuvi uchun bir devorli gorizontal idish;",
+      "RGSDp-60: yer osti joylashuvi uchun ikki devorli gorizontal idish."
+    ],
+    "part4desc2": "60 m³ ikki devorli idish ishlab chiqarilganda, devorlar orasidagi bo'shliq azot yoki suyuqlik bilan to'ldiriladi. Butun devorlar orasi bo'shliq to'ldiriladi va idish yopiq evakuatsiya tizimi bilan jihozlanadi.",
+    // part 5
+    "caption5": "Devorlar orasi bo'shliq uchun suyuqlik talablari:",
+    "part5List": [
+      "yonish harorati 100°C dan past bo'lmasligi kerak;",
+      "idishning konstruktsiya materiallari va saqlanadigan yoqilg'iga kimyoviy jihatdan neytral bo'lishi;",
+      "RGSda saqlanadigan mahsulotga nisbatan yuqori zichlik;",
+      "idish mo'ljallangan atrof-muhit haroratlarida o'z xususiyatlarini saqlab qolish qobiliyati;"
+    ],
+    // part 6
+    "caption6": "Bir sektsiyali / Ikki sektsiyali / Ko'p sektsiyali RGS-60:",
+    "part5SubCaption1": "Yuqorida aytib o'tilgan RGS-60 konfiguratsiyalari bir yoki bir nechta kamerali (sektsiyali) bo'lishi mumkin. Kameralar idish korpusidagi maxsus konstruktsiyali bo'linmalar orqali shakllanadi. Shunday qilib, 60 m³ idish ikki yoki undan ortiq bo'limlarga bo'linadi, bu esa turli xil suyuq xomashyolarni saqlash imkonini beradi. Ikki kamerali yoki ko'p kamerali gorizontal idishlarni ishlab chiqarishda biz kameralarning muhrlanishini kafolatlaymiz.",
+    "part5SubCaption2": "Quyidagi jadvalda ZMK 'REZERVUAROSTROITEL' tomonidan ishlab chiqarilgan 60 m³ hajmli RGS idishlarining turli konfiguratsiyalardagi asosiy texnik xususiyatlari keltirilgan.",
+    // part 7
+    "caption7": "RGS-60 idishlarining texnik xususiyatlari",
+    "table": {
+      "thead": {
+        "tr1": ["RGS-60", "YER USTI", "YER OSTI"],
+        "tr2": ["", "BIR DEVORLI", "IKKI DEVORLI", "BIR DEVORLI", "IKKI DEVORLI"]
+      },
+      "tbody": [
+        ["Nominal hajm, m³", "60.00", "60.00", "60.00", "60.00"],
+        ["Diametr, m", "2.80", "2.82", "2.80", "2.82"],
+        ["Tayanchlardagi balandlik, m", "2.96", "2.96", "2.96", "2.96"],
+        ["Texnik quduq bilan tayanchlardagi balandlik, m", "", "", "4.21", "4.21"],
+        ["Idish uzunligi, m", "10.60", "10.62", "10.60", "10.62"],
+        ["Umumiy og'irlik, t", "4.00", "7.10", "4.30", "7.40"],
+        ["Tayanchlar soni, dona", "4.00", "4.00", "4.00", "4.00"],
+        ["Korpus qalinligi, mm", "4.00", "4.00", "4.00", "4.00"]
+      ]
+    },
+    "allLinks": {
+      "text": "Gorizontal idishlarning boshqa hajmlari:",
+      "links": [
+        { "to": "/rgs-3", "text": "RGS-3" },
+        { "to": "/rgs-5", "text": "RGS-5" },
+        { "to": "/rgs-10", "text": "RGS-10" },
+        { "to": "/rgs-15", "text": "RGS-15" },
+        { "to": "/rgs-20", "text": "RGS-20" },
+        { "to": "/rgs-25", "text": "RGS-25" },
+        { "to": "/rgs-30", "text": "RGS-30" },
+        { "to": "/rgs-40", "text": "RGS-40" },
+        { "to": "/rgs-50", "text": "RGS-50" },
+        { "to": "/rgs-60", "text": "RGS-60" },
+        { "to": "/rgs-75", "text": "RGS-75" },
+        { "to": "/rgs-100", "text": "RGS-100" }
+      ]
+    },
+    // part 8
+    "caption8": "Yetkazib berishni hisoblash",
+    "part8desc": "RGS-60 m³, gorizontal po'lat idish yer usti / yer osti",
+    "part8Img": rgs60_footbg
+  },
+  {
+    "id": "rgs-75",
+    // part 1
+    "caption": "RGS-75 m³, Gorizontal po'lat idish yer usti / yer osti",
+    "desc1": "ZMK 'REZERVUAROSTROITEL' 75 m³ hajmli RGS tipidagi gorizontal silindrsimon po'lat idishlarni ishlab chiqaradi (RGS-75).",
+    "desc2": "RGS-75 idishlari zichligi 1 t/m³ dan oshmaydigan suyuq xomashyoni saqlash va tarqatish uchun ishlatiladi, harorat –60°C dan +90°C gacha, ichki bosim 0,07 MPa gacha va seysmik tebranishlar 7 ballgacha bo'lgan sharoitlarda.",
+    "desc3": "RGS-75 m³ idishi GOST 17032-2010 'Neft mahsulotlari uchun gorizontal po'lat idishlar' va GOST R 52630-2012 'Payvandlangan po'lat idishlar va apparatlar' standartlariga muvofiq ishlab chiqariladi. Gorizontal idishlarimizning sifati №РРС.00-047039 foydalanishga ruxsatnomasi va №Росс.RU.АВ17.по1286 muvofiqlik sertifikati bilan tasdiqlangan.",
+    "images": [rgs75_1, rgs75_2, rgs75_3, rgs75_4],
+    // part 2
+    "caption2": "RGS-75 idishiga buyurtma berish",
+    "zakazText": "Mijozlarimiz har doim konstruktorlik byuromizning standart chizmalariga muvofiq ishlab chiqarilgan 75 m³ idishni sotib olishlari mumkin (quyida texnik xususiyatlar va chizmalar bilan tanishish mumkin).",
+    "zakazText2": "Shuningdek, biz mijozning maxsus talablariga ko'ra konstruktorlik hujjatlarni ishlab chiqishni (masalan, idishni joylashtirish uchun cheklangan sharoitlarda) yoki sizning chizmalaringiz bo'yicha gorizontal po'lat idishlarni ishlab chiqarishni tez-tez amalga oshiramiz.",
+    "zakazImg": [rgs75_2_1, rgs75_2_2, rgs75_2_3, rgs75_2_4],
+    "zakazDesc": "ZMK 'REZERVUAROSTROITEL' tomonidan ishlab chiqarilgan 75 m³ idishiga buyurtma berish mumkin:",
+    "zakazList": [
+      "to'g'ridan-to'g'ri veb-saytdan;",
+      "+99893 738 55 58 telefon orqali;",
+      "teknikinnovatsion.info@gmail.com elektron pochta orqali so'rov yuborish orqali."
+    ],
+    "zakazDesc2": "Sizning so'rovingiz bir kun ichida ko'rib chiqiladi.",
+    // part 3
+    "caption3": "ZMK 'REZERVUAROSTROITEL' dan standart RGS-75 idishlari",
+    "subCaption1": "Yer usti RGSn-75 idishi:",
+    "part3Img1": {
+      "img1": rgs75_3_1,
+      "img2": rgs75_3_2
+    },
+    "subCaption2": "Yer osti RGSp-75 idishi:",
+    "part3Img2": {
+      "img1": rgs75_3_3,
+      "img2": rgs75_3_4
+    },
+    "part3Desc": "RGS-75 idishining narxi idishning konfiguratsiyasiga qarab shakllanadi.",
+    // part 4
+    "caption4": "RGS-75 konfiguratsiyalari",
+    "part4desc": "ZMK 'REZERVUAROSTROITEL' bir nechta asosiy konfiguratsiyalarda 75 m³ RGS-75 gorizontal idishlarni ishlab chiqaradi:",
+    "part4SubCaption1": "Yer osti / Yer usti RGS-75:",
+    "part4List1": [
+      "RGSn-75 – yer usti joylashuvi;",
+      "RGSp-75 – texnik quduq bilan yer osti joylashuvi;"
+    ],
+    "part4SubCaption2": "Bir devorli / Ikki devorli RGS-75 idishlari:",
+    "part4List2": [
+      "RGSn-75: yer usti joylashuvi uchun bir devorli gorizontal idish;",
+      "RGSDn-75: yer usti joylashuvi uchun ikki devorli gorizontal idish;",
+      "RGSp-75: yer osti joylashuvi uchun bir devorli gorizontal idish;",
+      "RGSDp-75: yer osti joylashuvi uchun ikki devorli gorizontal idish."
+    ],
+    "part4desc2": "75 m³ ikki devorli idish ishlab chiqarilganda, devorlar orasidagi bo'shliq azot yoki suyuqlik bilan to'ldiriladi. Butun devorlar orasi bo'shliq to'ldiriladi va idish yopiq evakuatsiya tizimi bilan jihozlanadi.",
+    // part 5
+    "caption5": "Devorlar orasi bo'shliq uchun suyuqlik talablari:",
+    "part5List": [
+      "yonish harorati 100°C dan past bo'lmasligi kerak;",
+      "idishning konstruktsiya materiallari va saqlanadigan yoqilg'iga kimyoviy jihatdan neytral bo'lishi;",
+      "RGSda saqlanadigan mahsulotga nisbatan yuqori zichlik;",
+      "idish mo'ljallangan atrof-muhit haroratlarida o'z xususiyatlarini saqlab qolish qobiliyati;"
+    ],
+    // part 6
+    "caption6": "Bir sektsiyali / Ikki sektsiyali / Ko'p sektsiyali RGS-75:",
+    "part5SubCaption1": "Yuqorida aytib o'tilgan RGS-75 idish konfiguratsiyalari bir yoki bir nechta kamerali (sektsiyali) bo'lishi mumkin. Kameralar idish korpusidagi maxsus konstruktsiyali bo'linmalar orqali shakllanadi. Shunday qilib, RGS idishi ikki yoki undan ortiq bo'limlarga bo'linadi, bu esa turli xil suyuq xomashyolarni saqlash imkonini beradi. Ikki kamerali yoki ko'p kamerali gorizontal idishlarni ishlab chiqarishda biz kameralarning muhrlanishini kafolatlaymiz.",
+    "part5SubCaption2": "Quyidagi jadvalda ZMK 'REZERVUAROSTROITEL' tomonidan ishlab chiqarilgan 75 m³ hajmli idishlarning turli konfiguratsiyalardagi asosiy texnik xususiyatlari keltirilgan.",
+    // part 7
+    "caption7": "75 m³ idishlarining texnik xususiyatlari",
+    "table": {
+      "thead": {
+        "tr1": ["RGS-75", "YER USTI", "YER OSTI"],
+        "tr2": ["", "BIR DEVORLI", "IKKI DEVORLI", "BIR DEVORLI", "IKKI DEVORLI"]
+      },
+      "tbody": [
+        ["Nominal hajm, m³", "75.00", "75.00", "75.00", "75.00"],
+        ["Diametr, m", "3.24", "3.26", "3.24", "3.26"],
+        ["Tayanchlardagi balandlik, m", "3.40", "3.40", "3.40", "3.40"],
+        ["Texnik quduq bilan tayanchlardagi balandlik, m", "", "", "4.70", "4.70"],
+        ["Idish uzunligi, m", "9.60", "9.62", "9.60", "9.62"],
+        ["Umumiy og'irlik, t", "4.50", "8.50", "4.80", "8.80"],
+        ["Tayanchlar soni, dona", "4.00", "4.00", "4.00", "4.00"],
+        ["Korpus qalinligi, mm", "5.00", "5.00", "5.00", "5.00"]
+      ]
+    },
+    "allLinks": {
+      "text": "Gorizontal idishlarning boshqa hajmlari:",
+      "links": [
+        { "to": "/rgs-3", "text": "RGS-3" },
+        { "to": "/rgs-5", "text": "RGS-5" },
+        { "to": "/rgs-10", "text": "RGS-10" },
+        { "to": "/rgs-15", "text": "RGS-15" },
+        { "to": "/rgs-20", "text": "RGS-20" },
+        { "to": "/rgs-25", "text": "RGS-25" },
+        { "to": "/rgs-30", "text": "RGS-30" },
+        { "to": "/rgs-40", "text": "RGS-40" },
+        { "to": "/rgs-50", "text": "RGS-50" },
+        { "to": "/rgs-60", "text": "RGS-60" },
+        { "to": "/rgs-75", "text": "RGS-75" },
+        { "to": "/rgs-100", "text": "RGS-100" }
+      ]
+    },
+    // part 8
+    "caption8": "Yetkazib berishni hisoblash",
+    "part8desc": "RGS-75 m³, gorizontal po'lat idish yer usti / yer osti",
+    "part8Img": rgs75_footbg
+  },
+  {
+    "id": "rgs-100",
+    // part 1
+    "caption": "RGS-100 m³, Gorizontal po'lat idish yer usti / yer osti",
+    "desc1": "ZMK 'REZERVUAROSTROITEL' 100 m³ hajmli RGS tipidagi gorizontal silindrsimon po'lat idishlarni ishlab chiqaradi (RGS-100).",
+    "desc2": "RGS-100 idishlari zichligi 1 t/m³ dan oshmaydigan suyuq xomashyoni saqlash va tarqatish uchun ishlatiladi, harorat –60°C dan +90°C gacha, ichki bosim 0,07 MPa gacha va seysmik tebranishlar 7 ballgacha bo'lgan sharoitlarda.",
+    "desc3": "RGS-100 m³ idishi GOST 17032-2010 'Neft mahsulotlari uchun gorizontal po'lat idishlar' va GOST R 52630-2012 'Payvandlangan po'lat idishlar va apparatlar' standartlariga muvofiq ishlab chiqariladi. Gorizontal idishlarimizning sifati №РРС.00-047039 foydalanishga ruxsatnomasi va №Росс.RU.АВ17.по1286 muvofiqlik sertifikati bilan tasdiqlangan.",
+    "images": [rgs100_1, rgs100_2, rgs100_3, rgs100_4],
+    // part 2
+    "caption2": "RGS-100 idishiga buyurtma berish",
+    "zakazText": "Mijozlarimiz har doim konstruktorlik byuromizning standart chizmalariga muvofiq ishlab chiqarilgan 100 m³ idishni sotib olishlari mumkin (quyida texnik xususiyatlar va chizmalar bilan tanishish mumkin).",
+    "zakazText2": "Shuningdek, biz mijozning maxsus talablariga ko'ra konstruktorlik hujjatlarni ishlab chiqishni (masalan, idishni joylashtirish uchun cheklangan sharoitlarda) yoki sizning chizmalaringiz bo'yicha RGS idishlarni ishlab chiqarishni tez-tez amalga oshiramiz.",
+    "zakazImg": [rgs100_2_1, rgs100_2_2, rgs100_2_3, rgs100_2_4],
+    "zakazDesc": "ZMK 'REZERVUAROSTROITEL' tomonidan ishlab chiqarilgan 100 m³ idishiga buyurtma berish mumkin:",
+    "zakazList": [
+      "to'g'ridan-to'g'ri veb-saytdan;",
+      "+99893 738 55 58 telefon orqali;",
+      "teknikinnovatsion.info@gmail.com elektron pochta orqali so'rov yuborish orqali."
+    ],
+    "zakazDesc2": "Sizning so'rovingiz bir kun ichida ko'rib chiqiladi.",
+    // part 3
+    "caption3": "ZMK 'REZERVUAROSTROITEL' dan standart RGS-100 idishlari",
+    "subCaption1": "Yer usti RGSn-100 idishi:",
+    "part3Img1": {
+      "img1": rgs100_3_1,
+      "img2": rgs100_3_2
+    },
+    "subCaption2": "Yer osti RGSp-100 idishi:",
+    "part3Img2": {
+      "img1": rgs100_3_3,
+      "img2": rgs100_3_4
+    },
+    "part3Desc": "RGS-100 narxi idishning konfiguratsiyasiga qarab shakllanadi.",
+    // part 4
+    "caption4": "RGS-100 konfiguratsiyalari",
+    "part4desc": "ZMK 'REZERVUAROSTROITEL' bir nechta asosiy konfiguratsiyalarda 100 m³ RGS-100 gorizontal idishlarni ishlab chiqaradi:",
+    "part4SubCaption1": "Yer osti / Yer usti RGS-100:",
+    "part4List1": [
+      "RGSp-100 – texnik quduq bilan yer osti joylashuvi;",
+      "RGSn-100 – yer usti joylashuvi."
+    ],
+    "part4SubCaption2": "Bir devorli / Ikki devorli RGS-100 idishlari:",
+    "part4List2": [
+      "RGSn-100: yer usti joylashuvi uchun bir devorli gorizontal idish;",
+      "RGSDn-100: yer usti joylashuvi uchun ikki devorli gorizontal idish;",
+      "RGSp-100: yer osti joylashuvi uchun bir devorli gorizontal idish;",
+      "RGSDp-100: yer osti joylashuvi uchun ikki devorli gorizontal idish."
+    ],
+    "part4desc2": "100 m³ ikki devorli idish ishlab chiqarilganda, devorlar orasidagi bo'shliq azot yoki suyuqlik bilan to'ldiriladi. Butun devorlar orasi bo'shliq to'ldiriladi va idish yopiq evakuatsiya tizimi bilan jihozlanadi.",
+    // part 5
+    "caption5": "Devorlar orasi bo'shliq uchun suyuqlik talablari:",
+    "part5List": [
+      "yonish harorati 100°C dan past bo'lmasligi kerak;",
+      "idishning konstruktsiya materiallari va saqlanadigan yoqilg'iga kimyoviy jihatdan neytral bo'lishi;",
+      "RGSda saqlanadigan mahsulotga nisbatan yuqori zichlik;",
+      "idish mo'ljallangan atrof-muhit haroratlarida o'z xususiyatlarini saqlab qolish qobiliyati;"
+    ],
+    // part 6
+    "caption6": "Bir sektsiyali / Ikki sektsiyali / Ko'p sektsiyali RGS-100:",
+    "part5SubCaption1": "Yuqorida aytib o'tilgan RGS-100 konfiguratsiyalari bir yoki bir nechta kamerali (sektsiyali) bo'lishi mumkin. Kameralar idish korpusidagi maxsus konstruktsiyali bo'linmalar orqali shakllanadi. Shunday qilib, RGS-100 idishi ikki yoki undan ortiq bo'limlarga bo'linadi, bu esa turli xil suyuq xomashyolarni saqlash imkonini beradi. Ikki kamerali yoki ko'p kamerali gorizontal idishlarni ishlab chiqarishda biz kameralarning muhrlanishini kafolatlaymiz.",
+    "part5SubCaption2": "Quyidagi jadvalda ZMK 'REZERVUAROSTROITEL' tomonidan ishlab chiqarilgan 100 m³ hajmli idishlarning turli konfiguratsiyalardagi asosiy texnik xususiyatlari keltirilgan.",
+    // part 7
+    "caption7": "100 m³ idishlarining texnik xususiyatlari",
+    "table": {
+      "thead": {
+        "tr1": ["RGS-100", "YER USTI", "YER OSTI"],
+        "tr2": ["", "BIR DEVORLI", "IKKI DEVORLI", "BIR DEVORLI", "IKKI DEVORLI"]
+      },
+      "tbody": [
+        ["Nominal hajm, m³", "100.00", "100.00", "100.00", "100.00"],
+        ["Diametr, m", "3.24", "3.26", "3.24", "3.26"],
+        ["Tayanchlardagi balandlik, m", "3.40", "3.40", "3.40", "3.40"],
+        ["Texnik quduq bilan tayanchlardagi balandlik, m", "", "", "4.99", "4.99"],
+        ["Idish uzunligi, m", "9.60", "9.62", "9.60", "9.62"],
+        ["Umumiy og'irlik, t", "5.40", "10.90", "5.70", "11.20"],
+        ["Tayanchlar soni, dona", "5.00", "5.00", "5.00", "5.00"],
+        ["Korpus qalinligi, mm", "5.00", "5.00", "5.00", "5.00"]
+      ]
+    },
+    "allLinks": {
+      "text": "Gorizontal idishlarning boshqa hajmlari:",
+      "links": [
+        { "to": "/rgs-3", "text": "RGS-3" },
+        { "to": "/rgs-5", "text": "RGS-5" },
+        { "to": "/rgs-10", "text": "RGS-10" },
+        { "to": "/rgs-15", "text": "RGS-15" },
+        { "to": "/rgs-20", "text": "RGS-20" },
+        { "to": "/rgs-25", "text": "RGS-25" },
+        { "to": "/rgs-30", "text": "RGS-30" },
+        { "to": "/rgs-40", "text": "RGS-40" },
+        { "to": "/rgs-50", "text": "RGS-50" },
+        { "to": "/rgs-60", "text": "RGS-60" },
+        { "to": "/rgs-75", "text": "RGS-75" },
+        { "to": "/rgs-100", "text": "RGS-100" }
+      ]
+    },
+    // part 8
+    "caption8": "Yetkazib berishni hisoblash",
+    "part8desc": "RGS-100 m³, gorizontal po'lat idish yer usti / yer osti",
+    "part8Img": rgs100_footerbg
+  }
+]
