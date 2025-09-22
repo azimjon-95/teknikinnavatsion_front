@@ -190,16 +190,7 @@ export default function FuelStationCards({ lang = "ru", state }) {
 
     return (
         <div style={{ borderRadius: state !== "nane" && "20px" }} className="cards-container">
-            {
-                state !== "none" &&
-                <div style={{ marginBottom: "35px" }} className="bez-header-bottom">
-                    {translations[lang].navLinks.map((link, index) => (
-                        <Link key={index} to={`/${lang}/${link.path}`}>
-                            {link.label}
-                        </Link>
-                    ))}
-                </div>
-            }
+
             <div className="cards-wrapper">
                 <div className="cards-grid">
                     {duplicatedProducts.map((product, index) => (

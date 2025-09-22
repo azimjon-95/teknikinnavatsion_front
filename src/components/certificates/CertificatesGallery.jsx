@@ -3,6 +3,7 @@ import { X } from "lucide-react";
 import Гувохнома from "../../assets/cert/guvohnoma_page-0001.jpg";
 import Паспорт from "../../assets/cert/Паспорт.jpg";
 import Сертификат from "../../assets/cert/Сертификат.jpg";
+// import Рухсатнома from "../../assets/cert/Гувохнома ва сертификатлар_page-0001.jpg"; // ✅ yangi fayl
 import "./style.css";
 
 const CertificatesGallery = ({ lang }) => {
@@ -10,12 +11,10 @@ const CertificatesGallery = ({ lang }) => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [isZoomed, setIsZoomed] = useState(false);
 
-  // Trigger animation when component mounts
   useEffect(() => {
     setTimeout(() => setIsLoaded(true), 100);
   }, []);
 
-  // Translation object for ru, en, uz
   const translations = {
     en: {
       subtitle: "Official Documentation & Quality Certifications",
@@ -49,6 +48,13 @@ const CertificatesGallery = ({ lang }) => {
           type: "Product Passport",
           description: "SODIUM NITRATE TECHNICAL GOST 828-77",
           image: Паспорт,
+        },
+        {
+          id: 4,
+          title: "Official Permission",
+          type: "Government License",
+          description: "Permission certificate from the Uzbekistan Mining Industry Committee",
+          // image: Рухсатнома,
         },
       ],
     },
@@ -85,6 +91,13 @@ const CertificatesGallery = ({ lang }) => {
           description: "ТЕХНИЧЕСКИЙ НИТРАТ НАТРИЯ ГОСТ 828-77",
           image: Паспорт,
         },
+        {
+          id: 4,
+          title: "Разрешение",
+          type: "Государственная лицензия",
+          description: "Разрешительный документ от инспекции горнодобывающей промышленности Узбекистана",
+          // image: Рухсатнома,
+        },
       ],
     },
     uz: {
@@ -117,24 +130,30 @@ const CertificatesGallery = ({ lang }) => {
           id: 3,
           title: "Sifat passporti",
           type: "Mahsulot pasporti",
-          description: "TEXNIK texnik natriy nitrati GOST 828-77",
+          description: "TEXNIK natriy nitrati GOST 828-77",
           image: Паспорт,
+        },
+        {
+          id: 4,
+          title: "Ruxsatnoma",
+          type: "Davlat litsenziyasi",
+          description: "O‘zbekiston Respublikasi tog‘-kon sanoati qo‘mitasidan berilgan ruxsatnoma",
+          // image: Рухсатнома,
         },
       ],
     },
   };
 
-  // Fallback to English if lang is not supported
   const t = translations[lang] || translations.en;
 
   const openCertificate = (certificate) => {
     setSelectedCertificate(certificate);
-    setIsZoomed(false); // Reset zoom state when opening a new certificate
+    setIsZoomed(false);
   };
 
   const closeCertificate = () => {
     setSelectedCertificate(null);
-    setIsZoomed(false); // Reset zoom state when closing
+    setIsZoomed(false);
   };
 
   const toggleZoom = () => {
@@ -151,8 +170,7 @@ const CertificatesGallery = ({ lang }) => {
         {t.certificates.map((certificate, index) => (
           <div
             key={certificate.id}
-            className={`set-certificate-card ${isLoaded ? "set-animate-in" : ""
-              }`}
+            className={`set-certificate-card ${isLoaded ? "set-animate-in" : ""}`}
             style={{ animationDelay: `${index * 0.2}s` }}
             onClick={() => openCertificate(certificate)}
           >
@@ -165,9 +183,7 @@ const CertificatesGallery = ({ lang }) => {
             </div>
             <div className="set-certificate-info">
               <h3 className="set-certificate-title">{certificate.title}</h3>
-              <p className="set-certificate-description">
-                {certificate.description}
-              </p>
+              <p className="set-certificate-description">{certificate.description}</p>
               <div className="set-view-button">
                 <span>{t.viewCertificate}</span>
                 <span className="set-arrow">→</span>
@@ -179,10 +195,7 @@ const CertificatesGallery = ({ lang }) => {
 
       {selectedCertificate && (
         <div className="set-modal-overlay" onClick={closeCertificate}>
-          <div
-            className="set-modal-content"
-            onClick={(e) => e.stopPropagation()}
-          >
+          <div className="set-modal-content" onClick={(e) => e.stopPropagation()}>
             <button className="set-close-button" onClick={closeCertificate}>
               <X size={24} />
             </button>
@@ -195,8 +208,7 @@ const CertificatesGallery = ({ lang }) => {
                 <img
                   src={selectedCertificate.image}
                   alt={selectedCertificate.title}
-                  className={`set-modal-certificate-image ${isZoomed ? "zoomed" : ""
-                    }`}
+                  className={`set-modal-certificate-image ${isZoomed ? "zoomed" : ""}`}
                   onClick={toggleZoom}
                   style={{ cursor: isZoomed ? "zoom-out" : "zoom-in" }}
                 />
@@ -218,9 +230,7 @@ const CertificatesGallery = ({ lang }) => {
                   </div>
                   <div className="set-detail-item">
                     <span className="set-label">{t.type}</span>
-                    <span className="set-value">
-                      {selectedCertificate.type}
-                    </span>
+                    <span className="set-value">{selectedCertificate.type}</span>
                   </div>
                 </div>
               </div>
@@ -228,8 +238,6 @@ const CertificatesGallery = ({ lang }) => {
           </div>
         </div>
       )}
-
-
     </div>
   );
 };

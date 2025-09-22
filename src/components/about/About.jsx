@@ -29,12 +29,22 @@ const UniversalInfoPage = () => {
   const [language, setLanguage] = useState(lang || "uz");
   const { data: contactData, isLoading: contactsLoading } =
     useGetContactsQuery();
-  console.log(contactData?.innerData[contactData?.innerData.length - 1]);
+
 
   // Fallback translations to avoid undefined errors
   const t = translations[language] || translations["uz"];
 
   const phones = contactData?.innerData[contactData?.innerData.length - 1];
+  // Telefon raqamni formatlovchi funksiya
+  const formatPhoneNumber = (phone) => {
+    // faqat raqamlarni ajratib olamiz
+    const cleaned = phone.replace(/\D/g, "");
+    // Formatlash: +998 94 994 55 54
+    return cleaned.replace(
+      /^(\d{3})(\d{2})(\d{3})(\d{2})(\d{2})$/,
+      "+$1 $2 $3 $4 $5"
+    );
+  };
 
   const contactItems = [
     {
@@ -143,7 +153,6 @@ const UniversalInfoPage = () => {
     }
   }, [lang, activeSection, navigate]);
 
-  console.log(contactItems);
 
   const renderContent = () => {
     switch (activeSection) {
@@ -235,7 +244,7 @@ const UniversalInfoPage = () => {
                         className="abu-phone-link"
                         aria-label={`Call ${item.label}`}
                       >
-                        +998 {PhoneNumberFormat(item.value)}
+                        {formatPhoneNumber(item.value)}
                       </a>
                     </div>
                   ))}

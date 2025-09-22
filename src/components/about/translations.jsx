@@ -42,11 +42,11 @@ export const translations = {
       address:
         "Farg'ona viloyati, Toshloq tumani, Ahshak MFY, Besholish ko'chasi",
       main: "Qabulxona", // Приёмная
-      sales: "Sotuv bo'limi", // Отдел по продажам
-      export: "Eksport bo‘yicha sotuv bo‘limi", // Отдел сбыта по вопросам экспорта
-      procurement: "Xaridlar bo‘limi", // Отдел по закупу
+      sales: "Sotuv Bo'limi Boshlig'i", // Отдел по продажам
+      export: "Eksport bo‘yicha", // Отдел сбыта по вопросам экспорта
+      procurement: "Sotuv Bo'limi Operatori", // Отдел по закупу
       personnel: "Kadrlar bo‘limi", // Отдел по работе с персоналом
-      info: "Ma’lumotnoma byurosi", // Справочное бюро
+      info: "Servis Hizmat Bo'limi", // Справочное бюро
       telegram: "Telegram",
       whatsapp: "WhatsApp",
       infoPhone: "+998 99 997 44 40",
@@ -86,7 +86,7 @@ export const translations = {
       subtitle: "Ведущая компания в производстве азота",
       mission: "Наша миссия",
       missionDesc:
-        " В наших производственных процессах мы строго придерживаемся международных стандартов качества, применяя устойчивые и экологически безопасные технологии. Продукция адаптирована под потребности промышленности, сельского хозяйства и других ключевых отраслей.",
+        "В наших производственных процессах мы строго придерживаемся международных стандартов качества, применяя устойчивые и экологически безопасные технологии. Продукция адаптирована под потребности промышленности, сельского хозяйства и других ключевых отраслей.",
       quality: "Гарантия качества",
       qualityDesc:
         "Мы предлагаем каждому клиенту индивидуальный подход, стабильные поставки и долгосрочное сотрудничество.",
@@ -106,11 +106,11 @@ export const translations = {
       subtitle: "Для любых вопросов или заказов",
       address: "Ферганская область, Ташлакский район, МФЙ Ахшак, улица Бешолиш",
       main: "Приёмная",
-      sales: "Отдел по продажам",
+      sales: "Руководитель отдела продаж", // `uz` tilidagi "Sotuv Bo'limi Boshlig'i" dan tarjima
       export: "Отдел сбыта по вопросам экспорта",
-      procurement: "Отдел по закупу",
+      procurement: "Оператор отдела закупок", // `uz` tilidagi "Sotuv Bo'limi Operatori" dan tarjima
       personnel: "Отдел по работе с персоналом",
-      info: "Справочное бюро",
+      info: "Справочное бюро", // `uz` tilidagi "Servis Hizmat Bo'limi" dan tarjima
       telegram: "Телеграм",
       whatsapp: "WhatsApp",
       infoPhone: "+998 99 997 44 40",
@@ -170,11 +170,11 @@ export const translations = {
       subtitle: "For any questions or orders",
       address: "Fergana Region, Tashlak District, Ahshak MFI, Besholish Street",
       main: "Reception",
-      sales: "Sales Department",
+      sales: "Head of Sales Department", // `uz` tilidagi "Sotuv Bo'limi Boshlig'i" dan tarjima
       export: "Export Sales Department",
-      procurement: "Procurement Department",
+      procurement: "Procurement Department Operator", // `uz` tilidagi "Sotuv Bo'limi Operatori" dan tarjima
       personnel: "Personnel Department",
-      info: "Information Desk",
+      info: "Information Service", // `uz` tilidagi "Servis Hizmat Bo'limi" dan tarjima
       telegram: "Telegram",
       whatsapp: "WhatsApp",
       infoPhone: "+998 99 997 44 40",

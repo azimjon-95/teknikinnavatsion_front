@@ -34,7 +34,41 @@ const translations = {
     ],
   },
 };
-
+const translations2 = {
+  ru: {
+    navLinks: [
+      { label: "Коммерческое предложение на (АЗС)", path: "azs" },
+      { label: "Коммерческое предложение на (МАЗС)", path: "mazs" },
+      { label: "Коммерческое предложение (KAЗС)", path: "kazs" },
+      { label: "Блочная автозаправочная станция (БАЗС)", path: "bazs" },
+    ],
+    imageAlt: "Карточка автозаправочной станции {id}",
+    modalImageAlt: "Увеличенное изображение карточки",
+    closeButtonAria: "Закрыть модальное окно",
+  },
+  en: {
+    navLinks: [
+      { label: "Commercial Offer for (AZS)", path: "azs" },
+      { label: "Commercial Offer (MAZS)", path: "mazs" },
+      { label: "Commercial Offer (KAZS)", path: "kazs" },
+      { label: "Block Fuel Station (BAZS)", path: "bazs" },
+    ],
+    imageAlt: "Fuel station card {id}",
+    modalImageAlt: "Enlarged view of the card",
+    closeButtonAria: "Close modal window",
+  },
+  uz: {
+    navLinks: [
+      { label: "Tijorat taklifi (AZS)", path: "azs" },
+      { label: "Tijorat taklifi (MAZS)", path: "mazs" },
+      { label: "Tijorat taklifi (KAZS)", path: "kazs" },
+      { label: "Blokli avtoyog' quyish shaxobchasi (BAZS)", path: "bazs" },
+    ],
+    imageAlt: "Avtoyog' quyish shaxobchasi kartasi {id}",
+    modalImageAlt: "Kartaning kattalashtirilgan ko'rinishi",
+    closeButtonAria: "Modal oynani yopish",
+  },
+};
 
 function Header() {
   const navigate = useNavigate();
@@ -126,6 +160,13 @@ function Header() {
             )
           })
         }
+      </div>
+      <div className="bez-header-bottom">
+        {translations2[language].navLinks.map((link, index) => (
+          <Link key={index} to={`/${language}/${link.path}`}>
+            {link.label}
+          </Link>
+        ))}
       </div>
     </div>
   );

@@ -88,14 +88,7 @@ const VideoFromYouT = ({ lang = "ru" }) => {
         </div>
 
         <div className="bez-insta-about-image">
-          <iframe
-            src="https://youtube.com/shorts/qcVac16PqNk?si=MPJkzZ1xoDz4ILb0"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-          ></iframe>
+          <iframe src="https://www.youtube.com/embed/n02iU-8ISIo?si=66foDb6p2F5gS-rm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
       </div>
 

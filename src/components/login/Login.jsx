@@ -105,7 +105,7 @@ const AdminLogin = () => {
       //   formData
       // );
       const res = await axios.post(
-        "http://localhost:8000/api/admin/login",
+        "https://technicalinvovatsion.medme.uz/api/admin/login",
         formData
       );
       if (res.data?.innerData) {

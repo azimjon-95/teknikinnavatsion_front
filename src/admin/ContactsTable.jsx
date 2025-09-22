@@ -16,11 +16,11 @@ const translations = {
     loading: "Loading...",
     error: "An error occurred!",
     noContacts: "No contacts found",
-    salesDepartment: "Sales Department",
+    salesDepartment: "Sales Department Head", // Translated from Uzbek "Sotuv Bo'limi Boshlig'i"
     exportDepartment: "Export Department",
-    purchaseDepartment: "Purchase Department",
+    purchaseDepartment: "Sales Department Operator", // Translated from Uzbek "Sotuv Bo'limi Operatori"
     hrDepartment: "HR Department",
-    infoDesk: "Info Desk",
+    infoDesk: "Service Department", // Translated from Uzbek "Servis Hizmat Bo'limi"
     reception: "Reception",
     telegramLink: "Telegram Link",
     whatsappLink: "WhatsApp Link",
@@ -37,11 +37,11 @@ const translations = {
     save: "Save",
     update: "Update",
     deleteConfirm: "Are you sure you want to delete this contact?",
-    salesDepartmentRequired: "Sales Department is required",
+    salesDepartmentRequired: "Sales Department Head is required", // Added for consistency
     exportDepartmentRequired: "Export Department is required",
-    purchaseDepartmentRequired: "Purchase Department is required",
+    purchaseDepartmentRequired: "Sales Department Operator is required", // Added for consistency
     hrDepartmentRequired: "HR Department is required",
-    infoDeskRequired: "Info Desk is required",
+    infoDeskRequired: "Service Department is required", // Added for consistency
     receptionRequired: "Reception is required",
     telegramPlaceholder: "https://t.me/username",
     whatsappPlaceholder: "https://wa.me/998901234567",
@@ -56,11 +56,11 @@ const translations = {
     loading: "Загрузка...",
     error: "Произошла ошибка!",
     noContacts: "Контакты не найдены",
-    salesDepartment: "Отдел продаж",
+    salesDepartment: "Руководитель отдела продаж", // Translated from Uzbek "Sotuv Bo'limi Boshlig'i"
     exportDepartment: "Отдел экспорта",
-    purchaseDepartment: "Отдел закупок",
+    purchaseDepartment: "Оператор отдела продаж", // Translated from Uzbek "Sotuv Bo'limi Operatori"
     hrDepartment: "Отдел кадров",
-    infoDesk: "Информационное бюро",
+    infoDesk: "Служба сервиса", // Translated from Uzbek "Servis Hizmat Bo'limi"
     reception: "Ресепшн",
     telegramLink: "Ссылка на Telegram",
     whatsappLink: "Ссылка на WhatsApp",
@@ -77,11 +77,11 @@ const translations = {
     save: "Сохранить",
     update: "Обновить",
     deleteConfirm: "Вы уверены, что хотите удалить этот контакт?",
-    salesDepartmentRequired: "Отдел продаж обязателен",
+    salesDepartmentRequired: "Руководитель отдела продаж обязателен", // Added for consistency
     exportDepartmentRequired: "Отдел экспорта обязателен",
-    purchaseDepartmentRequired: "Отдел закупок обязателен",
+    purchaseDepartmentRequired: "Оператор отдела продаж обязателен", // Added for consistency
     hrDepartmentRequired: "Отдел кадров обязателен",
-    infoDeskRequired: "Информационное бюро обязательно",
+    infoDeskRequired: "Служба сервиса обязательна", // Added for consistency
     receptionRequired: "Ресепшн обязателен",
     telegramPlaceholder: "https://t.me/username",
     whatsappPlaceholder: "https://wa.me/998901234567",
@@ -96,11 +96,11 @@ const translations = {
     loading: "Yuklanmoqda...",
     error: "Xatolik yuz berdi!",
     noContacts: "Kontaktlar topilmadi",
-    salesDepartment: "Sotuv Bo'limi",
+    salesDepartment: "Sotuv Bo'limi Boshlig'i",
     exportDepartment: "Eksport Bo'limi",
-    purchaseDepartment: "Sotib Olish Bo'limi",
+    purchaseDepartment: "Sotuv Bo'limi Operatori",
     hrDepartment: "HR Bo'limi",
-    infoDesk: "Ma'lumot Byurosi",
+    infoDesk: "Servis Hizmat Bo'limi",
     reception: "Qabulxona",
     telegramLink: "Telegram Havolasi",
     whatsappLink: "WhatsApp Havolasi",
@@ -117,11 +117,11 @@ const translations = {
     save: "Saqlash",
     update: "Yangilash",
     deleteConfirm: "Kontaktni o'chirishni xohlaysizmi?",
-    salesDepartmentRequired: "Sotuv Bo'limi majburiy",
+    salesDepartmentRequired: "Sotuv Bo'limi Boshlig'i majburiy", // Added for consistency
     exportDepartmentRequired: "Eksport Bo'limi majburiy",
-    purchaseDepartmentRequired: "Sotib Olish Bo'limi majburiy",
+    purchaseDepartmentRequired: "Sotuv Bo'limi Operatori majburiy", // Added for consistency
     hrDepartmentRequired: "HR Bo'limi majburiy",
-    infoDeskRequired: "Ma'lumot Byurosi majburiy",
+    infoDeskRequired: "Servis Hizmat Bo'limi majburiy", // Added for consistency
     receptionRequired: "Qabulxona majburiy",
     telegramPlaceholder: "https://t.me/username",
     whatsappPlaceholder: "https://wa.me/998901234567",
@@ -143,6 +143,7 @@ const ContactsTable = ({ lang = "uz", searchTerm = "" }) => {
     infoDesk: "",
     reception: "",
     telegramLink: "",
+    telegramLink2: "",
     whatsappLink: "",
     wechatLink: "",
     instagramLink1: "",
@@ -202,6 +203,7 @@ const ContactsTable = ({ lang = "uz", searchTerm = "" }) => {
         infoDesk: "",
         reception: "",
         telegramLink: "",
+        telegramLink2: "",
         whatsappLink: "",
         wechatLink: "",
         instagramLink1: "",
@@ -225,6 +227,7 @@ const ContactsTable = ({ lang = "uz", searchTerm = "" }) => {
       infoDesk: "",
       reception: "",
       telegramLink: "",
+      telegramLink2: "",
       whatsappLink: "",
       wechatLink: "",
       instagramLink1: "",
@@ -291,6 +294,7 @@ const ContactsTable = ({ lang = "uz", searchTerm = "" }) => {
         "infoDesk",
         "reception",
         "telegramLink",
+        "telegramLink2",
         "whatsappLink",
         "wechatLink",
         "instagramLink1",
@@ -350,6 +354,7 @@ const ContactsTable = ({ lang = "uz", searchTerm = "" }) => {
                 <th>{t.infoDesk}</th>
                 <th>{t.reception}</th>
                 <th>{t.telegramLink}</th>
+                <th>{t.telegramLink}</th>
                 <th>{t.whatsappLink}</th>
                 <th>{t.wechatLink}</th>
                 <th>{t.instagramLink1}</th>
@@ -382,6 +387,19 @@ const ContactsTable = ({ lang = "uz", searchTerm = "" }) => {
                           rel="noopener noreferrer"
                         >
                           {contact.telegramLink}
+                        </a>
+                      ) : (
+                        "-"
+                      )}
+                    </td>
+                    <td>
+                      {contact.instagramLink2 ? (
+                        <a
+                          href={contact.instagramLink2}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {contact.instagramLink2}
                         </a>
                       ) : (
                         "-"
@@ -526,6 +544,7 @@ const ContactsTable = ({ lang = "uz", searchTerm = "" }) => {
 
                 {/* Optional URL Fields */}
                 {[
+                  { name: "telegramLink2", label: t.telegramLink, placeholder: t.telegramPlaceholder },
                   { name: "telegramLink", label: t.telegramLink, placeholder: t.telegramPlaceholder },
                   { name: "whatsappLink", label: t.whatsappLink, placeholder: t.whatsappPlaceholder },
                   { name: "wechatLink", label: t.wechatLink, placeholder: t.wechatPlaceholder },
