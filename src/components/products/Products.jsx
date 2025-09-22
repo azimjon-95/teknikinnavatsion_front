@@ -306,7 +306,7 @@ const Products = ({ lang = "uz" }) => {
               </div>
             </div>
             <span className="klu-capability-ru">{t.productionData.method}</span>
-            dd</div>
+          </div>
         )}
 
         {activeSection === 'design' && (
