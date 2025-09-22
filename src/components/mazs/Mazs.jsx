@@ -1,12 +1,12 @@
 import React from 'react';
-import img from '../../assets/cards/11.jpg';
+import img from '../../assets/cards/12.jpg';
 import './style.css';
 import FuelStationCards from './FuelStationCards';
 
-const GasStationsPage = ({ lang = "ru" }) => {
+const Mazs = ({ lang = "ru" }) => {
     const ru = {
-        title: "Автоматизированные Заправочные Станции (Контейнерные АЗС)",
-        description: "Контейнерные АЗС с контейнерами, обшитыми композитными алюминиевыми панелями, предназначенные преимущественно для коммерческого использования.",
+        title: "Автоматизированные Заправочные Станции (Контейнерные МАЗС)",
+        description: "Контейнерные МАЗС с контейнерами, обшитыми композитными алюминиевыми панелями, предназначенные преимущественно для коммерческого использования.",
         name: "DOKAN / КОРАБЛЬ / ADEM",
         volume: "Двустенный и одностенный резервуар с общим объёмом от 14м³ до 40м³ (DOKAN: от 14м³; КОРАБЛЬ: от 20 до 30м³; ADEM: от 20 до 40м³).",
         fuelTypes: [
@@ -41,7 +41,7 @@ const GasStationsPage = ({ lang = "ru" }) => {
         sectionSafetyControl: "Безопасность и контроль",
         sectionAdditionalServices: "Дополнительные услуги",
         sectionDocuments: "Документы",
-        labelVolume: "Объём АЗС:",
+        labelVolume: "Объём МАЗС:",
         labelFuelTypes: "Виды топлива:",
         labelSafetySystem: "Система безопасности:",
         labelLevelControl: "Контроль уровня налива:",
@@ -49,8 +49,8 @@ const GasStationsPage = ({ lang = "ru" }) => {
     };
 
     const en = {
-        title: "Automated Fuel Stations (Containerized AZS)",
-        description: "Containerized AZS with containers clad in composite aluminum panels, primarily intended for commercial use.",
+        title: "Automated Fuel Stations (Containerized MAZS)",
+        description: "Containerized MAZS with containers clad in composite aluminum panels, primarily intended for commercial use.",
         name: "DOKAN / KORABL / ADEM",
         volume: "Double-walled and single-walled tanks with a total volume from 14m³ to 40m³ (DOKAN: from 14m³; KORABL: from 20 to 30m³; ADEM: from 20 to 40m³).",
         fuelTypes: [
@@ -85,7 +85,7 @@ const GasStationsPage = ({ lang = "ru" }) => {
         sectionSafetyControl: "Safety and Control",
         sectionAdditionalServices: "Additional Services",
         sectionDocuments: "Documents",
-        labelVolume: "AZS Volume:",
+        labelVolume: "MAZS Volume:",
         labelFuelTypes: "Fuel Types:",
         labelSafetySystem: "Safety System:",
         labelLevelControl: "Level Control:",
@@ -93,8 +93,8 @@ const GasStationsPage = ({ lang = "ru" }) => {
     };
 
     const uz = {
-        title: "Avtomatlashtirilgan Yoqilg‘i Shoxobchalari (Konteynerli AZS)",
-        description: "Asosan tijorat maqsadlarida foydalanish uchun mo‘ljallangan, kompozit alyuminiy panellar bilan qoplangan konteynerli AZS.",
+        title: "Avtomatlashtirilgan Yoqilg‘i Shoxobchalari (Konteynerli MAZS)",
+        description: "Asosan tijorat maqsadlarida foydalanish uchun mo‘ljallangan, kompozit alyuminiy panellar bilan qoplangan konteynerli MAZS.",
         name: "DOKAN / KORABL / ADEM",
         volume: "Ikki devorli va bir devorli rezervuarlar, umumiy hajmi 14m³ dan 40m³ gacha (DOKAN: 14m³ dan; KORABL: 20 dan 30m³ gacha; ADEM: 20 dan 40m³ gacha).",
         fuelTypes: [
@@ -129,7 +129,7 @@ const GasStationsPage = ({ lang = "ru" }) => {
         sectionSafetyControl: "Xavfsizlik va Nazorat",
         sectionAdditionalServices: "Qo'shimcha Xizmatlar",
         sectionDocuments: "Hujjatlar",
-        labelVolume: "AZS Hajmi:",
+        labelVolume: "MAZS Hajmi:",
         labelFuelTypes: "Yoqilg‘i Turlari:",
         labelSafetySystem: "Xavfsizlik Tizimi:",
         labelLevelControl: "Sath Nazorati:",
@@ -205,5 +205,5 @@ const GasStationsPage = ({ lang = "ru" }) => {
     );
 };
 
-export default GasStationsPage;
+export default Mazs;
 

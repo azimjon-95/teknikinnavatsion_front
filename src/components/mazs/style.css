@@ -1,0 +1,362 @@
+/* style.css */
+
+.azs-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+}
+
+.azs-header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 30px 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.azs-main-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.azs-subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+.azs-stations-grid {
+    display: grid;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.azs-station-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #e1e8ed;
+}
+
+.azs-station-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.azs-card-header {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: white;
+    padding: 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+.azs-card-header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    animation: shimmer 3s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+}
+
+.azs-station-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.azs-station-name {
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradientShift 3s ease infinite;
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes gradientShift {
+
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+.azs-card-content {
+    padding: 30px;
+}
+
+.azs-image-section {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.azs-station-image {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+
+.azs-info-section {
+    display: grid;
+    gap: 20px;
+}
+
+.azs-info-group {
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    border-left: 4px solid #007bff;
+    transition: all 0.3s ease;
+}
+
+.azs-info-group:hover {
+    background: #e3f2fd;
+    border-left-color: #0056b3;
+    transform: translateX(5px);
+}
+
+.azs-info-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.azs-info-title::before {
+    content: '●';
+    color: #007bff;
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.azs-description {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.azs-features-list,
+.azs-documents-list {
+    list-style: none;
+    padding: 0;
+}
+
+.azs-features-list li,
+.azs-documents-list li {
+    padding: 8px 0;
+    padding-left: 25px;
+    position: relative;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.azs-features-list li:hover,
+.azs-documents-list li:hover {
+    color: #007bff;
+}
+
+.azs-features-list li::before,
+.azs-documents-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #28a745;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.azs-additional-options {
+    margin-top: 15px;
+    padding: 15px;
+    background: #fff3cd;
+    border-radius: 8px;
+    border: 1px solid #ffeaa7;
+}
+
+.azs-additional-options ul {
+    margin: 10px 0 0 0;
+    list-style: none;
+    padding: 0;
+}
+
+.azs-additional-options li {
+    padding: 5px 0;
+    padding-left: 20px;
+    position: relative;
+    color: #856404;
+}
+
+.azs-additional-options li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: #f39c12;
+    font-weight: bold;
+}
+
+.azs-documents-section {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    margin: 15px 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e1e8ed;
+}
+
+.azs-documents-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    text-align: center;
+    position: relative;
+}
+
+.azs-documents-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #007bff, #28a745);
+    border-radius: 2px;
+}
+
+.azs-document-item {
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.azs-document-item:last-child {
+    border-bottom: none;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .azs-container {
+        padding: 15px;
+    }
+
+    .azs-main-title {
+        font-size: 2rem;
+    }
+
+    .azs-subtitle {
+        font-size: 1rem;
+    }
+
+    .azs-header {
+        padding: 20px 15px;
+        margin-bottom: 25px;
+    }
+
+    .azs-stations-grid {
+        gap: 20px;
+    }
+
+    .azs-card-content {
+        padding: 20px;
+    }
+
+    .azs-station-title {
+        font-size: 1.2rem;
+    }
+
+    .azs-station-name {
+        font-size: 1.6rem;
+    }
+
+    .azs-station-image {
+        height: 200px;
+    }
+
+    .azs-info-title {
+        font-size: 1.1rem;
+    }
+
+    .azs-documents-section {
+        padding: 20px;
+    }
+
+    .azs-documents-title {
+        font-size: 1.5rem;
+    }
+
+    .azs-info-group {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .azs-main-title {
+        font-size: 1.6rem;
+    }
+
+    .azs-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .azs-station-title {
+        font-size: 1rem;
+    }
+
+    .azs-station-name {
+        font-size: 1.4rem;
+    }
+
+    .azs-card-content {
+        padding: 15px;
+    }
+
+    .azs-info-group {
+        padding: 12px;
+    }
+
+    .azs-documents-section {
+        padding: 15px;
+    }
+}

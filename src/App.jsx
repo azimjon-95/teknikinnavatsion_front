@@ -28,6 +28,7 @@ import ScrollToTopButton from "./components/top/ScrollToTopButton"; // Import th
 import GasStationsPage from "./components/azs/Azs";
 import Kazs from "./components/kazs/Kazs";
 import Vertical from "./components/vertical/Vertical";
+import Mazs from "./components/mazs/Mazs";
 
 // Simulated token validation function (replace with your actual logic)
 const validateToken = (token) => {
@@ -125,6 +126,7 @@ function App() {
           element={<ProtectedRoute element={<AdminDashboard />} />}
         />
         <Route path="/:lang/azs" element={<GasStationsPage lang={lang} />} />
+        <Route path="/:lang/mazs" element={<Mazs lang={lang} />} />
         <Route path="/:lang/bazs" element={<AzsStationPage lang={lang} />} />
         <Route path="/:lang/kazs" element={<Kazs lang={lang} />} />
         <Route
