@@ -78,17 +78,18 @@ const VideoFromYouT = ({ lang = "ru" }) => {
         <div className="bez-insta-about-image">
 
           <iframe
-            src="https://www.youtube.com/embed/GjGLb7AgEjQ?si=F4AG-lopSPWrc1xX"
+            src="https://www.youtube.com/embed/nM4TryNtjlc?si=tsepgshfZVpTwbpm"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen></iframe>
+            allowfullscreen>
+          </iframe>
         </div>
 
         <div className="bez-insta-about-image">
           <iframe
-            src="https://www.youtube.com/embed/6eeedeutfXM?si=i61HHfHy56BcIZxg&amp;start=13"
+            src="https://youtube.com/shorts/qcVac16PqNk?si=MPJkzZ1xoDz4ILb0"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -101,7 +102,7 @@ const VideoFromYouT = ({ lang = "ru" }) => {
       <div className="bez-insta-about-insta">
         <blockquote
           className="instagram-media"
-          data-instgrm-permalink="https://www.instagram.com/reel/DON18iOjd_S/?igsh=MXJhc3V5YnplMXRpZQ=="
+          data-instgrm-permalink="https://www.instagram.com/reel/DN5k12XjHCc/?utm_source=ig_web_copy_link"
           data-instgrm-version="14"
         ></blockquote>
 
