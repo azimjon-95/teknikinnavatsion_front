@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { X } from "lucide-react";
-import Гувохнома from "../../assets/cert/guvohnoma_page-0001.jpg";
-import Паспорт from "../../assets/cert/Паспорт.jpg";
-import Сертификат from "../../assets/cert/Сертификат.jpg";
-// import Рухсатнома from "../../assets/cert/Гувохнома ва сертификатлар_page-0001.jpg"; // ✅ yangi fayl
+import Guvohnoma from "../../assets/cert/сертификатлар_page-0001.jpg"; // Existing, assuming this is the product conformity Guvohnoma
+// import Passport from "../../assets/cert/Паспорт.jpg"; // Existing, assuming this is the product passport for sodium nitrate
+import Sertifikat from "../../assets/cert/сертификатлар_page-0002.jpg"; // Existing, assuming this is one of the ISO certificates (Russian version)
+import Ruxsatnoma1 from "../../assets/cert/сертификатлар_page-0003.jpg"; // New: Ruxsatnoma №186191
+import Ruxsatnoma2 from "../../assets/cert/сертификатлар_page-0004.jpg"; // New: Ruxsatnoma №255535
+import IsoEnglish from "../../assets/cert/сертификатлар_page-0005.jpg"; // New: English ISO 9001:2015
+import ConformityCert from "../../assets/cert/сертификатлар_page-0006.jpg"; // New: Muvo fiqlik Sertifikati (Conformity Certificate)
 import "./style.css";
 
 const CertificatesGallery = ({ lang }) => {
@@ -30,31 +33,45 @@ const CertificatesGallery = ({ lang }) => {
       certificates: [
         {
           id: 1,
-          title: "Legal Certificate",
-          type: "Legal Certificate",
-          description: "TEKNIK INNOVATSION LLC Legal Entity Certificate",
-          image: Гувохнома,
+          title: "Permit Certificate №186191",
+          type: "Government Permit",
+          description: "Permit for operations in the free economic zone of Kokand, issued on 13.12.2023, valid until 13.12.2053. Covers technical innovation activities in ports, customs warehouses, and related services.",
+          image: Ruxsatnoma1,
         },
         {
           id: 2,
-          title: "ISO 9001:2015 Certificate",
-          type: "Quality Management",
-          description: "TEKNIK INNOVATSION LLC - Production of sodium nitrate",
-          image: Сертификат,
+          title: "Permit Certificate №255535",
+          type: "Government Permit",
+          description: "Permit for special economic zone activities in Navoi, issued on 13.04.2024, valid until 13.04.2054. Focuses on technical innovation projects and infrastructure.",
+          image: Ruxsatnoma2,
         },
         {
           id: 3,
-          title: "Quality Certificate",
-          type: "Product Passport",
-          description: "SODIUM NITRATE TECHNICAL GOST 828-77",
-          image: Паспорт,
+          title: "ISO 9001:2015 Certificate (Russian)",
+          type: "Quality Management",
+          description: "Certification for quality management system according to ISO 9001:2015, issued by Astraia on 30.10.2023, valid until 29.10.2026. Applies to construction and production of engineering structures, gas stations, and communications.",
+          image: Sertifikat,
         },
         {
           id: 4,
-          title: "Official Permission",
-          type: "Government License",
-          description: "Permission certificate from the Uzbekistan Mining Industry Committee",
-          // image: Рухсатнома,
+          title: "ISO 9001:2015 Certificate (English)",
+          type: "Quality Management",
+          description: "English version of the ISO 9001:2015 certification for quality management system, issued by Astraia on 30.10.2023, valid until 29.10.2026. Covers the same scope as the Russian version.",
+          image: IsoEnglish,
+        },
+        {
+          id: 5,
+          title: "Product Conformity Certificate (Guvohnoma)",
+          type: "Product Certification",
+          description: "Certificate of conformity for technical sodium nitrate under GOST 828-77, issued by Uzbekistan Metrology Institute on 16.10.2023. Confirms product meets standards for import and local use.",
+          image: Guvohnoma,
+        },
+        {
+          id: 6,
+          title: "Conformity Certificate",
+          type: "Product Conformity",
+          description: "Certificate of conformity for sodium nitrate technical GOST 828-77, issued by National Certification System on 07.11.2023, valid until 06.11.2026. Verifies compliance with O'z DSt ISO 9001:2015 standards.",
+          image: ConformityCert,
         },
       ],
     },
@@ -72,31 +89,45 @@ const CertificatesGallery = ({ lang }) => {
       certificates: [
         {
           id: 1,
-          title: "Сертификат юридического лица",
-          type: "Юридический сертификат",
-          description: "Сертификат юридического лица ООО TEKNIK INNOVATSION",
-          image: Гувохнома,
+          title: "Разрешительное свидетельство №186191",
+          type: "Государственное разрешение",
+          description: "Разрешение на деятельность в свободной экономической зоне Коканд, выдано 13.12.2023, действительно до 13.12.2053. Охватывает деятельность по техническим инновациям в портах, таможенных складах и связанных услугах.",
+          image: Ruxsatnoma1,
         },
         {
           id: 2,
-          title: "Сертификат ISO 9001:2015",
-          type: "Управление качеством",
-          description: "ООО TEKNIK INNOVATSION - Производство нитрата натрия",
-          image: Сертификат,
+          title: "Разрешительное свидетельство №255535",
+          type: "Государственное разрешение",
+          description: "Разрешение на деятельность в специальной экономической зоне Навои, выдано 13.04.2024, действительно до 13.04.2054. Фокус на проектах технических инноваций и инфраструктуре.",
+          image: Ruxsatnoma2,
         },
         {
           id: 3,
-          title: "Паспорт качества",
-          type: "Паспорт продукта",
-          description: "ТЕХНИЧЕСКИЙ НИТРАТ НАТРИЯ ГОСТ 828-77",
-          image: Паспорт,
+          title: "Сертификат ISO 9001:2015 (Русский)",
+          type: "Управление качеством",
+          description: "Сертификация системы менеджмента качества по ISO 9001:2015, выдана Astraia 30.10.2023, действительно до 29.10.2026. Применяется к строительству и производству инженерных сооружений, АЗС и коммуникаций.",
+          image: Sertifikat,
         },
         {
           id: 4,
-          title: "Разрешение",
-          type: "Государственная лицензия",
-          description: "Разрешительный документ от инспекции горнодобывающей промышленности Узбекистана",
-          // image: Рухсатнома,
+          title: "Сертификат ISO 9001:2015 (Английский)",
+          type: "Управление качеством",
+          description: "Английская версия сертификации ISO 9001:2015 для системы менеджмента качества, выдана Astraia 30.10.2023, действительно до 29.10.2026. Охватывает тот же объем, что и русская версия.",
+          image: IsoEnglish,
+        },
+        {
+          id: 5,
+          title: "Сертификат соответствия продукции (Guvohnoma)",
+          type: "Сертификация продукции",
+          description: "Сертификат соответствия техническому нитрату натрия по ГОСТ 828-77, выдан Институтом метрологии Узбекистана 16.10.2023. Подтверждает соответствие стандартам для импорта и местного использования.",
+          image: Guvohnoma,
+        },
+        {
+          id: 6,
+          title: "Сертификат соответствия",
+          type: "Соответствие продукции",
+          description: "Сертификат соответствия нитрату натрия техническому ГОСТ 828-77, выдан Национальной системой сертификации 07.11.2023, действительно до 06.11.2026. Подтверждает соответствие O'z DSt ISO 9001:2015.",
+          image: ConformityCert,
         },
       ],
     },
@@ -114,31 +145,45 @@ const CertificatesGallery = ({ lang }) => {
       certificates: [
         {
           id: 1,
-          title: "Yuridik shaxs guvohnomasi",
-          type: "Yuridik sertifikat",
-          description: "TEKNIK INNOVATSION MChJ yuridik shaxs sertifikati",
-          image: Гувохнома,
+          title: "Ruxsatnoma №186191",
+          type: "Davlat ruxsatnomasi",
+          description: "Qo'qon erkin iqtisodiy zonasi faoliyati uchun ruxsatnoma, 13.12.2023 da berilgan, 13.12.2053 gacha amal qiladi. Portlar, bojxona omborlari va tegishli xizmatlarda texnik innovatsiyalar faoliyatini qamrab oladi.",
+          image: Ruxsatnoma1,
         },
         {
           id: 2,
-          title: "ISO 9001:2015 sertifikati",
-          type: "Sifat boshqaruvi",
-          description: "TEKNIK INNOVATSION MChJ - texnik natriy nitrati ishlab chiqarish",
-          image: Сертификат,
+          title: "Ruxsatnoma №255535",
+          type: "Davlat ruxsatnomasi",
+          description: "Navoiy maxsus iqtisodiy zonasi faoliyati uchun ruxsatnoma, 13.04.2024 da berilgan, 13.04.2054 gacha amal qiladi. Texnik innovatsiya loyihalari va infratuzilmasiga e'tibor qaratilgan.",
+          image: Ruxsatnoma2,
         },
         {
           id: 3,
-          title: "Sifat passporti",
-          type: "Mahsulot pasporti",
-          description: "TEXNIK natriy nitrati GOST 828-77",
-          image: Паспорт,
+          title: "ISO 9001:2015 sertifikati (Ruscha)",
+          type: "Sifat boshqaruvi",
+          description: "ISO 9001:2015 bo'yicha sifat menejmenti tizimi sertifikati, Astraia tomonidan 30.10.2023 da berilgan, 29.10.2026 gacha amal qiladi. Qurilish va muhandislik inshootlari, gaz quyish shoxobchalari va aloqa ishlab chiqarishini qamrab oladi.",
+          image: Sertifikat,
         },
         {
           id: 4,
-          title: "Ruxsatnoma",
-          type: "Davlat litsenziyasi",
-          description: "O‘zbekiston Respublikasi tog‘-kon sanoati qo‘mitasidan berilgan ruxsatnoma",
-          // image: Рухсатнома,
+          title: "ISO 9001:2015 sertifikati (Inglizcha)",
+          type: "Sifat boshqaruvi",
+          description: "ISO 9001:2015 sifat menejmenti tizimi sertifikatining inglizcha versiyasi, Astraia tomonidan 30.10.2023 da berilgan, 29.10.2026 gacha amal qiladi. Ruscha versiya bilan bir xil qamrovga ega.",
+          image: IsoEnglish,
+        },
+        {
+          id: 5,
+          title: "Mahsulot muvofiqlik guvohnomasi (Guvohnoma)",
+          type: "Mahsulot sertifikatsiyasi",
+          description: "Texnik natriy nitrati GOST 828-77 bo'yicha muvofiqlik guvohnomasi, O'zbekiston metrologiya instituti tomonidan 16.10.2023 da berilgan. Import va mahalliy foydalanish uchun standartlarga muvofiqligini tasdiqlaydi.",
+          image: Guvohnoma,
+        },
+        {
+          id: 6,
+          title: "Muvofiqlik sertifikati",
+          type: "Mahsulot muvofiqligi",
+          description: "Natriy nitrati texnik GOST 828-77 muvofiqlik sertifikati, Milliy sertifikatlash tizimi tomonidan 07.11.2023 da berilgan, 06.11.2026 gacha amal qiladi. O'z DSt ISO 9001:2015 standartlariga muvofiqligini tasdiqlaydi.",
+          image: ConformityCert,
         },
       ],
     },
