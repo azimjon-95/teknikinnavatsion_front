@@ -105,7 +105,7 @@ const AdminLogin = () => {
       //   formData
       // );
       const res = await axios.post(
-        "https://teknikinnavatsion-server.vercel.app/api/admin/login",
+        "http://localhost:8000/api/admin/login",
         formData
       );
       if (res.data?.innerData) {

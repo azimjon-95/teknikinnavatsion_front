@@ -118,8 +118,8 @@ const ContactForm = ({ lang = "uz" }) => {
     setIsSubmitting(true);
 
     try {
-      const botToken = "8302017578:AAGVgLu6w9vuAzSlUki0nRg0jBI3IKzTH5M";
-      const chatId = "-4821339743";
+      const botToken = "8158047965:AAFDYM1-dKX6_CeZJAsH8AimlQisbFQ1DYI";
+      const chatId = "-4905893482";
       const telegramApiUrl = `https://api.telegram.org/bot${botToken}/sendMessage`;
 
       const messageText = `
