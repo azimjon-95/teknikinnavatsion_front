@@ -155,6 +155,7 @@ export default function FuelStationCards({ lang = "ru", state }) {
         en: {
             navLinks: [
                 { label: "Commercial Offer for (AZS)", path: "azs" },
+                { label: "Commercial Offer (MAZS)", path: "mazs" },
                 { label: "Commercial Offer (KAZS)", path: "kazs" },
                 { label: "Block Fuel Station (BAZS)", path: "bazs" },
             ],
@@ -165,6 +166,7 @@ export default function FuelStationCards({ lang = "ru", state }) {
         uz: {
             navLinks: [
                 { label: "Tijorat taklifi (AZS)", path: "azs" },
+                { label: "Tijorat taklifi (MAZS)", path: "mazs" },
                 { label: "Tijorat taklifi (KAZS)", path: "kazs" },
                 { label: "Blokli avtoyog' quyish shaxobchasi (BAZS)", path: "bazs" },
             ],
