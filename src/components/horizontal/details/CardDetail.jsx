@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./CardDetail.css";
 import { dataRu, dataEn, dataUz } from "./data.js";
 import { Link, useParams } from "react-router-dom";
@@ -7,12 +7,19 @@ import "antd/dist/reset.css";
 
 function CardDetail({ lang }) {
   const { id } = useParams();
-  // Select dataset based on lang prop
+
   const data = lang === "en" ? dataEn : lang === "uz" ? dataUz : dataRu;
   let item = data.find((d) => d.id === id);
+  const topRef = useRef(null);
+
+  useEffect(() => {
+    if (topRef.current) {
+      topRef.current.scrollIntoView({ behavior: "auto" });
+    }
+  }, [id]);
 
   return (
-    <div className="cardDetail">
+    <div className="cardDetail" ref={topRef}>
       <div className="item_nav">
         <h1 className="item_title">{item.caption}</h1>
         <p className="item_desc">{item.desc1}</p>
@@ -204,7 +211,7 @@ function CardDetail({ lang }) {
             <Link
               key={index}
               className={link.to?.replace("/", "") === id ? "activeLink" : ""}
-              to={link.to}
+              to={"/" + lang + "/details" + link.to}
             >
               {link.text}
             </Link>
