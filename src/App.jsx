@@ -98,7 +98,6 @@ function App() {
   return (
     <>
       {!isAdminLoginPage && !isAdminDashboardPage && <Header />}
-
       <Routes>
         <Route path="/" element={<RedirectToLang />} />
         <Route path="/:lang/:contact" element={<UniversalInfoPage />} />
@@ -181,6 +180,3 @@ function App() {
 }
 
 export default App;
-
-
-
