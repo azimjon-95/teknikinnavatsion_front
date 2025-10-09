@@ -5,83 +5,91 @@ import FuelStationCards from './FuelStationCards';
 
 const Mazs = ({ lang = "ru" }) => {
     const ru = {
-        title: "Автоматизированные Заправочные Станции (Контейнерные МАЗС)",
-        description: "Контейнерные МАЗС с контейнерами, обшитыми композитными алюминиевыми панелями, предназначенные преимущественно для коммерческого использования.",
-        name: "DOKAN / КОРАБЛЬ / ADEM",
-        volume: "Двустенный и одностенный резервуар с общим объёмом от 14м³ до 40м³ (DOKAN: от 14м³; КОРАБЛЬ: от 20 до 30м³; ADEM: от 20 до 40м³).",
+        title: "Модульная Автозаправочная Станция (МАЗС)",
+        description: "Современная автозаправочная станция представляет собой комплекс оборудования, с применением высокотехнологичных средств автоматизации и передовых информационных технологий. Проектирование, производство, поставка и установка оборудования для функционирования МАЗС – задачи, которые рекомендуется доверять специализированным компаниям, с большим опытом работы в данной сфере. Наиболее рентабельными МАЗС, согласно статистике, считаются станции, расположенные в пределах города, где наблюдается максимальное скопление потребителей. Но при этом заправочные объекты также рекомендуется располагать на крупных автотрассах и туристических маршрутах, с большой проходимостью автотранспорта.",
+        name: "МАЗС",
+        volume: "Двустенный или одностенный резервуар с общим объёмом от 5м³ до 60м³.",
         fuelTypes: [
-            "DOKAN: 2 вида, 2 рукава, 14м³",
-            "КОРАБЛЬ: 3 вида, 20м³, двустенный",
-            "ADEM: 3 вида, 6 рукавов 20/30м³",
-            "ADEM: 2 вида топлива, 8 рукавов 30м³, одностенный",
-            "ADEM: 3 вида топлива, 4 рукава 40м³, одностенный"
+            "2 вида топлива: 2 рукава, 12м³ до 40 м³",
+            "2 вида топлива: 4 рукава, 12м³ до 40 м³",
+            "3 вида топлива: 6 рукавов, 20м³ до 40 м³",
+            "4 вида топлива: 8 рукавов, 20м³ до 40 м³"
         ],
         features: [
-            "Самообслуживание Программа «СО» или «АДНС»",
-            "Автоматический по ключам/картам",
-            "Через оператора (пульт оператора ПК)",
-            "Через терминал оплаты наличными/картой"
+            "Оформление исходно-разрешительной документации (согласование территории по местоположению с МЧС, Кадастр, Промбезопасность, Нефтеинспекция, согласование технического задания с заказчиком)",
+            "Проектирование автозаправочной станции",
+            "Согласование проекта МАЗС с Заказчиком и получение разрешения на возведение",
+            "Изготовление отдельных конструкций строений на специализированных предприятиях",
+            "Монтаж металлоконструкций, оборудования МАЗС и сооружений",
+            "Благоустройство территории заправочного объекта",
+            "Исполнение пуско-наладочных работ и сдача объекта Заказчику"
         ],
-        safety: "В соответствии с НБП 111-98.",
-        control: "Уровнемер/Датчик верхнего уровня.",
-        automation: "Возможна установка автоматики и GSM модема для передачи на ПК уровень, объём, масса, температура, плотность топлива, установление лимитов для водителей, расход топлива",
-        services: "Доставка, пульт управления, мерник, метрошток, рекламный баннер, касса и мебель, гарантия 3 года, контрольные работы проводятся каждые 6 месяцев, все услуги бесплатны.",
+        safety: "В соответствии с требованиями МЧС, Кадастр, Промбезопасность, Нефтеинспекция.",
+        control: "Мерник 10 л, метршток 3 м.",
+        automation: "При обращении в компанию по вопросу монтажа оборудования МАЗС, специалисты запрашивают проект, выдают рекомендацию по комплектации и методике монтажа, вносят изменения, выполняют поставку и монтаж. Работы выполняются квалифицированным персоналом с необходимыми допусками.",
+        services: "Пожарный щит, мерник 10 л, метршток 3 м, реклама бренд, доставка, установка. В компании ООО «Teknik Innavatsion» представлено оборудование в широчайшем ассортименте для оптимальной комплектации.",
         image: img,
         documents: [
+            "Калибровочная таблица",
             "Паспорт на автозаправочную станцию",
-            "Сертификат качества на автозаправочную станцию и резервуар",
             "Акт об испытании резервуара",
             "Инструкция по эксплуатации",
-            "Сертификат ISO 9001-2015 Euro standard (Система менеджмента качества)"
+            "Сертификат качества на автозаправочную станцию и резервуар",
+            "Сертификат ISO 9001-2015 Euro standard (Система менеджмента качества)",
+            "ШНК"
         ],
-        // New translations for static JSX strings
+        // Static JSX strings
         sectionDescription: "Описание",
         sectionTechnicalSpecs: "Технические характеристики",
-        sectionFeatures: "Особенности",
+        sectionFeatures: "Основные этапы установки",
         sectionSafetyControl: "Безопасность и контроль",
         sectionAdditionalServices: "Дополнительные услуги",
         sectionDocuments: "Документы",
         labelVolume: "Объём МАЗС:",
         labelFuelTypes: "Виды топлива:",
         labelSafetySystem: "Система безопасности:",
-        labelLevelControl: "Контроль уровня налива:",
+        labelLevelControl: "Контроль уровня:",
         labelAutomation: "Автоматизация:"
     };
 
     const en = {
-        title: "Automated Fuel Stations (Containerized MAZS)",
-        description: "Containerized MAZS with containers clad in composite aluminum panels, primarily intended for commercial use.",
-        name: "DOKAN / KORABL / ADEM",
-        volume: "Double-walled and single-walled tanks with a total volume from 14m³ to 40m³ (DOKAN: from 14m³; KORABL: from 20 to 30m³; ADEM: from 20 to 40m³).",
+        title: "Modular Fuel Station (MAZS)",
+        description: "A modern fuel station is a complex of equipment using high-tech automation tools and advanced information technologies. Design, production, supply, and installation of equipment for MAZS operation should be entrusted to specialized companies with extensive experience in this field. According to statistics, the most profitable MAZS are stations located within the city, where there is a maximum concentration of consumers. However, fuel facilities are also recommended to be placed on major highways and tourist routes with high traffic flow.",
+        name: "MAZS",
+        volume: "Double-walled or single-walled tank with a total volume from 5m³ to 60m³.",
         fuelTypes: [
-            "DOKAN: 2 fuel types, 2 hoses, 14m³",
-            "KORABL: 3 fuel types, 20m³, double-walled",
-            "ADEM: 3 fuel types, 6 hoses, 20/30m³",
-            "ADEM: 2 fuel types, 8 hoses, 30m³, single-walled",
-            "ADEM: 3 fuel types, 4 hoses, 40m³, single-walled"
+            "2 fuel types: 2 hoses, 12m³ to 40m³",
+            "2 fuel types: 4 hoses, 12m³ to 40m³",
+            "3 fuel types: 6 hoses, 20m³ to 40m³",
+            "4 fuel types: 8 hoses, 20m³ to 40m³"
         ],
         features: [
-            "Self-service program 'SO' or 'ADNS'",
-            "Automatic operation via keys/cards",
-            "Via operator (operator control panel)",
-            "Via payment terminal with cash/card"
+            "Preparation of initial permitting documentation (approval of the territory location with EMERCOM, Cadastre, Industrial Safety, Oil Inspectorate, agreement of technical specifications with the customer)",
+            "Design of the fuel station",
+            "Approval of the MAZS project with the Customer and obtaining permission for construction",
+            "Manufacturing of individual building structures at specialized enterprises",
+            "Installation of metal structures, MAZS equipment, and facilities",
+            "Landscaping of the fuel facility area",
+            "Commissioning works and handover of the facility to the Customer"
         ],
-        safety: "In compliance with NBP 111-98.",
-        control: "Level gauge/Upper level sensor.",
-        automation: "Option to install automation and GSM modem for transmitting level, volume, weight, fuel temperature, density, setting driver limits, and fuel consumption to a PC.",
-        services: "Delivery, control panel, measuring stick, metro rod, advertising banner, cash register and furniture, 3-year warranty, maintenance work performed every 6 months, all services are free.",
+        safety: "In accordance with the requirements of EMERCOM, Cadastre, Industrial Safety, Oil Inspectorate.",
+        control: "10 l measuring can, 3 m dipstick.",
+        automation: "When contacting the company regarding MAZS equipment installation, specialists request the project, issue recommendations on configuration and installation method, make changes, perform supply and installation. Works are carried out by qualified personnel with necessary permits.",
+        services: "Fire shield, 10 l measuring can, 3 m dipstick, brand advertising, delivery, installation. LLC 'Teknik Innavatsion' offers a wide range of equipment for optimal configuration.",
         image: img,
         documents: [
+            "Calibration table",
             "Passport for the fuel station",
-            "Quality certificate for the fuel station and tank",
             "Tank test certificate",
             "Operating instructions",
-            "ISO 9001-2015 Euro standard certificate (Quality Management System)"
+            "Quality certificate for the fuel station and tank",
+            "ISO 9001-2015 Euro standard certificate (Quality Management System)",
+            "QR code"
         ],
-        // New translations for static JSX strings
+        // Static JSX strings
         sectionDescription: "Description",
         sectionTechnicalSpecs: "Technical Specifications",
-        sectionFeatures: "Features",
+        sectionFeatures: "Main Installation Stages",
         sectionSafetyControl: "Safety and Control",
         sectionAdditionalServices: "Additional Services",
         sectionDocuments: "Documents",
@@ -93,46 +101,50 @@ const Mazs = ({ lang = "ru" }) => {
     };
 
     const uz = {
-        title: "Avtomatlashtirilgan Yoqilg‘i Shoxobchalari (Konteynerli MAZS)",
-        description: "Asosan tijorat maqsadlarida foydalanish uchun mo‘ljallangan, kompozit alyuminiy panellar bilan qoplangan konteynerli MAZS.",
-        name: "DOKAN / KORABL / ADEM",
-        volume: "Ikki devorli va bir devorli rezervuarlar, umumiy hajmi 14m³ dan 40m³ gacha (DOKAN: 14m³ dan; KORABL: 20 dan 30m³ gacha; ADEM: 20 dan 40m³ gacha).",
+        title: "Modulli Avtozapravka Stansiyasi (MAZS)",
+        description: "Zamonaviy avtozapravka stansiyasi yuqori texnologiyali avtomatlashtirish vositalari va ilg'or axborot texnologiyalaridan foydalangan holda jihozlar majmuasini tashkil etadi. MAZS ishlashi uchun jihozlarni loyihalash, ishlab chiqarish, yetkazib berish va o'rnatish – bu sohada katta tajribaga ega ixtisoslashgan kompaniyalarga topshirish tavsiya etiladigan vazifalar. Statistikaga ko'ra, eng foydali MAZS shahar ichida, iste'molchilarning maksimal to'planishi bo'lgan joylarda joylashgan stansiyalar hisoblanadi. Biroq, yoqilg'i ob'ektlarini katta avtomagistrallar va sayyohlik marshrutlarda, avtotransport oqimi yuqori bo'lgan joylarda joylashtirish ham tavsiya etiladi.",
+        name: "MAZS",
+        volume: "Ikki devorli yoki bir devorli rezervuar, umumiy hajmi 5m³ dan 60m³ gacha.",
         fuelTypes: [
-            "DOKAN: 2 turdagi yoqilg‘i, 2 shlang, 14m³",
-            "KORABL: 3 turdagi yoqilg‘i, 20m³, ikki devorli",
-            "ADEM: 3 turdagi yoqilg‘i, 6 shlang, 20/30m³",
-            "ADEM: 2 turdagi yoqilg‘i, 8 shlang, 30m³, bir devorli",
-            "ADEM: 3 turdagi yoqilg‘i, 4 shlang, 40m³, bir devorli"
+            "2 turdagi yoqilg'i: 2 shlang, 12m³ dan 40 m³ gacha",
+            "2 turdagi yoqilg'i: 4 shlang, 12m³ dan 40 m³ gacha",
+            "3 turdagi yoqilg'i: 6 shlang, 20m³ dan 40 m³ gacha",
+            "4 turdagi yoqilg'i: 8 shlang, 20m³ dan 40 m³ gacha"
         ],
         features: [
-            "O‘z-o‘ziga xizmat ko‘rsatish dasturi 'SO' yoki 'ADNS'",
-            "Kalitlar/kartalar orqali avtomatik ishlash",
-            "Operator orqali (operator boshqaruv paneli)",
-            "Naqd pul/karta bilan to‘lov terminali orqali"
+            "Boshlang'ich ruxsatnomaviy hujjatlarni rasmiylashtirish (joylashuv bo'yicha hududni FChS, Kadastr, Sanoat xavfsizligi, Neft inspeksiyasi bilan kelishish, mijoz bilan texnik topshiriqni kelishish)",
+            "Avtozapravka stansiyasini loyihalash",
+            "MAZS loyihasini Mijoz bilan kelishish va qurilishga ruxsat olish",
+            "Maxsus korxonalarda alohida qurilish konstruktsiyalarini ishlab chiqarish",
+            "Metall konstruktsiyalar, MAZS jihozlari va inshootlarni montajlash",
+            "Zapravka ob'ekti hududini abadlashtirish",
+            "Ishga tushirish va sozlash ishlari va ob'ektni Mijozga topshirish"
         ],
-        safety: "NBP 111-98 ga muvofiq.",
-        control: "Sath o‘lchagich/Yuqori sath sensori.",
-        automation: "Avtomatlashtirish va GSM modem o‘rnatish imkoniyati, kompyuterga sath, hajm, og‘irlik, yoqilg‘i harorati, zichligi, haydovchilar uchun limitlar belgilash va yoqilg‘i sarfini uzatish.",
-        services: "Yetkazib berish, boshqaruv paneli, o‘lchov chizig‘i, metro shtok, reklama banneri, kassa va mebel, 3 yil kafolat, har 6 oyda nazorat ishlari, barcha xizmatlar bepul.",
+        safety: "FChS, Kadastr, Sanoat xavfsizligi, Neft inspeksiyasi talablariga muvofiq.",
+        control: "10 l o'lchov idishi, 3 m metr shtox.",
+        automation: "MAZS jihozlarini montajlash masalasida kompaniyaga murojaat qilganda, mutaxassislar loyihani so'raydilar, konfiguratsiya va montaj usuli bo'yicha tavsiyalar beradilar, o'zgarishlarni kiritadilar, yetkazib berish va montajni amalga oshiradilar. Ishlar kerakli ruxsatlarga ega malakali xodimlar tomonidan bajariladi.",
+        services: "Yong'in qalqoni, 10 l o'lchov idishi, 3 m metr shtox, brend reklama, yetkazib berish, o'rnatish. «Teknik Innavatsion» MChJ har qanday funksional maqsad va texnik murakkablikdagi zapravka stansiyasi uchun optimal konfiguratsiyani tanlashga imkon beruvchi keng assortimentdagi jihozlarni taklif etadi.",
         image: img,
         documents: [
-            "Yoqilg‘i shoxobchasi uchun pasport",
-            "Yoqilg‘i shoxobchasi va rezervuar sifat sertifikati",
+            "Kalirovka jadvali",
+            "Avtozapravka stansiyasi uchun pasport",
             "Rezervuar sinov akti",
-            "Foydalanish bo‘yicha yo‘riqnoma",
-            "ISO 9001-2015 Euro standarti sertifikati (Sifat boshqaruv tizimi)"
+            "Ishlatish bo'yicha ko'rsatma",
+            "Avtozapravka stansiyasi va rezervuar uchun sifat sertifikati",
+            "ISO 9001-2015 Euro standarti sertifikati (Sifat menejmenti tizimi)",
+            "QR kod"
         ],
-        // New translations for static JSX strings
+        // Static JSX strings
         sectionDescription: "Tavsif",
-        sectionTechnicalSpecs: "Texnik Xususiyatlar",
-        sectionFeatures: "Xususiyatlar",
-        sectionSafetyControl: "Xavfsizlik va Nazorat",
-        sectionAdditionalServices: "Qo'shimcha Xizmatlar",
+        sectionTechnicalSpecs: "Texnik xususiyatlar",
+        sectionFeatures: "O'rnatishning asosiy bosqichlari",
+        sectionSafetyControl: "Xavfsizlik va nazorat",
+        sectionAdditionalServices: "Qo'shimcha xizmatlar",
         sectionDocuments: "Hujjatlar",
-        labelVolume: "MAZS Hajmi:",
-        labelFuelTypes: "Yoqilg‘i Turlari:",
-        labelSafetySystem: "Xavfsizlik Tizimi:",
-        labelLevelControl: "Sath Nazorati:",
+        labelVolume: "MAZS hajmi:",
+        labelFuelTypes: "Yoqilg'i turlari:",
+        labelSafetySystem: "Xavfsizlik tizimi:",
+        labelLevelControl: "Sath nazorati:",
         labelAutomation: "Avtomatlashtirish:"
     };
 
@@ -206,4 +218,3 @@ const Mazs = ({ lang = "ru" }) => {
 };
 
 export default Mazs;
-
