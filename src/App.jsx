@@ -29,6 +29,7 @@ import GasStationsPage from "./components/azs/Azs";
 import Kazs from "./components/kazs/Kazs";
 import Vertical from "./components/vertical/Vertical";
 import Mazs from "./components/mazs/Mazs";
+import Sug from "./components/sug/Sug";
 
 // Simulated token validation function (replace with your actual logic)
 const validateToken = (token) => {
@@ -105,6 +106,7 @@ function App() {
         <Route path="/:lang/rgs" element={<Horizontal lang={lang} />} />
         <Route path="/:lang/rvs" element={<Vertical lang={lang} />} />
         <Route path="/:lang/details/:id" element={<CardDetail lang={lang} />} />
+        <Route path="/:lang/sug" element={<Sug lang={lang} />} />
         <Route
           path="/:lang/rvs-details/:id"
           element={<CardDetail2 lang={lang} />}

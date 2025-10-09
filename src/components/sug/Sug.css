@@ -1,0 +1,93 @@
+.table-wrapper {
+  width: 70%;
+  margin: 30px auto;
+  padding: 24px;
+  background: #f9fafb;
+  min-height: 100vh;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 16px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.equipment-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.equipment-table th,
+.equipment-table td {
+  border: 1px solid #d1d5db;
+  padding: 1px 11px;
+  text-align: left;
+}
+
+.equipment-table th {
+  background: #f3f4f6;
+  font-weight: 600;
+  text-align: center;
+}
+
+.section-header td {
+  background: #8b0000;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1157px) {
+  .table-wrapper {
+    width: 90%;
+    padding: 16px;
+  }
+}
+
+@media screen and (max-width: 859px) {
+  .table-wrapper {
+    width: 100%;
+    padding: 16px;
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .equipment-table th,
+  .equipment-table td {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .table-wrapper {
+    padding: 12px;
+  }
+
+  .equipment-table {
+    font-size: 13px;
+  }
+
+  .equipment-table th,
+  .equipment-table td {
+    padding: 6px;
+  }
+
+  .section-header td {
+    font-size: 13px;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+}

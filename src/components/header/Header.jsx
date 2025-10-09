@@ -156,6 +156,14 @@ function Header() {
           </div>
         </div>
       </div>
+
+      <div className="bez-header-bottom">
+        {translations2[language].navLinks.map((link, index) => (
+          <Link key={index} to={`/${language}/${link.path}`}>
+            {link.label}
+          </Link>
+        ))}
+      </div>
       <div className="bez-header-bottom">
         {translations[language].navLinks.map((link, index) => {
           return (
@@ -164,13 +172,6 @@ function Header() {
             </Link>
           );
         })}
-      </div>
-      <div className="bez-header-bottom">
-        {translations2[language].navLinks.map((link, index) => (
-          <Link key={index} to={`/${language}/${link.path}`}>
-            {link.label}
-          </Link>
-        ))}
       </div>
     </div>
   );
