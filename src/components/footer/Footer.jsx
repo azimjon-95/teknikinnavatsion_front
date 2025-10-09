@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 import { Mail } from "lucide-react";
 import TEKNIK from "../../assets/TEKNIK.jpg";
-import img1 from '../../assets/footer/ico-my.png';
-import img2 from '../../assets/footer/ico-my1.png';
-import img3 from '../../assets/footer/ico-my2.png';
-import img4 from '../../assets/footer/ico-my3.png';
-import img5 from '../../assets/footer/ico-my4.png';
-import './style.css';
+import img1 from "../../assets/footer/ico-my.png";
+import img2 from "../../assets/footer/ico-my1.png";
+import img3 from "../../assets/footer/ico-my2.png";
+import img4 from "../../assets/footer/ico-my3.png";
+import img5 from "../../assets/footer/ico-my4.png";
+import "./style.css";
 
 const Footer = ({ lang = "ru" }) => {
   const translations = {
@@ -22,8 +22,8 @@ const Footer = ({ lang = "ru" }) => {
             "Продукция завода",
             "Услуги СМУ",
             "Услуги ПКБ",
-            "Справочник оборудования"
-          ]
+            "Справочник оборудования",
+          ],
         },
         catalog: {
           title: "КАТАЛОГ",
@@ -35,16 +35,16 @@ const Footer = ({ lang = "ru" }) => {
             "Силос / бункер для сыпучих продуктов и материалов",
             "Свеча рассеивания газа СР",
             "Резервуары для различных продуктов",
-            "Справочник резервуарного оборудования"
-          ]
+            "Справочник резервуарного оборудования",
+          ],
         },
         design: {
           title: "ПРОЕКТИРОВАНИЕ",
           items: [
             "Проектирование нефтебаз",
             "Проектирование резервуарных парков",
-            "Проектирование резервуаров РВС"
-          ]
+            "Проектирование резервуаров РВС",
+          ],
         },
         production: {
           title: "ПРОИЗВОДСТВО",
@@ -52,8 +52,8 @@ const Footer = ({ lang = "ru" }) => {
             "Рулонные резервуары вертикальные",
             "Полистовые резервуары вертикальные",
             "Производство емкостей горизонтальных стальных",
-            "Услуги металлообработки в Саратове"
-          ]
+            "Услуги металлообработки в Саратове",
+          ],
         },
         construction: {
           title: "СТРОИТЕЛЬСТВО",
@@ -65,10 +65,10 @@ const Footer = ({ lang = "ru" }) => {
             "Теплоизоляция резервуаров",
             "Зачистка резервуаров",
             "Техническое диагностирование (дефектоскопия) резервуаров",
-            "Ремонт резервуаров"
-          ]
-        }
-      }
+            "Ремонт резервуаров",
+          ],
+        },
+      },
     },
     en: {
       email: "Email:",
@@ -82,8 +82,8 @@ const Footer = ({ lang = "ru" }) => {
             "Factory products",
             "Construction services",
             "Design bureau services",
-            "Equipment handbook"
-          ]
+            "Equipment handbook",
+          ],
         },
         catalog: {
           title: "CATALOG",
@@ -95,16 +95,12 @@ const Footer = ({ lang = "ru" }) => {
             "Silo / bunker for bulk products and materials",
             "Gas dispersion flare SR",
             "Tanks for various products",
-            "Tank equipment handbook"
-          ]
+            "Tank equipment handbook",
+          ],
         },
         design: {
           title: "DESIGN",
-          items: [
-            "Oil depot design",
-            "Tank farm design",
-            "RVS tank design"
-          ]
+          items: ["Oil depot design", "Tank farm design", "RVS tank design"],
         },
         production: {
           title: "PRODUCTION",
@@ -112,8 +108,8 @@ const Footer = ({ lang = "ru" }) => {
             "Rolled vertical tanks",
             "Sheet vertical tanks",
             "Horizontal steel tank production",
-            "Metalworking services in Saratov"
-          ]
+            "Metalworking services in Saratov",
+          ],
         },
         construction: {
           title: "CONSTRUCTION",
@@ -125,10 +121,10 @@ const Footer = ({ lang = "ru" }) => {
             "Tank thermal insulation",
             "Tank cleaning",
             "Technical diagnostics (flaw detection) of tanks",
-            "Tank repair"
-          ]
-        }
-      }
+            "Tank repair",
+          ],
+        },
+      },
     },
     uz: {
       email: "Elektron pochta:",
@@ -142,8 +138,8 @@ const Footer = ({ lang = "ru" }) => {
             "Zavod mahsulotlari",
             "Qurilish xizmatlari",
             "Loyiha byurosi xizmatlari",
-            "Asbob-uskunalar ma'lumotnomasi"
-          ]
+            "Asbob-uskunalar ma'lumotnomasi",
+          ],
         },
         catalog: {
           title: "KATALOG",
@@ -155,16 +151,16 @@ const Footer = ({ lang = "ru" }) => {
             "Quyma mahsulotlar va materiallar uchun silos / bunker",
             "Gaz tarqatish shamchasi SR",
             "Turli mahsulotlar uchun rezervuarlar",
-            "Rezervuar uskunalari ma'lumotnomasi"
-          ]
+            "Rezervuar uskunalari ma'lumotnomasi",
+          ],
         },
         design: {
           title: "LOYIHALASH",
           items: [
             "Neft ombori loyihalash",
             "Rezervuar parki loyihalash",
-            "RVS rezervuar loyihalash"
-          ]
+            "RVS rezervuar loyihalash",
+          ],
         },
         production: {
           title: "ISHLAB CHIQARISH",
@@ -172,8 +168,8 @@ const Footer = ({ lang = "ru" }) => {
             "Rulonli vertikal rezervuarlar",
             "Varaqdagi vertikal rezervuarlar",
             "Gorizontal po'lat rezervuar ishlab chiqarish",
-            "Saratovda metall ishlov berish xizmatlari"
-          ]
+            "Saratovda metall ishlov berish xizmatlari",
+          ],
         },
         construction: {
           title: "QURILISH",
@@ -185,11 +181,11 @@ const Footer = ({ lang = "ru" }) => {
             "Rezervuar issiqlik izolyatsiyasi",
             "Rezervuar tozalash",
             "Rezervuarlarning texnik diagnostikasi (nuqsonlarni aniqlash)",
-            "Rezervuar ta'miri"
-          ]
-        }
-      }
-    }
+            "Rezervuar ta'miri",
+          ],
+        },
+      },
+    },
   };
 
   const t = translations[lang] || translations.ru;
@@ -198,7 +194,6 @@ const Footer = ({ lang = "ru" }) => {
     <footer className="fot-footer">
       <div className="fot-container">
         <div className="fot-grid">
-
           {/* Company Section */}
           <div className="fot-section">
             <div className="fot-icon">
@@ -208,15 +203,22 @@ const Footer = ({ lang = "ru" }) => {
             <div className="fot-section-list">
               {t.sections.company.items.map((item, index) => (
                 <p key={index}>
-                  <a href="#" className="fot-section-link">{item}</a>
+                  <a href="#" className="fot-section-link">
+                    {item}
+                  </a>
                 </p>
               ))}
               <p>
-                <a href={`mailto:teknikinnovatsion.info@gmail.com`} className="fot-section-link">
-                  <span style={{ color: "green" }}>teknikinnovatsion.info@gmail.com</span>
+                <a
+                  href={`mailto:aasatillo123@gmail.com`}
+                  className="fot-section-link"
+                >
+                  <span style={{ color: "green" }}>aasatillo123@gmail.com</span>
                 </a>
               </p>
-              <h3><i>TEKNIK INNOVATSION</i> </h3>
+              <h3>
+                <i>TEKNIK INNOVATSION</i>{" "}
+              </h3>
             </div>
           </div>
 
@@ -229,7 +231,9 @@ const Footer = ({ lang = "ru" }) => {
             <div className="fot-section-list">
               {t.sections.catalog.items.map((item, index) => (
                 <p key={index}>
-                  <a href="#" className="fot-section-link">{item}</a>
+                  <a href="#" className="fot-section-link">
+                    {item}
+                  </a>
                 </p>
               ))}
             </div>
@@ -244,7 +248,9 @@ const Footer = ({ lang = "ru" }) => {
             <div className="fot-section-list">
               {t.sections.design.items.map((item, index) => (
                 <p key={index}>
-                  <a href="#" className="fot-section-link">{item}</a>
+                  <a href="#" className="fot-section-link">
+                    {item}
+                  </a>
                 </p>
               ))}
             </div>
@@ -259,7 +265,9 @@ const Footer = ({ lang = "ru" }) => {
             <div className="fot-section-list">
               {t.sections.production.items.map((item, index) => (
                 <p key={index}>
-                  <a href="#" className="fot-section-link">{item}</a>
+                  <a href="#" className="fot-section-link">
+                    {item}
+                  </a>
                 </p>
               ))}
             </div>
@@ -270,22 +278,23 @@ const Footer = ({ lang = "ru" }) => {
             <div className="fot-icon">
               <img src={img5} alt="" />
             </div>
-            <h5 className="fot-section-title">{t.sections.construction.title}</h5>
+            <h5 className="fot-section-title">
+              {t.sections.construction.title}
+            </h5>
             <div className="fot-section-list">
               {t.sections.construction.items.map((item, index) => (
                 <p key={index}>
-                  <a href="#" className="fot-section-link">{item}</a>
+                  <a href="#" className="fot-section-link">
+                    {item}
+                  </a>
                 </p>
               ))}
             </div>
           </div>
         </div>
       </div>
-
-
     </footer>
   );
 };
 
 export default Footer;
-

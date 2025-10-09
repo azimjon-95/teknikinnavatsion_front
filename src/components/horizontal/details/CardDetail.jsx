@@ -70,10 +70,10 @@ function CardDetail({ lang }) {
             ) : index === 2 ? (
               <li key={index}>
                 {listItem.split(" ").map((part, i) =>
-                  part === "teknikinnovatsion.info@gmail.com" ? (
+                  part === "aasatillo123@gmail.com" ? (
                     <a
                       key={i}
-                      href="mailto:teknikinnovatsion.info@gmail.com?subject=Buyurtma%20haqida&body=Assalomu%20alaykum,%0D%0AMenga%20ko'proq%20ma'lumot%20kerak."
+                      href="mailto:aasatillo123@gmail.com?subject=Buyurtma%20haqida&body=Assalomu%20alaykum,%0D%0AMenga%20ko'proq%20ma'lumot%20kerak."
                     >
                       {part}
                     </a>

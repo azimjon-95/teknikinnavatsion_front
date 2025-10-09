@@ -30,7 +30,6 @@ const UniversalInfoPage = () => {
   const { data: contactData, isLoading: contactsLoading } =
     useGetContactsQuery();
 
-
   // Fallback translations to avoid undefined errors
   const t = translations[language] || translations["uz"];
 
@@ -153,7 +152,6 @@ const UniversalInfoPage = () => {
     }
   }, [lang, activeSection, navigate]);
 
-
   const renderContent = () => {
     switch (activeSection) {
       case "about":
@@ -262,11 +260,13 @@ const UniversalInfoPage = () => {
                     <Mail className="abu-contact-icon" aria-hidden="true" />
                     <h3>{t.contact?.info || "Information"}</h3>
                     <a
-                      href={`mailto:${t.contact?.infoEmail || "teknikinnovatsion.info@gmail.com"}`}
+                      href={`mailto:${
+                        t.contact?.infoEmail || "aasatillo123@gmail.com"
+                      }`}
                       className="abu-phone-link"
                       aria-label="Send email"
                     >
-                      {t.contact?.infoEmail || "teknikinnovatsion.info@gmail.com"}
+                      {t.contact?.infoEmail || "aasatillo123@gmail.com"}
                     </a>
                   </div>
                 </div>
@@ -281,7 +281,9 @@ const UniversalInfoPage = () => {
                         href={item.value}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={`abu-social-btn abu-${item.key.split(/\d/)[0]}`}
+                        className={`abu-social-btn abu-${
+                          item.key.split(/\d/)[0]
+                        }`}
                         aria-label={`Visit our ${item.label}`}
                       >
                         <item.icon size={24} aria-hidden="true" />

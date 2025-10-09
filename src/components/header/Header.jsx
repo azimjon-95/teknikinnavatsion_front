@@ -2,7 +2,10 @@ import React, { useEffect, useState, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Search, Phone, Mail } from "lucide-react";
 import { Select } from "antd";
-import { toggleSearchPanel, setSearchQuery } from "../../context/actions/authSearch";
+import {
+  toggleSearchPanel,
+  setSearchQuery,
+} from "../../context/actions/authSearch";
 import { useNavigate, useLocation, Link } from "react-router-dom";
 import logo from "../../assets/logoHeader.png";
 import TEKNIK from "../../assets/TEKNIK.jpg";
@@ -12,33 +15,35 @@ const { Option } = Select;
 
 const translations = {
   ru: {
-    contactEmail: "teknikinnovatsion.info@gmail.com",
+    contactEmail: "aasatillo123@gmail.com",
     navLinks: [
       { label: "Резервуар горизонтальный стальной РГС", path: "rgs" },
       { label: "Резервуар вертикальный стальной РВС", path: "rvs" },
-
+      { label: "Емкости для СУГ Резервуары СУГ", path: "sug" },
     ],
   },
   en: {
-    contactEmail: "teknikinnovatsion.info@gmail.com",
+    contactEmail: "aasatillo123@gmail.com",
     navLinks: [
       { label: "Horizontal Steel Tank RGS", path: "rgs" },
       { label: "Vertical Steel Tank RVS", path: "rvs" },
+      { label: "LPG Tanks LPG Reservoirs", path: "sug" },
     ],
   },
   uz: {
-    contactEmail: "teknikinnovatsion.info@gmail.com",
+    contactEmail: "aasatillo123@gmail.com",
     navLinks: [
       { label: "Gorizontal po'lat rezervuar RGS", path: "rgs" },
       { label: "Vertikal po'lat rezervuar RVS", path: "rvs" },
+      { label: "SUГ tanklari SUГ rezervuarlari", path: "sug" },
     ],
   },
 };
 const translations2 = {
   ru: {
     navLinks: [
-      { label: "Коммерческое предложение на (АЗС)", path: "azs" },
-      { label: "Коммерческое предложение на (МАЗС)", path: "mazs" },
+      { label: "Коммерческое предложение на (МАЗС)", path: "azs" },
+      { label: "Коммерческое предложение на (АЗС)", path: "mazs" },
       { label: "Коммерческое предложение (KAЗС)", path: "kazs" },
       { label: "Блочная автозаправочная станция (БАЗС)", path: "bazs" },
     ],
@@ -89,7 +94,11 @@ function Header() {
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (isSearchOpen && searchPanelRef.current && !searchPanelRef.current.contains(event.target)) {
+      if (
+        isSearchOpen &&
+        searchPanelRef.current &&
+        !searchPanelRef.current.contains(event.target)
+      ) {
         dispatch(toggleSearchPanel());
       }
     };
@@ -118,8 +127,6 @@ function Header() {
     }
   };
 
-
-
   return (
     <div className="bez-header">
       <div className="bez-header-top-content">
@@ -128,7 +135,10 @@ function Header() {
             <img src={logo} alt="Company logo" />
           </Link>
           <img src={TEKNIK} alt="Company logo" />
-          <a href={`mailto:${translations[language].contactEmail}`} className="bez-contact-info">
+          <a
+            href={`mailto:${translations[language].contactEmail}`}
+            className="bez-contact-info"
+          >
             <Mail size={16} />
             <span>{translations[language].contactEmail}</span>
           </a>
@@ -147,19 +157,13 @@ function Header() {
         </div>
       </div>
       <div className="bez-header-bottom">
-        {
-          translations[language].navLinks.map((link, index) => {
-            return (
-              <Link
-                key={index}
-                to={`/${language}/${link.path}`}
-              >
-                {link.label}
-              </Link>
-
-            )
-          })
-        }
+        {translations[language].navLinks.map((link, index) => {
+          return (
+            <Link key={index} to={`/${language}/${link.path}`}>
+              {link.label}
+            </Link>
+          );
+        })}
       </div>
       <div className="bez-header-bottom">
         {translations2[language].navLinks.map((link, index) => (
@@ -173,5 +177,3 @@ function Header() {
 }
 
 export default Header;
-
-
