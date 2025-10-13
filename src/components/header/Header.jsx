@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { Search, Phone, Mail } from "lucide-react";
+import { Search, Phone, Mail, Menu, X } from "lucide-react";
 import { Select } from "antd";
 import {
   toggleSearchPanel,
@@ -81,6 +81,7 @@ function Header() {
   const dispatch = useDispatch();
   const { isSearchOpen, searchQuery } = useSelector((state) => state.search);
   const [language, setLanguage] = useState("ru");
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const searchPanelRef = useRef(null);
 
   useEffect(() => {
@@ -111,6 +112,7 @@ function Header() {
   const handleLanguageChange = (value) => {
     setLanguage(value);
     localStorage.setItem("lang", value);
+    setIsMobileMenuOpen(false);
 
     // Joriy yo'lni olish (masalan, /ru/rgs yoki /en/contact)
     const currentPath = location.pathname;
@@ -125,6 +127,14 @@ function Header() {
       // Agar yo'l bo'sh bo'lsa, faqat tilni o'zgartirish
       navigate(`/${value}`);
     }
+  };
+
+  const handleMenuToggle = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const handleMenuItemClick = () => {
+    setIsMobileMenuOpen(false);
   };
 
   return (
@@ -153,25 +163,64 @@ function Header() {
               <Option value="en">English</Option>
               <Option value="uz">O'zbekcha</Option>
             </Select>
+            <button onClick={handleMenuToggle} className="bez-hamburger">
+              {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
           </div>
         </div>
       </div>
 
       <div className="bez-header-bottom">
-        {translations2[language].navLinks.map((link, index) => (
-          <Link key={index} to={`/${language}/${link.path}`}>
-            {link.label}
-          </Link>
-        ))}
-      </div>
-      <div className="bez-header-bottom">
-        {translations[language].navLinks.map((link, index) => {
-          return (
+        <div className="bez-header-li">
+          {translations2[language].navLinks.map((link, index) => (
             <Link key={index} to={`/${language}/${link.path}`}>
               {link.label}
             </Link>
-          );
-        })}
+          ))}
+        </div>
+        <div className="bez-header-li">
+          {translations[language].navLinks.map((link, index) => {
+            return (
+              <Link key={index} to={`/${language}/${link.path}`}>
+                {link.label}
+              </Link>
+            );
+          })}
+        </div>
+      </div>
+
+      {isMobileMenuOpen && (
+        <div
+          className={`bez-overlay`}
+          onClick={handleMenuToggle}
+        />
+      )}
+
+      <div className={`bez-mobile-menu ${isMobileMenuOpen ? 'open' : ''}`}>
+        <div className="bez-header-li">
+          {translations2[language].navLinks.map((link, index) => (
+            <Link
+              key={index}
+              to={`/${language}/${link.path}`}
+              onClick={handleMenuItemClick}
+            >
+              {link.label}
+            </Link>
+          ))}
+        </div>
+        <div className="bez-header-li">
+          {translations[language].navLinks.map((link, index) => {
+            return (
+              <Link
+                key={index}
+                to={`/${language}/${link.path}`}
+                onClick={handleMenuItemClick}
+              >
+                {link.label}
+              </Link>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
